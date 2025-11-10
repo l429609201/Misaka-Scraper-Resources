@@ -1,6 +1,118 @@
 {
-  "version": "1.0.11",
-  "build_date": "2025-11-10T14:07:10Z",
-  "commit": "ef9706183925b286b10f5963858cbe75798b9b46",
-  "python_version": "3.11"
+  "version": "1.0.13",
+  "build_date": "2025-11-10T17:11:20Z",
+  "commit": "3e7103fb519b233fa0d2cf9690facab5df697d1f",
+  "python_version": "3.11",
+  "resources": {
+    "bilibili": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Bilibili弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/bilibili.so",
+        "linux-arm": "resources/linux-arm/bilibili.so",
+        "windows-amd64": "resources/windows-amd64/bilibili.pyd"
+      }
+    },
+    "iqiyi": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Iqiyi弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/iqiyi.so",
+        "linux-arm": "resources/linux-arm/iqiyi.so",
+        "windows-amd64": "resources/windows-amd64/iqiyi.pyd"
+      }
+    },
+    "tencent": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Tencent弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/tencent.so",
+        "linux-arm": "resources/linux-arm/tencent.so",
+        "windows-amd64": "resources/windows-amd64/tencent.pyd"
+      }
+    },
+    "youku": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Youku弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/youku.so",
+        "linux-arm": "resources/linux-arm/youku.so",
+        "windows-amd64": "resources/windows-amd64/youku.pyd"
+      }
+    },
+    "gamer": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Gamer弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/gamer.so",
+        "linux-arm": "resources/linux-arm/gamer.so",
+        "windows-amd64": "resources/windows-amd64/gamer.pyd"
+      }
+    },
+    "dandanplay": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Dandanplay弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/dandanplay.so",
+        "linux-arm": "resources/linux-arm/dandanplay.so",
+        "windows-amd64": "resources/windows-amd64/dandanplay.pyd"
+      }
+    },
+    "hanjutv": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Hanjutv弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/hanjutv.so",
+        "linux-arm": "resources/linux-arm/hanjutv.so",
+        "windows-amd64": "resources/windows-amd64/hanjutv.pyd"
+      }
+    },
+    "le": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Le弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/le.so",
+        "linux-arm": "resources/linux-arm/le.so",
+        "windows-amd64": "resources/windows-amd64/le.pyd"
+      }
+    },
+    "mgtv": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Mgtv弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/mgtv.so",
+        "linux-arm": "resources/linux-arm/mgtv.so",
+        "windows-amd64": "resources/windows-amd64/mgtv.pyd"
+      }
+    },
+    "renren": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Renren弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/renren.so",
+        "linux-arm": "resources/linux-arm/renren.so",
+        "windows-amd64": "resources/windows-amd64/renren.pyd"
+      }
+    },
+    "sohu": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Sohu弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/sohu.so",
+        "linux-arm": "resources/linux-arm/sohu.so",
+        "windows-amd64": "resources/windows-amd64/sohu.pyd"
+      }
+    }
+  }
 }
