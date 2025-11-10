@@ -1,1 +1,1 @@
-# misaka_danmu_hub
+# Misaka-Scraper-Resources
