@@ -1,13 +1,18 @@
 {
-  "bilibili": "1.0.0",
-  "dandanplay": "1.0.0",
-  "gamer": "1.0.0",
-  "hanjutv": "1.0.0",
-  "iqiyi": "1.0.0",
-  "le": "1.0.0",
-  "mgtv": "1.0.0",
-  "renren": "1.0.0",
-  "sohu": "1.0.0",
-  "tencent": "1.0.0",
-  "youku": "1.0.0"
+  "platform": "windows",
+  "type": "amd64",
+  "version": "1.0.0",
+  "scrapers": {
+    "bilibili": "1.0.0",
+    "dandanplay": "1.0.0",
+    "gamer": "1.0.0",
+    "hanjutv": "1.0.0",
+    "iqiyi": "1.0.0",
+    "le": "1.0.0",
+    "mgtv": "1.0.0",
+    "renren": "1.0.0",
+    "sohu": "1.0.0",
+    "tencent": "1.0.0",
+    "youku": "1.0.0"
+  }
 }
