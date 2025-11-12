@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.0.0",
+  "version": "1.0.18",
   "scrapers": {
     "iqiyi": "1.0.0",
     "bilibili": "1.0.0",

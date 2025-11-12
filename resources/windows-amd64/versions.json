@@ -1,7 +1,7 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "1.0.0",
+  "version": "1.0.18",
   "scrapers": {
     "bilibili": "1.0.0",
     "dandanplay": "1.0.0",
