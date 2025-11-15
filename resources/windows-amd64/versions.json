@@ -1,7 +1,7 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "scrapers": {
     "bilibili": "1.0.0",
     "dandanplay": "1.0.0",
@@ -9,7 +9,7 @@
     "hanjutv": "1.0.0",
     "iqiyi": "1.0.0",
     "le": "1.0.0",
-    "mgtv": "1.0.0",
+    "mgtv": "1.0.1",
     "renren": "1.0.0",
     "sohu": "1.0.0",
     "tencent": "1.0.0",

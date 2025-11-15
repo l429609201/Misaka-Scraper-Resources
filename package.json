@@ -1,7 +1,7 @@
 {
-  "version": "1.0.19",
-  "build_date": "2025-11-14T15:19:33Z",
-  "commit": "b7f80142d607d613056292b596c0b3b2061affc7",
+  "version": "1.0.20",
+  "build_date": "2025-11-15T12:33:01Z",
+  "commit": "1d38121336e1a744b92ee57f4975fc6f3f4feca1",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -86,7 +86,7 @@
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so",
