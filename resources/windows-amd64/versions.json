@@ -1,7 +1,7 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "scrapers": {
     "bilibili": "1.0.0",
     "dandanplay": "1.0.0",
@@ -13,6 +13,6 @@
     "renren": "1.0.0",
     "sohu": "1.0.0",
     "tencent": "1.0.0",
-    "youku": "1.0.2"
+    "youku": "1.0.3"
   }
 }

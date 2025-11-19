@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "scrapers": {
     "iqiyi": "1.0.0",
     "bilibili": "1.0.0",
@@ -13,6 +13,6 @@
     "mgtv": "1.0.1",
     "gamer": "1.0.0",
     "sohu": "1.0.0",
-    "youku": "1.0.2"
+    "youku": "1.0.3"
   }
 }

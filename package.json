@@ -1,7 +1,7 @@
 {
-  "version": "1.0.21",
-  "build_date": "2025-11-17T12:30:24Z",
-  "commit": "ee721188b0adcffdfa28c259e045339c2f88b69d",
+  "version": "1.0.22",
+  "build_date": "2025-11-19T15:44:37Z",
+  "commit": "a57b331b8431d388f6eea244f624b38c7f8864da",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -36,7 +36,7 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so",
