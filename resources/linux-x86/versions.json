@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "scrapers": {
     "iqiyi": "1.0.0",
     "bilibili": "1.0.0",
@@ -10,7 +10,7 @@
     "tencent": "1.0.0",
     "hanjutv": "1.0.0",
     "dandanplay": "1.0.0",
-    "mgtv": "1.0.1",
+    "mgtv": "1.0.2",
     "gamer": "1.0.0",
     "sohu": "1.0.0",
     "youku": "1.0.3"
