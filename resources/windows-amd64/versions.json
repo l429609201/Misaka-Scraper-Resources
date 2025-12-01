@@ -1,31 +1,31 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "1.0.27",
+  "version": "1.4.0",
   "scrapers": {
     "bilibili": "1.0.0",
-    "dandanplay": "1.0.0",
-    "gamer": "1.0.0",
-    "hanjutv": "1.0.0",
+    "dandanplay": "1.0.1",
+    "gamer": "1.0.1",
+    "hanjutv": "1.0.1",
     "iqiyi": "1.0.0",
-    "le": "1.0.0",
+    "le": "1.0.1",
     "mgtv": "1.0.5",
     "renren": "1.0.0",
-    "sohu": "1.0.0",
+    "sohu": "1.0.1",
     "tencent": "1.0.0",
     "youku": "1.0.3"
   },
   "hashes": {
-    "bilibili": "fae138a5c5b70980892b8ffc24bb90acbd3e791c6d8e04cacfb3b294ff37c51b",
-    "dandanplay": "78875a04017d4b991c349e7c9fb166df133523eec2fc42c0210399dc4f9f0ad4",
-    "gamer": "97a3f0852ee49cda69d7c79de1960021e462d3cff9ee243eeaff54df13b71eb0",
-    "hanjutv": "99154dc86f5dbc1fa76db5f26def8dea74b1d830936548371906c0f4ddea5015",
-    "iqiyi": "af7a49a099a9a667dc0b1cb42ddb0b5ec41ae9dfbcc178b319fc9e0260fbda75",
-    "le": "2e151ed5d491f51ee8e503bb4d965ee8c3ba8e904c3fdb6609f30ea7c7658a1a",
-    "mgtv": "ac90cc2675ccac92ffe1c154f9e6ddf9669fd5ab848a7ffe184b49292ef6587d",
-    "renren": "e8b0e6e639107e190e7b75f05115eee099c67f1df61792d5f15f1965e5842bb0",
-    "sohu": "4df76c7bd378bb4a91f189ea1106f0e306646e8343b27f1291f8bf2394e5644d",
-    "tencent": "edc40ee1e51ebd5ce8afc4d499e7c9a64e749572dec541c4eb4aeb6979235b2e",
-    "youku": "a1c4ba734db44c4599885108cf411b61071aed7129b79d643e4dda1f911e3045"
+    "bilibili": "0db035ad2f6dea34433534a16281be2790652c75e0dde83628decc33e50b9745",
+    "dandanplay": "6fd77afba46ead044a8ccf4fc36982862b09f7665724c98d0daf347900591065",
+    "gamer": "89be4049fdc24c4bc9a294e5fb917e7401f4039f140d10ef593699249305d337",
+    "hanjutv": "d6e888c07658a874de8758dd85556abae82cfd732b8b05cbf1a2b8a4484d1e5d",
+    "iqiyi": "fd0b16b21779f0a1f4c63166fc0799ee58848e42d5f81cc61ff3091141282282",
+    "le": "8038702e5999e8a00733eb985ed0cc62048d59d587b6648553d255675667bc96",
+    "mgtv": "cfc027f2e1f9ebba979708e7af69771a5deb43c29894a298a952cfc4c820256d",
+    "renren": "5bae00c1fd7727fc5bc7c0a0667eed82a4eb9ac5045e3f27d1830acc22bddf59",
+    "sohu": "7533d26c361398bb0c8d32922e4214770e4f7ec827c200ea883f022c687b88bd",
+    "tencent": "e7d19a2a2ba1edef036e145d7ea2984da4620fedcecd4d581cfe834b2d29fcdf",
+    "youku": "fd7f37bed2f43122b408e91eab538713eddb97b980a3c13c0f8bf36c9569673c"
   }
 }
