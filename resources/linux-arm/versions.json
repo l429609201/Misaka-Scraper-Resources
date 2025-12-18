@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.4.2",
+  "version": "1.4.4",
   "scrapers": {
     "iqiyi": "1.0.1",
     "renren": "1.0.0",
@@ -11,7 +11,7 @@
     "le": "1.0.1",
     "gamer": "1.0.2",
     "hanjutv": "1.0.1",
-    "bilibili": "1.0.1",
+    "bilibili": "1.0.2",
     "mgtv": "1.0.5",
     "dandanplay": "1.0.1"
   },
@@ -24,7 +24,7 @@
     "le": "94792e3fea86ce87a65a9c5ae63ffe490b60e432896c93b3d08508bb1c69ae6a",
     "gamer": "e0c7767d65a1ae4f405b59900db96ff2b54736ddd9005e710645bf3968460389",
     "hanjutv": "a235983d32e9bbf0b93868aa85312ccb1772e5b7d04d6a294bafe6a4f7ea5a63",
-    "bilibili": "c33a136066b4d07ff6feaf4b181a81626b8f76ee6dba486b8233c7c1df333cce",
+    "bilibili": "fa745ea74df406b6e543b682937abc7310c02a4b549200c5bec5042d4edbdc98",
     "mgtv": "478fc4b7735c8e8a36cd08bbfa6ce1a0770b4f3ad635d56bf5838d84be0d8625",
     "dandanplay": "0430aec86bcca9937b66c95f543000caf519bd30adc39ff0f2fdeba61a0bfc87"
   }
