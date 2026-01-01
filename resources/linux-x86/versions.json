@@ -1,10 +1,10 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "scrapers": {
     "iqiyi": "1.0.2",
-    "renren": "1.0.1",
+    "renren": "1.0.2",
     "sohu": "1.0.2",
     "tencent": "1.0.1",
     "youku": "1.0.4",
@@ -17,7 +17,7 @@
   },
   "hashes": {
     "iqiyi": "a3646cd1fa3d5e1f494dfce162e2a963a048f356450eca851706da89b31c666f",
-    "renren": "37a7a46deaff4a497ad74c2c33a4f1b7087e0627a9cb56ab2b7c346596b67657",
+    "renren": "db3a987e6218529fbbfc9b402e57c097446dd88f0c3b75c87a0e2b073612d776",
     "sohu": "8b5187a8f9bb2526278dae8464b212967c40af05848106e042745741b3fbb4aa",
     "tencent": "7b9b36de8df5ac5aa120d53c6c992b6e26c34325759ed8f75f929219394fcb4c",
     "youku": "269206a0543c00dd6a90306eb87dc94480c10dafad1cb8230111b8d21f809aa3",

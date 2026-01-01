@@ -1,7 +1,7 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "scrapers": {
     "bilibili": "1.0.5",
     "dandanplay": "1.0.1",
@@ -10,22 +10,22 @@
     "iqiyi": "1.0.2",
     "le": "1.0.2",
     "mgtv": "1.0.5",
-    "renren": "1.0.1",
+    "renren": "1.0.2",
     "sohu": "1.0.2",
     "tencent": "1.0.1",
     "youku": "1.0.4"
   },
   "hashes": {
-    "bilibili": "8d9908721aab624c1064ef708a52979c2a5b860a91e22f1bdf38629a17078e3d",
-    "dandanplay": "df20ef500db650409c55f983c08a38604d8939c3bb621c2f119f0da93e34c2b8",
-    "gamer": "2c5a86a5cc84a9cfac61dfce8fbf46ed3c56c4ff35a94c84710a6c971ebeb1c4",
-    "hanjutv": "651da8c4fe8b0f84f51132e8e46848e2f2869065cee732f686528b5c6c3053bd",
-    "iqiyi": "3f5be6dea4886b0670f0567c1d8c7ab2bf411986a7f65d2dc594cd8cc381122a",
-    "le": "c657fbc2901cf4677c612a2eeb5556361c17aa52ea05b1610f0366700c4060b9",
-    "mgtv": "0c1f036b60807fbab791c76ff1bacae71b26fe8a12fb483e53ea84cebe9fec97",
-    "renren": "cedf3609a0adcc083d7380e97832bb68f48daf18231fd464480d45d21a8818fe",
-    "sohu": "517b0ca3658a9eeff76b7b694682de229fdde33e140a606e37742ec372cf5a7a",
-    "tencent": "010a4b691e6355ae9ab2faceee2628126f3dfb8bc7a29485ede00b08071e155c",
-    "youku": "56cb56378233a368c4e6595ae40d97a09cf50412d25bb908fc2c8014546b57e3"
+    "bilibili": "12062f00d4db8cdf10c3d6d7129de5a3be38424dab095a6233c9c0dee2e769b9",
+    "dandanplay": "ca37197dbdd533145bbaf85d4cb528a4fc4f7c884322857152a51f805a0ed5c7",
+    "gamer": "976fd47f674412f54f6f64d64e7e32f7aa967a25029d3219bd5b9627d7963bfe",
+    "hanjutv": "3837c639dcad1563856413c4c62cec909da3d7c4b8bfd74e3bf86aece02c5998",
+    "iqiyi": "3981825020f45450a175e5dc2d870b1cd21ff578c028dcc04ca6ed26827a66cc",
+    "le": "d8c89b4aecda7ac313e5971c0ac6be555d667186ebe37e9d3d01dfe9cd4e11ba",
+    "mgtv": "c5710f1123a08be39b02dc56d9bda885fe70dfa24d644c626108e9dbaa03b3ce",
+    "renren": "300db34fcfd57916c10f2b7eabac0199206ebe1c88c0ad15b9ca87f8950c2ddc",
+    "sohu": "514306190f57c3f8710f751ce6f11fb2b6ed5cadcb4fc2979ac53043c084ed98",
+    "tencent": "715d16daebe6c448786fbc72fb3aa08bd3ac7206fbdea2bf582f279b6765af21",
+    "youku": "0dc4113203dc457758795796e3d7e01bf9fd4ccb75db796336927f836a7856e1"
   }
 }
