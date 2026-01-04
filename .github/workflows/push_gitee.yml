@@ -3,11 +3,7 @@ name: Sync to Gitee
 on:
   release:
     types: [published]
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Tag to sync (e.g. v1.5.3)'
-        required: false
+  workflow_dispatch:  # 手动触发时同步全部
 
 jobs:
   sync:
@@ -18,70 +14,118 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to Gitee
+      - name: Push Code and Tags to Gitee
         run: |
           git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources.git
           git push gitee --all --force
           git push gitee --tags --force
 
-      - name: Get Release Info
-        id: release_info
-        run: |
-          if [ "${{ github.event_name }}" == "release" ]; then
-            echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-            echo "name=${{ github.event.release.name }}" >> $GITHUB_OUTPUT
-          else
-            TAG="${{ github.event.inputs.tag }}"
-            if [ -z "$TAG" ]; then
-              TAG=$(git describe --tags --abbrev=0)
-            fi
-            echo "tag=$TAG" >> $GITHUB_OUTPUT
-            echo "name=$TAG" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Download GitHub Release Assets
+      # 新 Release 发布时，只同步这一个
+      - name: Sync Single Release (on publish)
+        if: github.event_name == 'release'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+          GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
         run: |
+          TAG="${{ github.event.release.tag_name }}"
+          NAME="${{ github.event.release.name }}"
+          BODY=$(echo "${{ github.event.release.body }}" | head -c 1000)
+          
+          echo "Syncing release: $TAG"
+          
+          # 下载资产
           mkdir -p ./release-assets
-          gh release download ${{ steps.release_info.outputs.tag }} -D ./release-assets || echo "No assets to download"
-          ls -la ./release-assets/ || true
-
-      - name: Create Gitee Release and Upload Assets
-        run: |
-          TAG_NAME="${{ steps.release_info.outputs.tag }}"
-          RELEASE_NAME="${{ steps.release_info.outputs.name }}"
+          gh release download "$TAG" -D ./release-assets || true
           
           # 创建 Gitee Release
-          echo "Creating Gitee release for tag: $TAG_NAME"
           RESPONSE=$(curl -s -X POST \
-            "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases" \
+            "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases" \
             -H "Content-Type: application/json" \
             -d "{
-              \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
-              \"tag_name\": \"${TAG_NAME}\",
-              \"name\": \"${RELEASE_NAME}\",
-              \"body\": \"Synced from GitHub\",
+              \"access_token\": \"${GITEE_TOKEN}\",
+              \"tag_name\": \"${TAG}\",
+              \"name\": \"${NAME:-$TAG}\",
+              \"body\": \"${BODY:-Synced from GitHub}\",
               \"target_commitish\": \"main\"
             }")
           
-          echo "Create release response: $RESPONSE"
           RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
-          echo "Release ID: $RELEASE_ID"
+          echo "Created release ID: $RELEASE_ID"
           
-          # 上传资产文件
-          if [ "$RELEASE_ID" != "null" ] && [ -d "./release-assets" ]; then
-            cd ./release-assets
-            for file in *; do
-              if [ -f "$file" ]; then
-                echo "Uploading: $file"
-                curl -s -X POST \
-                  "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases/${RELEASE_ID}/attach_files" \
-                  -H "Content-Type: multipart/form-data" \
-                  -F "access_token=${{ secrets.GITEE_TOKEN }}" \
-                  -F "file=@$file"
-                echo ""
-                echo "Uploaded: $file"
-              fi
+          # 上传资产
+          if [ "$RELEASE_ID" != "null" ] && [ -d "./release-assets" ] && [ "$(ls -A ./release-assets 2>/dev/null)" ]; then
+            for file in ./release-assets/*; do
+              [ -f "$file" ] || continue
+              echo "Uploading: $(basename $file)"
+              curl -s -X POST \
+                "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases/${RELEASE_ID}/attach_files" \
+                -F "access_token=${GITEE_TOKEN}" \
+                -F "file=@$file"
             done
           fi
+
+      # 手动触发时，同步全部 Releases
+      - name: Sync All Releases (manual trigger)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+          GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
+        run: |
+          echo "Fetching all GitHub releases..."
+          RELEASES=$(gh release list --json tagName,name,body --limit 100)
+          
+          echo "Fetching existing Gitee releases..."
+          GITEE_RELEASES=$(curl -s "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases?access_token=${GITEE_TOKEN}&per_page=100")
+          GITEE_TAGS=$(echo $GITEE_RELEASES | jq -r '.[].tag_name' 2>/dev/null || echo "")
+          
+          echo "$RELEASES" | jq -c '.[]' | while read release; do
+            TAG=$(echo $release | jq -r '.tagName')
+            NAME=$(echo $release | jq -r '.name')
+            BODY=$(echo $release | jq -r '.body' | head -c 1000)
+            
+            # 检查是否已存在
+            if echo "$GITEE_TAGS" | grep -q "^${TAG}$"; then
+              echo "Skip: $TAG (already exists)"
+              continue
+            fi
+            
+            echo "Syncing: $TAG"
+            
+            # 下载资产
+            rm -rf ./release-assets
+            mkdir -p ./release-assets
+            gh release download "$TAG" -D ./release-assets || true
+            
+            # 创建 Release
+            RESPONSE=$(curl -s -X POST \
+              "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"access_token\": \"${GITEE_TOKEN}\",
+                \"tag_name\": \"${TAG}\",
+                \"name\": \"${NAME:-$TAG}\",
+                \"body\": \"${BODY:-Synced from GitHub}\",
+                \"target_commitish\": \"main\"
+              }")
+            
+            RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
+            
+            # 上传资产
+            if [ "$RELEASE_ID" != "null" ] && [ -d "./release-assets" ] && [ "$(ls -A ./release-assets 2>/dev/null)" ]; then
+              for file in ./release-assets/*; do
+                [ -f "$file" ] || continue
+                echo "  Uploading: $(basename $file)"
+                curl -s -X POST \
+                  "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases/${RELEASE_ID}/attach_files" \
+                  -F "access_token=${GITEE_TOKEN}" \
+                  -F "file=@$file"
+              done
+            fi
+            
+            echo "Done: $TAG"
+            sleep 1  # 避免 API 限流
+          done
+          
+          echo "All releases synced!"
