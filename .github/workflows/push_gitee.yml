@@ -10,13 +10,13 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Mirror to Gitee
-        uses: Yikun/hub-mirror-action@master
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          src: github/${{ github.repository_owner }}
-          dst: gitee/${{ secrets.GITEE_USERNAME }}
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
-          static_list: "Misaka-Scraper-Resources"
-          force_update: true
-          clone_style: "https"
+          fetch-depth: 0
+
+      - name: Push to Gitee
+        run: |
+          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources.git
+          git push gitee --all --force
+          git push gitee --tags --force
