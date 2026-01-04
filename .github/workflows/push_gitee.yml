@@ -2,52 +2,21 @@ name: Sync to Gitee
 
 on:
   push:
-    分支: [main]
     tags:
       - 'v*'
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
-  # Job 1: 同步代码和 Tags（覆盖式）
-  sync-code:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Mirror to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_SSH_KEY }}
+        uses: Yikun/hub-mirror-action@master
         with:
-          source-repo: "git@github.com:l429609201/Misaka-Scraper-Resources.git"
-          destination-repo: "git@gitee.com:${{ secrets.GITEE_OWNER }}/Misaka-Scraper-Resources.git"
-
-  # Job 2: 同步 Release（仅在发布 Release 时触发）
-  sync-release:
-    if: github.event_name == 'release'
-    needs: sync-code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create Gitee Release
-        run: |
-          # 转义 release body 中的特殊字符
-          RELEASE_BODY=$(cat << 'EOF'
-          ${{ github.event.release.body }}
-          EOF
-          )
-          
-          # 调用 Gitee API 创建发行版
-          curl -X POST "https://gitee.com/api/v5/repos/${{ secrets.GITEE_OWNER }}/Misaka-Scraper-Resources/releases" \
-            -H "Content-Type: application/json" \
-            -d "{
-              \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
-              \"tag_name\": \"${{ github.event.release.tag_name }}\",
-              \"name\": \"${{ github.event.release.name }}\",
-              \"body\": \"同步自 GitHub Release\n\n${{ github.event.release.tag_name }}\",
-              \"prerelease\": ${{ github.event.release.prerelease }}
-            }"
-
+          src: github/${{ github.repository_owner }}
+          dst: gitee/${{ secrets.GITEE_USERNAME }}
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          static_list: "Misaka-Scraper-Resources"
+          force_update: true
+          clone_style: "https"
