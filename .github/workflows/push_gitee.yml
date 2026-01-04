@@ -3,7 +3,7 @@ name: Sync to Gitee
 on:
   release:
     types: [published]
-  workflow_dispatch:  # 手动触发时同步全部
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -20,7 +20,6 @@ jobs:
           git push gitee --all --force
           git push gitee --tags --force
 
-      # 新 Release 发布时，只同步这一个
       - name: Sync Single Release (on publish)
         if: github.event_name == 'release'
         env:
@@ -30,15 +29,12 @@ jobs:
         run: |
           TAG="${{ github.event.release.tag_name }}"
           NAME="${{ github.event.release.name }}"
-          BODY=$(echo "${{ github.event.release.body }}" | head -c 1000)
           
           echo "Syncing release: $TAG"
           
-          # 下载资产
           mkdir -p ./release-assets
           gh release download "$TAG" -D ./release-assets || true
           
-          # 创建 Gitee Release
           RESPONSE=$(curl -s -X POST \
             "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases" \
             -H "Content-Type: application/json" \
@@ -46,14 +42,13 @@ jobs:
               \"access_token\": \"${GITEE_TOKEN}\",
               \"tag_name\": \"${TAG}\",
               \"name\": \"${NAME:-$TAG}\",
-              \"body\": \"${BODY:-Synced from GitHub}\",
+              \"body\": \"Synced from GitHub\",
               \"target_commitish\": \"main\"
             }")
           
           RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
           echo "Created release ID: $RELEASE_ID"
           
-          # 上传资产
           if [ "$RELEASE_ID" != "null" ] && [ -d "./release-assets" ] && [ "$(ls -A ./release-assets 2>/dev/null)" ]; then
             for file in ./release-assets/*; do
               [ -f "$file" ] || continue
@@ -65,7 +60,6 @@ jobs:
             done
           fi
 
-      # 手动触发时，同步全部 Releases
       - name: Sync All Releases (manual trigger)
         if: github.event_name == 'workflow_dispatch'
         env:
@@ -74,23 +68,24 @@ jobs:
           GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
         run: |
           echo "Fetching all GitHub releases..."
-          RELEASES=$(gh release list --json tagName,name,body --limit 100)
           
+          # 获取已存在的 Gitee releases
           echo "Fetching existing Gitee releases..."
           GITEE_RELEASES=$(curl -s "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases?access_token=${GITEE_TOKEN}&per_page=100")
           GITEE_TAGS=$(echo $GITEE_RELEASES | jq -r '.[].tag_name' 2>/dev/null || echo "")
           
-          echo "$RELEASES" | jq -c '.[]' | while read release; do
+          # 获取 GitHub releases 列表（只取 tagName 和 name）
+          gh release list --limit 100 --json tagName,name | jq -c '.[]' | while read release; do
             TAG=$(echo $release | jq -r '.tagName')
             NAME=$(echo $release | jq -r '.name')
-            BODY=$(echo $release | jq -r '.body' | head -c 1000)
             
             # 检查是否已存在
             if echo "$GITEE_TAGS" | grep -q "^${TAG}$"; then
-              echo "Skip: $TAG (already exists)"
+              echo "Skip: $TAG (already exists on Gitee)"
               continue
             fi
             
+            echo "========================================"
             echo "Syncing: $TAG"
             
             # 下载资产
@@ -106,11 +101,12 @@ jobs:
                 \"access_token\": \"${GITEE_TOKEN}\",
                 \"tag_name\": \"${TAG}\",
                 \"name\": \"${NAME:-$TAG}\",
-                \"body\": \"${BODY:-Synced from GitHub}\",
+                \"body\": \"Synced from GitHub\",
                 \"target_commitish\": \"main\"
               }")
             
             RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
+            echo "Created release ID: $RELEASE_ID"
             
             # 上传资产
             if [ "$RELEASE_ID" != "null" ] && [ -d "./release-assets" ] && [ "$(ls -A ./release-assets 2>/dev/null)" ]; then
@@ -125,7 +121,8 @@ jobs:
             fi
             
             echo "Done: $TAG"
-            sleep 1  # 避免 API 限流
+            sleep 1
           done
           
+          echo "========================================"
           echo "All releases synced!"
