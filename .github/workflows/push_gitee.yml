@@ -5,6 +5,10 @@ on:
     types: [published]
   workflow_dispatch:
 
+env:
+  GITHUB_REPO: l429609201/Misaka-Scraper-Resources
+  GITEE_REPO: Misaka-Scraper-Resources
+
 jobs:
   # Job 1: 同步代码和 tags
   sync-code:
@@ -17,7 +21,7 @@ jobs:
 
       - name: Push to Gitee
         run: |
-          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources.git
+          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/${{ env.GITEE_REPO }}.git
           git push gitee --all --force
           git push gitee --tags --force
 
@@ -34,35 +38,68 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ "${{ github.event_name }}" == "release" ]; then
-            echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-            echo "name=${{ github.event.release.name }}" >> $GITHUB_OUTPUT
+            TAG="${{ github.event.release.tag_name }}"
+            NAME="${{ github.event.release.name }}"
           else
-            # 手动触发，获取最新的 release
-            LATEST=$(gh release list --limit 1 --json tagName,name | jq -r '.[0]')
+            LATEST=$(gh release list --repo ${{ env.GITHUB_REPO }} --limit 1 --json tagName,name | jq -r '.[0]')
             TAG=$(echo $LATEST | jq -r '.tagName')
             NAME=$(echo $LATEST | jq -r '.name')
-            echo "tag=$TAG" >> $GITHUB_OUTPUT
-            echo "name=$NAME" >> $GITHUB_OUTPUT
           fi
+          echo "Tag: $TAG, Name: $NAME"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "name=$NAME" >> $GITHUB_OUTPUT
 
-  # Job 3: 下载资产并创建 Gitee Release
-  create-release:
-    needs: [sync-code, get-latest-release]
+  # Job 3: 下载资产并获取文件列表
+  download-assets:
+    needs: [get-latest-release]
     runs-on: ubuntu-latest
     outputs:
-      release_id: ${{ steps.create.outputs.release_id }}
       files: ${{ steps.list-files.outputs.files }}
+      has_files: ${{ steps.list-files.outputs.has_files }}
     steps:
       - name: Download assets from GitHub
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="${{ needs.get-latest-release.outputs.tag }}"
-          echo "Downloading assets for: $TAG"
+          echo "Downloading assets for tag: $TAG from repo: ${{ env.GITHUB_REPO }}"
           mkdir -p ./release-assets
-          gh release download "$TAG" -D ./release-assets || true
+          
+          gh release download "$TAG" --repo ${{ env.GITHUB_REPO }} -D ./release-assets 2>&1 || echo "Download completed"
+          
+          echo "Downloaded files:"
           ls -la ./release-assets/
 
+      - name: List files for matrix
+        id: list-files
+        run: |
+          if [ -d "./release-assets" ] && [ "$(ls -A ./release-assets 2>/dev/null)" ]; then
+            FILES=$(ls -1 ./release-assets | jq -R -s -c 'split("\n") | map(select(length > 0))')
+            COUNT=$(echo $FILES | jq 'length')
+            echo "Found $COUNT files: $FILES"
+            echo "files=$FILES" >> $GITHUB_OUTPUT
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "No files found"
+            echo "files=[]" >> $GITHUB_OUTPUT
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload assets cache
+        if: steps.list-files.outputs.has_files == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-assets
+          path: ./release-assets/*
+          retention-days: 1
+
+  # Job 4: 创建 Gitee Release
+  create-gitee-release:
+    needs: [sync-code, get-latest-release, download-assets]
+    runs-on: ubuntu-latest
+    outputs:
+      release_id: ${{ steps.create.outputs.release_id }}
+    steps:
       - name: Create Gitee Release
         id: create
         env:
@@ -72,15 +109,18 @@ jobs:
           TAG="${{ needs.get-latest-release.outputs.tag }}"
           NAME="${{ needs.get-latest-release.outputs.name }}"
           
-          # 检查是否已存在
-          EXISTING=$(curl -s "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases/tags/${TAG}?access_token=${GITEE_TOKEN}" | jq -r '.id // empty')
+          echo "Creating Gitee release: $TAG"
           
-          if [ -n "$EXISTING" ]; then
-            echo "Release $TAG already exists, ID: $EXISTING"
-            echo "release_id=$EXISTING" >> $GITHUB_OUTPUT
+          # 检查是否已存在
+          EXISTING=$(curl -s "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/${{ env.GITEE_REPO }}/releases/tags/${TAG}?access_token=${GITEE_TOKEN}")
+          EXISTING_ID=$(echo $EXISTING | jq -r '.id // empty')
+          
+          if [ -n "$EXISTING_ID" ] && [ "$EXISTING_ID" != "null" ]; then
+            echo "Release already exists, ID: $EXISTING_ID"
+            echo "release_id=$EXISTING_ID" >> $GITHUB_OUTPUT
           else
             RESPONSE=$(curl -s -X POST \
-              "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases" \
+              "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/${{ env.GITEE_REPO }}/releases" \
               -H "Content-Type: application/json" \
               -d "{
                 \"access_token\": \"${GITEE_TOKEN}\",
@@ -95,28 +135,14 @@ jobs:
             echo "release_id=$RELEASE_ID" >> $GITHUB_OUTPUT
           fi
 
-      - name: List files for matrix
-        id: list-files
-        run: |
-          FILES=$(ls -1 ./release-assets 2>/dev/null | jq -R -s -c 'split("\n") | map(select(length > 0))')
-          echo "files=$FILES" >> $GITHUB_OUTPUT
-          echo "Files to upload: $FILES"
-
-      - name: Upload assets cache
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-assets
-          path: ./release-assets/
-          retention-days: 1
-
-  # Job 4: 并行上传文件
+  # Job 5: 并行上传文件
   upload-files:
-    needs: [create-release]
-    if: needs.create-release.outputs.release_id != 'null' && needs.create-release.outputs.files != '[]'
+    needs: [download-assets, create-gitee-release]
+    if: needs.download-assets.outputs.has_files == 'true' && needs.create-gitee-release.outputs.release_id != 'null' && needs.create-gitee-release.outputs.release_id != ''
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        file: ${{ fromJson(needs.create-release.outputs.files) }}
+        file: ${{ fromJson(needs.download-assets.outputs.files) }}
       max-parallel: 10
       fail-fast: false
     steps:
@@ -132,41 +158,35 @@ jobs:
           GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
         run: |
           FILE="./release-assets/${{ matrix.file }}"
-          RELEASE_ID="${{ needs.create-release.outputs.release_id }}"
+          RELEASE_ID="${{ needs.create-gitee-release.outputs.release_id }}"
           
-          echo "Uploading: ${{ matrix.file }}"
+          echo "Uploading: ${{ matrix.file }} to release $RELEASE_ID"
+          ls -la ./release-assets/
           
           RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-            "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/Misaka-Scraper-Resources/releases/${RELEASE_ID}/attach_files" \
+            "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/${{ env.GITEE_REPO }}/releases/${RELEASE_ID}/attach_files" \
             -F "access_token=${GITEE_TOKEN}" \
             -F "file=@$FILE")
           
           HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
-          BODY=$(echo "$RESPONSE" | sed '$d')
           
           if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
             echo "✓ Uploaded: ${{ matrix.file }}"
           else
             echo "✗ Failed: ${{ matrix.file }} (HTTP $HTTP_CODE)"
-            echo "$BODY"
+            echo "$RESPONSE"
             exit 1
           fi
 
-  # Job 5: 汇总
+  # Job 6: 汇总
   summary:
-    needs: [sync-code, get-latest-release, create-release, upload-files]
+    needs: [get-latest-release, create-gitee-release, upload-files]
     if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Summary
         run: |
           echo "## Sync Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
           echo "- **Tag**: ${{ needs.get-latest-release.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Release ID**: ${{ needs.create-release.outputs.release_id }}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Job | Status |" >> $GITHUB_STEP_SUMMARY
-          echo "|-----|--------|" >> $GITHUB_STEP_SUMMARY
-          echo "| sync-code | ${{ needs.sync-code.result }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| create-release | ${{ needs.create-release.outputs.result }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| upload-files | ${{ needs.upload-files.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "- **Gitee Release ID**: ${{ needs.create-gitee-release.outputs.release_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Upload Status**: ${{ needs.upload-files.result }}" >> $GITHUB_STEP_SUMMARY
