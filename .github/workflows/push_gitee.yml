@@ -4,6 +4,10 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to sync (e.g. v1.5.3)'
+        required: false
 
 jobs:
   sync:
@@ -20,22 +24,36 @@ jobs:
           git push gitee --all --force
           git push gitee --tags --force
 
-      - name: Download GitHub Release Assets
-        if: github.event_name == 'release'
-        uses: robinrber/github-release-assets-action@v1.0
-        with:
-          version: ${{ github.event.release.tag_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: ./release-assets
-
-      - name: Create Gitee Release
-        if: github.event_name == 'release'
+      - name: Get Release Info
+        id: release_info
         run: |
-          TAG_NAME="${{ github.event.release.tag_name }}"
-          RELEASE_NAME="${{ github.event.release.name }}"
-          RELEASE_BODY="${{ github.event.release.body }}"
+          if [ "${{ github.event_name }}" == "release" ]; then
+            echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+            echo "name=${{ github.event.release.name }}" >> $GITHUB_OUTPUT
+          else
+            TAG="${{ github.event.inputs.tag }}"
+            if [ -z "$TAG" ]; then
+              TAG=$(git describe --tags --abbrev=0)
+            fi
+            echo "tag=$TAG" >> $GITHUB_OUTPUT
+            echo "name=$TAG" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Download GitHub Release Assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p ./release-assets
+          gh release download ${{ steps.release_info.outputs.tag }} -D ./release-assets || echo "No assets to download"
+          ls -la ./release-assets/ || true
+
+      - name: Create Gitee Release and Upload Assets
+        run: |
+          TAG_NAME="${{ steps.release_info.outputs.tag }}"
+          RELEASE_NAME="${{ steps.release_info.outputs.name }}"
           
           # 创建 Gitee Release
+          echo "Creating Gitee release for tag: $TAG_NAME"
           RESPONSE=$(curl -s -X POST \
             "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases" \
             -H "Content-Type: application/json" \
@@ -43,27 +61,27 @@ jobs:
               \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
               \"tag_name\": \"${TAG_NAME}\",
               \"name\": \"${RELEASE_NAME}\",
-              \"body\": \"${RELEASE_BODY}\",
+              \"body\": \"Synced from GitHub\",
               \"target_commitish\": \"main\"
             }")
           
           echo "Create release response: $RESPONSE"
           RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
           echo "Release ID: $RELEASE_ID"
-          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_ENV
-
-      - name: Upload Assets to Gitee Release
-        if: github.event_name == 'release' && env.RELEASE_ID != 'null'
-        run: |
-          cd ./release-assets
-          for file in *; do
-            if [ -f "$file" ]; then
-              echo "Uploading: $file"
-              curl -s -X POST \
-                "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases/${{ env.RELEASE_ID }}/attach_files" \
-                -H "Content-Type: multipart/form-data" \
-                -F "access_token=${{ secrets.GITEE_TOKEN }}" \
-                -F "file=@$file"
-              echo "Uploaded: $file"
-            fi
-          done
+          
+          # 上传资产文件
+          if [ "$RELEASE_ID" != "null" ] && [ -d "./release-assets" ]; then
+            cd ./release-assets
+            for file in *; do
+              if [ -f "$file" ]; then
+                echo "Uploading: $file"
+                curl -s -X POST \
+                  "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases/${RELEASE_ID}/attach_files" \
+                  -H "Content-Type: multipart/form-data" \
+                  -F "access_token=${{ secrets.GITEE_TOKEN }}" \
+                  -F "file=@$file"
+                echo ""
+                echo "Uploaded: $file"
+              fi
+            done
+          fi
