@@ -1,9 +1,8 @@
 name: Sync to Gitee
 
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types: [published]
   workflow_dispatch:
 
 jobs:
@@ -20,3 +19,51 @@ jobs:
           git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources.git
           git push gitee --all --force
           git push gitee --tags --force
+
+      - name: Download GitHub Release Assets
+        if: github.event_name == 'release'
+        uses: robinrber/github-release-assets-action@v1.0
+        with:
+          version: ${{ github.event.release.tag_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./release-assets
+
+      - name: Create Gitee Release
+        if: github.event_name == 'release'
+        run: |
+          TAG_NAME="${{ github.event.release.tag_name }}"
+          RELEASE_NAME="${{ github.event.release.name }}"
+          RELEASE_BODY="${{ github.event.release.body }}"
+          
+          # 创建 Gitee Release
+          RESPONSE=$(curl -s -X POST \
+            "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
+              \"tag_name\": \"${TAG_NAME}\",
+              \"name\": \"${RELEASE_NAME}\",
+              \"body\": \"${RELEASE_BODY}\",
+              \"target_commitish\": \"main\"
+            }")
+          
+          echo "Create release response: $RESPONSE"
+          RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
+          echo "Release ID: $RELEASE_ID"
+          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_ENV
+
+      - name: Upload Assets to Gitee Release
+        if: github.event_name == 'release' && env.RELEASE_ID != 'null'
+        run: |
+          cd ./release-assets
+          for file in *; do
+            if [ -f "$file" ]; then
+              echo "Uploading: $file"
+              curl -s -X POST \
+                "https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/Misaka-Scraper-Resources/releases/${{ env.RELEASE_ID }}/attach_files" \
+                -H "Content-Type: multipart/form-data" \
+                -F "access_token=${{ secrets.GITEE_TOKEN }}" \
+                -F "file=@$file"
+              echo "Uploaded: $file"
+            fi
+          done
