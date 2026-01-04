@@ -2,7 +2,7 @@ name: Sync to Gitee
 
 on:
   push:
-    branches: [main]
+    分支: [main]
     tags:
       - 'v*'
   release:
@@ -50,3 +50,4 @@ jobs:
               \"body\": \"同步自 GitHub Release\n\n${{ github.event.release.tag_name }}\",
               \"prerelease\": ${{ github.event.release.prerelease }}
             }"
+
