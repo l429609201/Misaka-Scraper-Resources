@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "scrapers": {
     "iqiyi": "1.0.2",
     "renren": "1.0.2",
@@ -13,7 +13,7 @@
     "hanjutv": "1.0.2",
     "bilibili": "1.0.8",
     "mgtv": "1.0.5",
-    "dandanplay": "1.0.1"
+    "dandanplay": "1.0.2"
   },
   "hashes": {
     "iqiyi": "a3646cd1fa3d5e1f494dfce162e2a963a048f356450eca851706da89b31c666f",
@@ -26,6 +26,6 @@
     "hanjutv": "57f0c7792a4e3a00cbf9436e63f1316a9e34faa5109988a476b117e3aed83ec6",
     "bilibili": "4b90d7a49dec84cc6ea9b38ab4b06331d95640e0ca2933bb44908bd655aede0c",
     "mgtv": "024f17d5d5eb2b000f9bcf3bd75347123820d68e776edeafb944734183578373",
-    "dandanplay": "5216cb61fba05fa559f2305a7b267c6cff62a13b28618de6a6466cdcd27c9528"
+    "dandanplay": "a2e27eef84582824a52755ad50657584d65ea70abe1b196b305caddb2ef322d0"
   }
 }

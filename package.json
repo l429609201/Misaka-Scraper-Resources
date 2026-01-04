@@ -1,7 +1,7 @@
 {
-  "version": "1.5.2",
-  "build_date": "2026-01-04T04:56:37Z",
-  "commit": "83731f4ed888f54d39ea39a8d5660e3143ad6c15",
+  "version": "1.5.3",
+  "build_date": "2026-01-04T14:44:34Z",
+  "commit": "513871c4a61a092b4e08eb2f27bd28efabd2eb6c",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -16,7 +16,7 @@
       "hashes": {
         "linux-x86": "4b90d7a49dec84cc6ea9b38ab4b06331d95640e0ca2933bb44908bd655aede0c",
         "linux-arm": "5d5639b42de5f0bb297744dda59c269a6d35c4b894989cc42a4a108d858d9baf",
-        "windows-amd64": "b8192c70e52a2ce2c78baa9c5955bb7780ce40111c7a88dbf7caa4ff3c2848cc"
+        "windows-amd64": "0e1cbb6f8642e5e4fb6a869299173a67365cca9453d2d63356ab6246c30cb9b0"
       }
     },
     "iqiyi": {
@@ -31,7 +31,7 @@
       "hashes": {
         "linux-x86": "a3646cd1fa3d5e1f494dfce162e2a963a048f356450eca851706da89b31c666f",
         "linux-arm": "d71b78677dbb5e985f7c4d0659adf2182d1eb81f96c273a2de281b8522a80d4c",
-        "windows-amd64": "f47a68c82faddeeef968b2261ff8133a5cf22571110107cb7adc71d567fe7825"
+        "windows-amd64": "5e7552c16fc07c3ebc4f06c2167257198275729bee2569e8e221a3f2f9f615ad"
       }
     },
     "tencent": {
@@ -46,7 +46,7 @@
       "hashes": {
         "linux-x86": "25ecca234360cee19a9c6dc3a702e1a07a2aa16cb0e07ade1da83b40bb32ee86",
         "linux-arm": "9c91ef0abb2f20cc9f15dea8a5912bbe5756a829141425ccf5dafb570012321a",
-        "windows-amd64": "186c038b49f67e3a2e6915c2cc9c4d7d6b6a3e3e3dacf3e8721a020c17cc1408"
+        "windows-amd64": "6346ac0e2280e05cd60655bba7a59b07f903fd287ced8dbb37a473d061ad62e5"
       }
     },
     "youku": {
@@ -61,7 +61,7 @@
       "hashes": {
         "linux-x86": "269206a0543c00dd6a90306eb87dc94480c10dafad1cb8230111b8d21f809aa3",
         "linux-arm": "854f50cca38d36e015ab769090355bb68956f1f6e833f0f8d37a10825b63c6ba",
-        "windows-amd64": "9859cd567914379a05b819fda75d8dbe9389fe25f5ae52dfbce23fb03b9fcba9"
+        "windows-amd64": "f66abf1d8288d469fda56a90630e55fb091e72b31cd0128db29112edc2ca6ee4"
       }
     },
     "gamer": {
@@ -76,12 +76,12 @@
       "hashes": {
         "linux-x86": "0cea37066fff65056584e5c6f602640e7026362386f3a2c96db4d62972a7b47a",
         "linux-arm": "43b79e3d23d7c4faf2bf71e506c230679662f30736b719afed5fcb4e97a49aca",
-        "windows-amd64": "2dc94ece33f02b65d105690c314b7e455fac28d094ed8cec1ed5dd5f714f7436"
+        "windows-amd64": "35bc38a01498a74784367bdc52268c4e12bd4e58dfc95ccfa349c8ce8f424e57"
       }
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so",
@@ -89,9 +89,9 @@
         "windows-amd64": "resources/windows-amd64/dandanplay.pyd"
       },
       "hashes": {
-        "linux-x86": "5216cb61fba05fa559f2305a7b267c6cff62a13b28618de6a6466cdcd27c9528",
-        "linux-arm": "0430aec86bcca9937b66c95f543000caf519bd30adc39ff0f2fdeba61a0bfc87",
-        "windows-amd64": "818c406ca3451a99d159dc873c8872a014fd1f3b9d0b1ff9cac1159b1174a00f"
+        "linux-x86": "a2e27eef84582824a52755ad50657584d65ea70abe1b196b305caddb2ef322d0",
+        "linux-arm": "5e53134cba8316df0baf4bb66a8980092c38ba9cdd38a0621854c1c9f80087da",
+        "windows-amd64": "18c1cf54041f4a7dcaaedd3847bbca5e0d2d6ee7e08ef22c3587ffc911c146cd"
       }
     },
     "hanjutv": {
@@ -106,7 +106,7 @@
       "hashes": {
         "linux-x86": "57f0c7792a4e3a00cbf9436e63f1316a9e34faa5109988a476b117e3aed83ec6",
         "linux-arm": "7049bc52abe9e907cbdaf408c4629f6c8ab829b98c2f2d7b0fd815d5e191b873",
-        "windows-amd64": "5428a7e259bcd4568d190f8f4b1f44780dee3c8a80bf9e911d5e30ab8f8baa51"
+        "windows-amd64": "2fd0144c83c6d3841f9f8348bb60d08a1eac585b2eb183a1309b6e0f11f2cf21"
       }
     },
     "le": {
@@ -121,7 +121,7 @@
       "hashes": {
         "linux-x86": "2176c13558f7a11276654f97d8fa11c0e96a1dd6dc6e189a9be21f68dfcd4ea2",
         "linux-arm": "88d6e0ef3a3e1635ff89bae75046f44e883a5a767689cae3c2811bc72089b830",
-        "windows-amd64": "9233ac94c0ec821007946e2b294ad09a4d70264bb9cf47e16fb4b06ef0ca072f"
+        "windows-amd64": "4938a236249a453b4bc7714a9dd49b101767d84f69266da005a572a281792287"
       }
     },
     "mgtv": {
@@ -136,7 +136,7 @@
       "hashes": {
         "linux-x86": "024f17d5d5eb2b000f9bcf3bd75347123820d68e776edeafb944734183578373",
         "linux-arm": "478fc4b7735c8e8a36cd08bbfa6ce1a0770b4f3ad635d56bf5838d84be0d8625",
-        "windows-amd64": "4c13c56581534578fb127c852e6f5e32759843d16a9dce367481d7f3eefdf2e9"
+        "windows-amd64": "5246598b21b31e7ee2749078a9b5f4c6c788e039ca15dc793e7c50d7cc7077c5"
       }
     },
     "renren": {
@@ -151,7 +151,7 @@
       "hashes": {
         "linux-x86": "db3a987e6218529fbbfc9b402e57c097446dd88f0c3b75c87a0e2b073612d776",
         "linux-arm": "8a70710f403de2175ba0a72abeb8c60ff3ab7af6eb23df819722217e10456a2b",
-        "windows-amd64": "738832f990cf54e28386ec078983aee4be98954a40a7c7a1998cf7c6936c44bc"
+        "windows-amd64": "7f4a4717a35d40c83f64688a770309038b125656a16c6f5f667caed98818c08c"
       }
     },
     "sohu": {
@@ -166,7 +166,7 @@
       "hashes": {
         "linux-x86": "8b5187a8f9bb2526278dae8464b212967c40af05848106e042745741b3fbb4aa",
         "linux-arm": "da4c84d4cf0109ac470642cb1e9b62a63c70332cbe0725dbe3df006cb1e92bd7",
-        "windows-amd64": "e29054d5ad05265f913821dce22d96f8c1f2bd9d573241944efcc66f2e64924f"
+        "windows-amd64": "69d967f57945686d2cfee47fcb1f6ae87a8e5cc4934abe604ef91cd77c9c55bd"
       }
     }
   }
