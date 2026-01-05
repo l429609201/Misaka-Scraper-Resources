@@ -10,23 +10,33 @@ env:
   GITEE_REPO: Misaka-Scraper-Resources
 
 jobs:
-  # Job 1: 同步代码和 tags
+  # Job 1: 完全镜像同步代码
   sync-code:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Push to Gitee
+      - name: Mirror clone and push
         run: |
+          # 使用 mirror clone 获取完整仓库（包括所有分支、tags、refs）
+          git clone --mirror https://github.com/${{ env.GITHUB_REPO }}.git repo
+          cd repo
+          
+          echo "=== GitHub 仓库内容 ==="
+          echo "Branches:"
+          git branch -a
+          echo "Tags:"
+          git tag -l
+          
+          # 添加 Gitee 远程仓库
           git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/${{ env.GITEE_REPO }}.git
-          git push gitee --all --force
-          git push gitee --tags --force
+          
+          # 完全镜像推送（会删除 Gitee 上多余的分支和 tags）
+          git push gitee --mirror --force
+          
+          echo "✓ Mirror sync completed"
 
   # Job 2: 获取最新 release 信息
   get-latest-release:
+    needs: [sync-code]
     runs-on: ubuntu-latest
     outputs:
       tag: ${{ steps.get-tag.outputs.tag }}
