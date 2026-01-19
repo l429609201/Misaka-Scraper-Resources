@@ -1,6 +1,8 @@
 name: Sync to Gitee
 
 on:
+  push:
+    branches: [main, test]
   release:
     types: [published]
   workflow_dispatch:
@@ -34,8 +36,9 @@ jobs:
           
           echo "✓ Mirror sync completed"
 
-  # Job 2: 获取最新 release 信息
+  # Job 2: 获取最新 release 信息（仅 main 分支）
   get-latest-release:
+    if: github.ref_name == 'main'
     needs: [sync-code]
     runs-on: ubuntu-latest
     outputs:
@@ -59,8 +62,9 @@ jobs:
           echo "tag=$TAG" >> $GITHUB_OUTPUT
           echo "name=$NAME" >> $GITHUB_OUTPUT
 
-  # Job 3: 下载资产并获取文件列表
+  # Job 3: 下载资产并获取文件列表（仅 main 分支）
   download-assets:
+    if: github.ref_name == 'main'
     needs: [get-latest-release]
     runs-on: ubuntu-latest
     outputs:
@@ -103,8 +107,9 @@ jobs:
           path: ./release-assets/*
           retention-days: 1
 
-  # Job 4: 创建 Gitee Release
+  # Job 4: 创建 Gitee Release（仅 main 分支）
   create-gitee-release:
+    if: github.ref_name == 'main'
     needs: [sync-code, get-latest-release, download-assets]
     runs-on: ubuntu-latest
     outputs:
@@ -139,16 +144,16 @@ jobs:
                 \"body\": \"Synced from GitHub\",
                 \"target_commitish\": \"main\"
               }")
-            
+
             RELEASE_ID=$(echo $RESPONSE | jq -r '.id')
             echo "Created release ID: $RELEASE_ID"
             echo "release_id=$RELEASE_ID" >> $GITHUB_OUTPUT
           fi
 
-  # Job 5: 并行上传文件
+  # Job 5: 并行上传文件（仅 main 分支）
   upload-files:
+    if: github.ref_name == 'main'
     needs: [download-assets, create-gitee-release]
-    if: needs.download-assets.outputs.has_files == 'true' && needs.create-gitee-release.outputs.release_id != 'null' && needs.create-gitee-release.outputs.release_id != ''
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -169,17 +174,17 @@ jobs:
         run: |
           FILE="./release-assets/${{ matrix.file }}"
           RELEASE_ID="${{ needs.create-gitee-release.outputs.release_id }}"
-          
+
           echo "Uploading: ${{ matrix.file }} to release $RELEASE_ID"
           ls -la ./release-assets/
-          
+
           RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
             "https://gitee.com/api/v5/repos/${GITEE_USERNAME}/${{ env.GITEE_REPO }}/releases/${RELEASE_ID}/attach_files" \
             -F "access_token=${GITEE_TOKEN}" \
             -F "file=@$FILE")
-          
+
           HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
-          
+
           if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
             echo "✓ Uploaded: ${{ matrix.file }}"
           else
@@ -188,10 +193,10 @@ jobs:
             exit 1
           fi
 
-  # Job 6: 汇总
+  # Job 6: 汇总（仅 main 分支）
   summary:
+    if: github.ref_name == 'main'
     needs: [get-latest-release, create-gitee-release, upload-files]
-    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Summary
@@ -200,3 +205,4 @@ jobs:
           echo "- **Tag**: ${{ needs.get-latest-release.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Gitee Release ID**: ${{ needs.create-gitee-release.outputs.release_id }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Upload Status**: ${{ needs.upload-files.result }}" >> $GITHUB_STEP_SUMMARY
+
