@@ -1,7 +1,7 @@
 {
   "version": "1.5.7",
-  "build_date": "2026-01-19T12:59:08Z",
-  "commit": "4c4cee4d497824a17a253447442a12781103bc49",
+  "build_date": "2026-01-20T11:39:37Z",
+  "commit": "cf21de95133e8def664236908406e4a21622b020",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
