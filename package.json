@@ -1,7 +1,7 @@
 {
-  "version": "1.5.6",
-  "build_date": "2026-01-07T22:13:27Z",
-  "commit": "5ec8775c589c8109643d05c557094956f08b7664",
+  "version": "1.5.7",
+  "build_date": "2026-01-20T18:07:57Z",
+  "commit": "8599b9beb6bfdd7402511955f1ce49451438f300",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -9,74 +9,10 @@
       "version": "1.0.8",
       "description": "Bilibili弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/bilibili.so",
-        "linux-arm": "resources/linux-arm/bilibili.so",
-        "windows-amd64": "resources/windows-amd64/bilibili.pyd"
+        "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "4b90d7a49dec84cc6ea9b38ab4b06331d95640e0ca2933bb44908bd655aede0c",
-        "linux-arm": "5d5639b42de5f0bb297744dda59c269a6d35c4b894989cc42a4a108d858d9baf",
-        "windows-amd64": "91aca77911400d070587098dfe808c6547093a490cca558f47da96f23aa4a729"
-      }
-    },
-    "iqiyi": {
-      "type": "scraper",
-      "version": "1.0.2",
-      "description": "Iqiyi弹幕源",
-      "files": {
-        "linux-x86": "resources/linux-x86/iqiyi.so",
-        "linux-arm": "resources/linux-arm/iqiyi.so",
-        "windows-amd64": "resources/windows-amd64/iqiyi.pyd"
-      },
-      "hashes": {
-        "linux-x86": "a3646cd1fa3d5e1f494dfce162e2a963a048f356450eca851706da89b31c666f",
-        "linux-arm": "d71b78677dbb5e985f7c4d0659adf2182d1eb81f96c273a2de281b8522a80d4c",
-        "windows-amd64": "f9d9521f12d8d2103a172fd34ab1f9eabb2c7173859f86c311430e1522b0f36a"
-      }
-    },
-    "tencent": {
-      "type": "scraper",
-      "version": "1.0.2",
-      "description": "Tencent弹幕源",
-      "files": {
-        "linux-x86": "resources/linux-x86/tencent.so",
-        "linux-arm": "resources/linux-arm/tencent.so",
-        "windows-amd64": "resources/windows-amd64/tencent.pyd"
-      },
-      "hashes": {
-        "linux-x86": "25ecca234360cee19a9c6dc3a702e1a07a2aa16cb0e07ade1da83b40bb32ee86",
-        "linux-arm": "9c91ef0abb2f20cc9f15dea8a5912bbe5756a829141425ccf5dafb570012321a",
-        "windows-amd64": "39bb17e134b2c2912b97816e52eda1974fe93987643597fa71d305557644640a"
-      }
-    },
-    "youku": {
-      "type": "scraper",
-      "version": "1.0.4",
-      "description": "Youku弹幕源",
-      "files": {
-        "linux-x86": "resources/linux-x86/youku.so",
-        "linux-arm": "resources/linux-arm/youku.so",
-        "windows-amd64": "resources/windows-amd64/youku.pyd"
-      },
-      "hashes": {
-        "linux-x86": "269206a0543c00dd6a90306eb87dc94480c10dafad1cb8230111b8d21f809aa3",
-        "linux-arm": "854f50cca38d36e015ab769090355bb68956f1f6e833f0f8d37a10825b63c6ba",
-        "windows-amd64": "634d9983dc3c5f13339f02e7db915d65e07af82789f2e8fe72dad5567263982c"
-      }
-    },
-    "gamer": {
-      "type": "scraper",
-      "version": "1.0.3",
-      "description": "Gamer弹幕源",
-      "files": {
-        "linux-x86": "resources/linux-x86/gamer.so",
-        "linux-arm": "resources/linux-arm/gamer.so",
-        "windows-amd64": "resources/windows-amd64/gamer.pyd"
-      },
-      "hashes": {
-        "linux-x86": "0cea37066fff65056584e5c6f602640e7026362386f3a2c96db4d62972a7b47a",
-        "linux-arm": "43b79e3d23d7c4faf2bf71e506c230679662f30736b719afed5fcb4e97a49aca",
-        "windows-amd64": "2beb81ded111542853036ee1d7de86624b445def08b863c2ece22750942b1119"
+        "linux-x86": "4b90d7a49dec84cc6ea9b38ab4b06331d95640e0ca2933bb44908bd655aede0c"
       }
     },
     "dandanplay": {
@@ -84,14 +20,21 @@
       "version": "1.0.2",
       "description": "Dandanplay弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/dandanplay.so",
-        "linux-arm": "resources/linux-arm/dandanplay.so",
-        "windows-amd64": "resources/windows-amd64/dandanplay.pyd"
+        "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "a2e27eef84582824a52755ad50657584d65ea70abe1b196b305caddb2ef322d0",
-        "linux-arm": "5e53134cba8316df0baf4bb66a8980092c38ba9cdd38a0621854c1c9f80087da",
-        "windows-amd64": "52ff0d32ba5edec0cf8483ec383f55a851eb8f409c23b5980cd301d5139f4bf1"
+        "linux-x86": "a2e27eef84582824a52755ad50657584d65ea70abe1b196b305caddb2ef322d0"
+      }
+    },
+    "gamer": {
+      "type": "scraper",
+      "version": "1.0.3",
+      "description": "Gamer弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/gamer.so"
+      },
+      "hashes": {
+        "linux-x86": "0cea37066fff65056584e5c6f602640e7026362386f3a2c96db4d62972a7b47a"
       }
     },
     "hanjutv": {
@@ -99,14 +42,21 @@
       "version": "1.0.2",
       "description": "Hanjutv弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/hanjutv.so",
-        "linux-arm": "resources/linux-arm/hanjutv.so",
-        "windows-amd64": "resources/windows-amd64/hanjutv.pyd"
+        "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "57f0c7792a4e3a00cbf9436e63f1316a9e34faa5109988a476b117e3aed83ec6",
-        "linux-arm": "7049bc52abe9e907cbdaf408c4629f6c8ab829b98c2f2d7b0fd815d5e191b873",
-        "windows-amd64": "4e1ced2b957e8d79b1689e3c9206a94954f1ed5e01f65635cc71e442aa66113b"
+        "linux-x86": "57f0c7792a4e3a00cbf9436e63f1316a9e34faa5109988a476b117e3aed83ec6"
+      }
+    },
+    "iqiyi": {
+      "type": "scraper",
+      "version": "1.0.2",
+      "description": "Iqiyi弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/iqiyi.so"
+      },
+      "hashes": {
+        "linux-x86": "a3646cd1fa3d5e1f494dfce162e2a963a048f356450eca851706da89b31c666f"
       }
     },
     "le": {
@@ -114,29 +64,32 @@
       "version": "1.0.4",
       "description": "Le弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/le.so",
-        "linux-arm": "resources/linux-arm/le.so",
-        "windows-amd64": "resources/windows-amd64/le.pyd"
+        "linux-x86": "resources/linux-x86/le.so"
       },
       "hashes": {
-        "linux-x86": "e0403cf95ec10630f6df4c28ea68079255cb7ea4ef2f8fcce1ea01871ff0087d",
-        "linux-arm": "e731752e50c2263df8c7426c2b9bc8151d13fbe98ba154acfda20924ff9bd743",
-        "windows-amd64": "b391b25aaabcfc3ca7144d28ba37ee4e5f2412a86a91806cbf0c62c578a3bf16"
+        "linux-x86": "e0403cf95ec10630f6df4c28ea68079255cb7ea4ef2f8fcce1ea01871ff0087d"
       }
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.8",
       "description": "Mgtv弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/mgtv.so",
-        "linux-arm": "resources/linux-arm/mgtv.so",
-        "windows-amd64": "resources/windows-amd64/mgtv.pyd"
+        "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "0936d4c54dc480ebaebac40e377cdfa6e54f6a38769887bbc7f6503bd58e02b5",
-        "linux-arm": "1d31592fd397851fea8f4e0728fba89c0423810e8585ec8c593f6450c51b0183",
-        "windows-amd64": "cd57dc747cb245a9b978a2b55d0729f566d1dd6d823f5167037628c263e29e2e"
+        "linux-x86": "7cc9fbdcc1811a0e2b06f6f3436f58f0a8f677750f48ec13ae0dccb8c47f1c46"
+      }
+    },
+    "migu": {
+      "type": "scraper",
+      "version": "1.0.1",
+      "description": "Migu弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/migu.so"
+      },
+      "hashes": {
+        "linux-x86": "f311260440d73c2286f9a02424c7ddd80619dc1723aa501228d9e2d7dd5e2f32"
       }
     },
     "renren": {
@@ -144,14 +97,10 @@
       "version": "1.0.2",
       "description": "Renren弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/renren.so",
-        "linux-arm": "resources/linux-arm/renren.so",
-        "windows-amd64": "resources/windows-amd64/renren.pyd"
+        "linux-x86": "resources/linux-x86/renren.so"
       },
       "hashes": {
-        "linux-x86": "db3a987e6218529fbbfc9b402e57c097446dd88f0c3b75c87a0e2b073612d776",
-        "linux-arm": "8a70710f403de2175ba0a72abeb8c60ff3ab7af6eb23df819722217e10456a2b",
-        "windows-amd64": "89073545356a8fbf53960dc7998fc9659fb920369a10fd59d6ff0ede5e17e1da"
+        "linux-x86": "db3a987e6218529fbbfc9b402e57c097446dd88f0c3b75c87a0e2b073612d776"
       }
     },
     "sohu": {
@@ -159,14 +108,32 @@
       "version": "1.0.3",
       "description": "Sohu弹幕源",
       "files": {
-        "linux-x86": "resources/linux-x86/sohu.so",
-        "linux-arm": "resources/linux-arm/sohu.so",
-        "windows-amd64": "resources/windows-amd64/sohu.pyd"
+        "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "c76d072fd7be6d8aa911c4541d37c0911f18cc1e2e68fa9c4028582b42d458fc",
-        "linux-arm": "d43da5d17748582117565ff6657fcf0d5ddd53cb231d30fafbdadf9082256b33",
-        "windows-amd64": "eecb255dacb87fcde80080f0bc092f6a799c2b7c898ad1b558fb33cdef7df31d"
+        "linux-x86": "c76d072fd7be6d8aa911c4541d37c0911f18cc1e2e68fa9c4028582b42d458fc"
+      }
+    },
+    "tencent": {
+      "type": "scraper",
+      "version": "1.0.2",
+      "description": "Tencent弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/tencent.so"
+      },
+      "hashes": {
+        "linux-x86": "25ecca234360cee19a9c6dc3a702e1a07a2aa16cb0e07ade1da83b40bb32ee86"
+      }
+    },
+    "youku": {
+      "type": "scraper",
+      "version": "1.0.4",
+      "description": "Youku弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/youku.so"
+      },
+      "hashes": {
+        "linux-x86": "269206a0543c00dd6a90306eb87dc94480c10dafad1cb8230111b8d21f809aa3"
       }
     }
   }
