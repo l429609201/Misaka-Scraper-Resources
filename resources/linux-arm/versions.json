@@ -1,11 +1,11 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "scrapers": {
     "mgtv": "1.0.8",
     "le": "1.0.4",
-    "migu": "1.0.1",
+    "migu": "1.0.6",
     "hanjutv": "1.0.2",
     "gamer": "1.0.3",
     "sohu": "1.0.3",
@@ -19,7 +19,7 @@
   "hashes": {
     "mgtv": "40b2dc11348e7b9d5d058d08314f59b61fbd307344f0cda3e523b6926c53eab4",
     "le": "e731752e50c2263df8c7426c2b9bc8151d13fbe98ba154acfda20924ff9bd743",
-    "migu": "3f84a8d2c8ba7a577ef5d8e66a3cb69485aa629f53de2f0be1cf1c14fc9fb870",
+    "migu": "0005c49ed33614e0f361e30f7c0e85b6367933a9079735fa0a37ec1e03ffca57",
     "hanjutv": "7049bc52abe9e907cbdaf408c4629f6c8ab829b98c2f2d7b0fd815d5e191b873",
     "gamer": "43b79e3d23d7c4faf2bf71e506c230679662f30736b719afed5fcb4e97a49aca",
     "sohu": "d43da5d17748582117565ff6657fcf0d5ddd53cb231d30fafbdadf9082256b33",
