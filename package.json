@@ -1,7 +1,7 @@
 {
-  "version": "1.5.8",
-  "build_date": "2026-01-21T11:52:07Z",
-  "commit": "8460be607548e1dd374621e64d7a114c2da78f42",
+  "version": "1.5.9",
+  "build_date": "2026-01-22T13:01:53Z",
+  "commit": "b510d2a20465b96d900d7885f98f11ee967bb1a7",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -83,13 +83,13 @@
     },
     "migu": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "Migu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/migu.so"
       },
       "hashes": {
-        "linux-x86": "f3ef992685c99867ecabe4ee6b09e824908ca84a12f5ce7fd4df5c8bbf78f45a"
+        "linux-x86": "d9fed85e3b136167229ea726d1eafe3bdc5adcc8b398923f836344301d25936a"
       }
     },
     "renren": {
