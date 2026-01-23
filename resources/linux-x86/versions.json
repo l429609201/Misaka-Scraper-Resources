@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "1.5.9",
+  "version": "1.6.0",
   "scrapers": {
     "mgtv": "1.0.8",
     "le": "1.0.4",
@@ -9,7 +9,7 @@
     "hanjutv": "1.0.2",
     "gamer": "1.0.3",
     "sohu": "1.0.3",
-    "xigua": "1.0.0",
+    "xigua": "1.0.1",
     "iqiyi": "1.0.2",
     "tencent": "1.0.2",
     "dandanplay": "1.0.2",
@@ -24,7 +24,7 @@
     "hanjutv": "253a8e17eac63984cb66771b541c493a330439e0172078f541a8459eb8aecb9a",
     "gamer": "84ddb81d3f3f3de1c3d53103b088200b471f3bf7a0cb6dab7d99fe84643351e5",
     "sohu": "84ff5c0fb747cd1c3281e48bc062051e0557e61f5874e062a3379091ad1206df",
-    "xigua": "76f7a85f23760a4152e5302cab6aea8fd86abc067750ffb1400214c8600dc051",
+    "xigua": "4f7ae1f4a0e0f8f782f4f2c8dc0920d214d9fac05fed4c3af64976057ae2e0c1",
     "iqiyi": "e6c75165b2db7fab8bf50ca33dc6a01bf13b82e2ae070fabf927d517060d766f",
     "tencent": "694c72819f30573dd1aa3f42b6643d968a0b3e0b0494f25444af5fae1980bd4b",
     "dandanplay": "c3abb403e9b713280453c06dbb2f3bd4a7192fbe7bbcc1ec117a7994e1110022",
