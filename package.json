@@ -1,7 +1,7 @@
 {
   "version": "1.6.0",
-  "build_date": "2026-01-23T11:25:14Z",
-  "commit": "48b44a6b945cfb3f41354914d1cff1c273bf58fc",
+  "build_date": "2026-01-23T13:07:05Z",
+  "commit": "9710814129b6042142d79c6a704a1c44e86dbe52",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -83,13 +83,13 @@
     },
     "migu": {
       "type": "scraper",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "description": "Migu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/migu.so"
       },
       "hashes": {
-        "linux-x86": "a2ce5d70d4b09ba1170691e0f1d69e3e53e773ef295d4ebe930bb1dde02e4a5d"
+        "linux-x86": "958d989efb32224c0d4234cf3e138703c62770ed28615b412d79caa86fdf5981"
       }
     },
     "renren": {
@@ -127,13 +127,13 @@
     },
     "xigua": {
       "type": "scraper",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Xigua弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/xigua.so"
       },
       "hashes": {
-        "linux-x86": "4f7ae1f4a0e0f8f782f4f2c8dc0920d214d9fac05fed4c3af64976057ae2e0c1"
+        "linux-x86": "84e89108ac57816bce18ffd179e6da0fa658e7859f8f0ef9e9de18a920221b32"
       }
     },
     "youku": {
