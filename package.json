@@ -1,7 +1,7 @@
 {
   "version": "1.6.0",
-  "build_date": "2026-01-27T05:46:31Z",
-  "commit": "65697ecd67e02738ae81fdc2f3deb29836fdf067",
+  "build_date": "2026-01-27T06:19:17Z",
+  "commit": "be7e9f85d21191dce51d242072267cc3630cb398",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -133,7 +133,7 @@
         "linux-x86": "resources/linux-x86/xigua.so"
       },
       "hashes": {
-        "linux-x86": "ffbc297d13deb385f88b6df931ac673b6d5e3ec4dc730b17f36a49fa5e272bf6"
+        "linux-x86": "ab817f199460f1577b6ef5aa012c9581425eb9934143fc2bffe717f3710baec9"
       }
     },
     "youku": {
