@@ -1,7 +1,7 @@
 {
   "version": "1.6.0",
-  "build_date": "2026-01-23T16:42:46Z",
-  "commit": "58aea01fa9ca848c6f71a727820d031458883c2f",
+  "build_date": "2026-01-27T04:52:11Z",
+  "commit": "d290ea74d570dc8db0dd912b673ea55d64946bfa",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -127,13 +127,13 @@
     },
     "xigua": {
       "type": "scraper",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "Xigua弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/xigua.so"
       },
       "hashes": {
-        "linux-x86": "0cceaca6beca8d3c22856db3d75e7c696594ec5f235d64198e1ababb1e3a7b1c"
+        "linux-x86": "f8914ae81677540744d6280624885bf8ee8cbd0a445cb42b6d3e7c96fc629462"
       }
     },
     "youku": {
