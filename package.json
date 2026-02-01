@@ -1,18 +1,18 @@
 {
   "version": "2.0.0",
-  "build_date": "2026-02-01T10:45:45Z",
-  "commit": "90aadea480538b3a4509ce343306816dc2d1d880",
+  "build_date": "2026-02-01T11:45:50Z",
+  "commit": "16c8b4464857ef16d7180abf56216e9a47eeb66b",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
       "type": "scraper",
-      "version": "1.0.9",
+      "version": "1.1.0",
       "description": "Bilibili弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "8d3bacc23e33989d0255d02d446946b09a276dd4ad43d43848ab56b67989530f"
+        "linux-x86": "c46628fec6bfec801226bb009c78793a8fce7506b34fe7ea4441163310ec39de"
       }
     },
     "dandanplay": {
