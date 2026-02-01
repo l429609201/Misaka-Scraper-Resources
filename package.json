@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
-  "build_date": "2026-02-01T11:45:50Z",
-  "commit": "16c8b4464857ef16d7180abf56216e9a47eeb66b",
+  "build_date": "2026-02-01T12:20:34Z",
+  "commit": "3917de51ef427676d9d030b1a29a0f7dcf765cce",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -12,7 +12,7 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "c46628fec6bfec801226bb009c78793a8fce7506b34fe7ea4441163310ec39de"
+        "linux-x86": "991788b0f251b5f468d9215b056eed7a8ce585db226fba79adc765abf4bf795b"
       }
     },
     "dandanplay": {
