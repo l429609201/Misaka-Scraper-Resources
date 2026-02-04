@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
-  "build_date": "2026-02-04T11:45:35Z",
-  "commit": "29980e0f87b1b83fa9d7b3057d938abb9dd70d9c",
+  "build_date": "2026-02-04T12:04:31Z",
+  "commit": "de2f57cf4f9d5b75eccae06dfc4235608cc7ca6c",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -116,13 +116,13 @@
     },
     "tencent": {
       "type": "scraper",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Tencent弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/tencent.so"
       },
       "hashes": {
-        "linux-x86": "6a8dc695bb8489b5df107d4f5043abd0b160fe600567a042e0028142ceb6095e"
+        "linux-x86": "64fb0bb3019cb5f18204caa5c9231ab37e9885a829032b52089c800730628e33"
       }
     },
     "xigua": {
@@ -138,13 +138,13 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "26d778df94ec8c8be0f1d570f1f96f78841605718b1123696babd23572b9edb9"
+        "linux-x86": "027c56b19e8898050b0847fafe251c15366b73388c8f531c69d584d11afda983"
       }
     }
   }

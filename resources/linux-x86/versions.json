@@ -11,9 +11,9 @@
     "sohu": "1.0.4",
     "xigua": "1.0.8",
     "iqiyi": "1.0.3",
-    "tencent": "1.0.3",
+    "tencent": "1.0.4",
     "dandanplay": "1.0.3",
-    "youku": "1.0.5",
+    "youku": "1.0.6",
     "renren": "1.0.4",
     "bilibili": "1.1.1"
   },
@@ -26,9 +26,9 @@
     "sohu": "be186c075d579273c02a90f763d2e367c0a3083ee4e0aa9e8fe8824ce0c71bff",
     "xigua": "28a9ce535e6254134929dfa4243ab659780a8f34c365a7f57a92650830a58a7d",
     "iqiyi": "90b3cb65209cabdec6421dc3eb8dce3b614210267685a17b21ebabd767821aa7",
-    "tencent": "6a8dc695bb8489b5df107d4f5043abd0b160fe600567a042e0028142ceb6095e",
+    "tencent": "64fb0bb3019cb5f18204caa5c9231ab37e9885a829032b52089c800730628e33",
     "dandanplay": "e045848c8aed1de059185a8ad24f314939612ca7c97bf064112dca16ec3847c6",
-    "youku": "26d778df94ec8c8be0f1d570f1f96f78841605718b1123696babd23572b9edb9",
+    "youku": "027c56b19e8898050b0847fafe251c15366b73388c8f531c69d584d11afda983",
     "renren": "2ca31d87085ba38aabc8ed5bcafe147b6284776d4a7184b3dfdf8c1c016bf5e2",
     "bilibili": "16cf2ea32ba44d748df00babe819599caafa5767dd822a12878c5d3f2d7c64bb"
   }
