@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
-  "build_date": "2026-02-01T12:20:34Z",
-  "commit": "3917de51ef427676d9d030b1a29a0f7dcf765cce",
+  "build_date": "2026-02-04T07:06:37Z",
+  "commit": "a97ce9abc6a03ec3cb7660560b94d1612519057d",
   "python_version": "3.11",
   "resources": {
     "bilibili": {
@@ -94,13 +94,13 @@
     },
     "renren": {
       "type": "scraper",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Renren弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/renren.so"
       },
       "hashes": {
-        "linux-x86": "eb7ec1768ef62fbd715e6c5a361f1c436de7d4dbd348e3c9bc8b1569b9a8a7fc"
+        "linux-x86": "2ca31d87085ba38aabc8ed5bcafe147b6284776d4a7184b3dfdf8c1c016bf5e2"
       }
     },
     "sohu": {

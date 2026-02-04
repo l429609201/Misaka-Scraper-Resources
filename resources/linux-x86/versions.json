@@ -14,7 +14,7 @@
     "tencent": "1.0.3",
     "dandanplay": "1.0.3",
     "youku": "1.0.5",
-    "renren": "1.0.3",
+    "renren": "1.0.4",
     "bilibili": "1.1.0"
   },
   "hashes": {
@@ -29,7 +29,7 @@
     "tencent": "6a8dc695bb8489b5df107d4f5043abd0b160fe600567a042e0028142ceb6095e",
     "dandanplay": "e045848c8aed1de059185a8ad24f314939612ca7c97bf064112dca16ec3847c6",
     "youku": "26d778df94ec8c8be0f1d570f1f96f78841605718b1123696babd23572b9edb9",
-    "renren": "eb7ec1768ef62fbd715e6c5a361f1c436de7d4dbd348e3c9bc8b1569b9a8a7fc",
+    "renren": "2ca31d87085ba38aabc8ed5bcafe147b6284776d4a7184b3dfdf8c1c016bf5e2",
     "bilibili": "991788b0f251b5f468d9215b056eed7a8ce585db226fba79adc765abf4bf795b"
   }
 }
