@@ -1,7 +1,7 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scrapers": {
     "bilibili": "1.1.1",
     "dandanplay": "1.0.3",
@@ -11,25 +11,25 @@
     "le": "1.0.5",
     "mgtv": "1.0.9",
     "migu": "1.0.9",
-    "renren": "1.0.4",
+    "renren": "1.0.5",
     "sohu": "1.0.4",
     "tencent": "1.0.4",
     "xigua": "1.0.8",
     "youku": "1.0.6"
   },
   "hashes": {
-    "bilibili": "775e648f9df307dac72ff1d36ff750871088f84fbc3e3b0a27b0743ce104f20f",
-    "dandanplay": "8f90e304be753bd8dea251894fb0db414068069eb7af21ef74145bf61d62c14c",
-    "gamer": "39932a9571deeb3b04b265f4e101c04305a1a3ae9c1d2859fe267f727945730a",
-    "hanjutv": "2e354062f1e99db1a15258128609d4b686b165477a0170858d4c53154fa762d7",
-    "iqiyi": "8f5fd8fb620c408a7ef6e9cd14b06abcbe36e13d90abfab7a5bce2907dacf947",
-    "le": "a875a4d1901e647f3e3dd4c728d65cc3a1acbf8055f354a8aa1b720aed58581d",
-    "mgtv": "7d7baf01f6d16eb6d42df515d4682a69cbe5be5ebbb5122947951c5f771ad08a",
-    "migu": "9bb10db54d427ef2371df061656b97324f56261bb11d12d0ad3be40635d1fae3",
-    "renren": "8c8c41572544ffa633108e22c719b389ed1cb56b791473d7164c58f1ab58a08b",
-    "sohu": "5253e922cb6cdea036a8aa1b12e17e07baa4df2bf659aa97ef0a037a64a67f71",
-    "tencent": "b851363eb58e0e2f73c48e7a5ebeb45cecafd9df2006d6e6494114ba5e0f6b19",
-    "xigua": "d75291d4f4daa9e11319880239d0bc91333dbffe903e93c0b9d4f24b93fe804a",
-    "youku": "0baa9a2bab8a2024cfeefe420aa0b285c23b0803b8f428414526fee0aec5b220"
+    "bilibili": "4d8d0cdd020b8672c28c7d1cd1878fa60f73394321c658b559279506d356caec",
+    "dandanplay": "309b76127a3962323d90b5c4154ab97a427d928b7c84d2f87b184f8ec7b34e2a",
+    "gamer": "461b9937c5218bbfc0b03999b4e26f058ea61ffff33a0ab1e9f684d77e46a126",
+    "hanjutv": "eb833f288f24ea83d85db5e1c71cf6bf8dcecd0edc669dafa497762a56499609",
+    "iqiyi": "510a93f0cd9c11d108c40311b3c093fa73e664df0636730e83ba9fce0c958629",
+    "le": "6cf9ee33273da9458c4ec94379f09be11668f3de7da09e3686476006c810eff9",
+    "mgtv": "e92453c17aeb1a3c95372be53bd526dccb70cacafe488e23bc054311b48fca2c",
+    "migu": "ea560bb28fceec9f9815e6e9b25a532e1e68baa5aba1a22895a26dbf5fd63d9c",
+    "renren": "a29cc57939f56eb56db474fa62d848050b08b02608d5faa7b910c2e54ce383f4",
+    "sohu": "a6c7e219e27a56f16093ccf6514cb2eafa34fb8ce4bc4626505501e8c028f699",
+    "tencent": "0b8c45c5e12655a6346849918f2614a469d9a5341d10eead0ae0fb0d3ec3b97b",
+    "xigua": "b0177ffbcef1be42274ff8df3d0321f6725bd8db8650ddf67343cddba0b116b7",
+    "youku": "fa2f887b8618cfdfead3f30cad45c157303a3e1879c8722a1e90170d90038d33"
   }
 }

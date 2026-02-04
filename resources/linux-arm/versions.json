@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scrapers": {
     "mgtv": "1.0.9",
     "le": "1.0.5",
@@ -14,7 +14,7 @@
     "tencent": "1.0.4",
     "dandanplay": "1.0.3",
     "youku": "1.0.6",
-    "renren": "1.0.4",
+    "renren": "1.0.5",
     "bilibili": "1.1.1"
   },
   "hashes": {
@@ -29,7 +29,7 @@
     "tencent": "04871a2fe77940348da01bb0ac239655bcfda1fa1a848a65a1287386d1fd47d6",
     "dandanplay": "4ba5bb98dad42844557e25fb8bd1b6b3949c92f15528135c91f5848260ff1c5c",
     "youku": "d05a2bc4048f52fbfaea5acbe1f2d9636a59497d413f7254a95891fa0710624d",
-    "renren": "c1c595ce3fe9f32d0ea5946a2c94601aa951eef38c83148fbc7ab11fe5cee6e8",
+    "renren": "07258a2cb4b8d45ea83227aa6e9483bea98a2bb40ff37d6ecd014b4b98fd1d1a",
     "bilibili": "d868d3bdc98acf2818434fe29b4934a3c14d4dec773555ed91a0456bc4aee7fd"
   }
 }
