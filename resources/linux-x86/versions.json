@@ -15,7 +15,7 @@
     "dandanplay": "1.0.3",
     "youku": "1.0.5",
     "renren": "1.0.4",
-    "bilibili": "1.1.0"
+    "bilibili": "1.1.1"
   },
   "hashes": {
     "mgtv": "3eccf0e678d2cae8803dbcaf6b8135282522dc5bd71961250d3e9193a779db56",
@@ -30,6 +30,6 @@
     "dandanplay": "e045848c8aed1de059185a8ad24f314939612ca7c97bf064112dca16ec3847c6",
     "youku": "26d778df94ec8c8be0f1d570f1f96f78841605718b1123696babd23572b9edb9",
     "renren": "2ca31d87085ba38aabc8ed5bcafe147b6284776d4a7184b3dfdf8c1c016bf5e2",
-    "bilibili": "991788b0f251b5f468d9215b056eed7a8ce585db226fba79adc765abf4bf795b"
+    "bilibili": "16cf2ea32ba44d748df00babe819599caafa5767dd822a12878c5d3f2d7c64bb"
   }
 }
