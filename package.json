@@ -1,8 +1,9 @@
 {
   "version": "2.0.2",
-  "build_date": "2026-02-06T04:39:27Z",
-  "commit": "94c5309f5cf3d1e5a29e63922ff61468356818e8",
+  "build_date": "2026-02-06T10:37:38Z",
+  "commit": "a5e0985706fb2b2d8d849c9dd6befc2c4ee5281f",
   "python_version": "3.11",
+  "changelog": "## v2.0.2\n- 修复renren源tv接口@xuennai",
   "resources": {
     "bilibili": {
       "type": "scraper",
