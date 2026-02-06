@@ -1,9 +1,9 @@
 {
-  "version": "2.0.2",
-  "build_date": "2026-02-06T10:37:38Z",
-  "commit": "a5e0985706fb2b2d8d849c9dd6befc2c4ee5281f",
+  "version": "2.0.3",
+  "build_date": "2026-02-06T16:25:27Z",
+  "commit": "be813ea2910dd2fa9583425863b71f40e2ee90fb",
   "python_version": "3.11",
-  "changelog": "## v2.0.2\n- 修复renren源tv接口@xuennai",
+  "changelog": "## v2.0.3\n- 优化youku源从搜索接口获取播放链接，用于跳转使用\n\n## v2.0.2\n- 修复renren源tv接口@xuennai",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -139,13 +139,13 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "1e2d04da64723658e0181767b33b07a13def96a8af9c19ea9ed1f75e4479486e"
+        "linux-x86": "076d0c4d38ffccb89b478c7e4eb64c1a6f4cbd58e0038a3faf54b8acd49d0a73"
       }
     }
   }
