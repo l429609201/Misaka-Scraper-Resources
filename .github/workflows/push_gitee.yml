@@ -12,29 +12,41 @@ env:
   GITEE_REPO: Misaka-Scraper-Resources
 
 jobs:
-  # Job 1: 完全镜像同步代码
+  # Job 1: 同步代码
   sync-code:
     runs-on: ubuntu-latest
     steps:
-      - name: Mirror clone and push
+      - name: Sync GitHub to Gitee
         run: |
-          # 使用 mirror clone 获取完整仓库（包括所有分支、tags、refs）
-          git clone --mirror https://github.com/${{ env.GITHUB_REPO }}.git repo
+          GITEE_URL="https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/${{ env.GITEE_REPO }}.git"
+
+          # 克隆 GitHub 仓库（非 mirror，避免 refs 锁冲突）
+          git clone --bare https://github.com/${{ env.GITHUB_REPO }}.git repo
           cd repo
-          
-          echo "=== GitHub 仓库内容 ==="
-          echo "Branches:"
+
+          echo "=== GitHub Branches ==="
           git branch -a
-          echo "Tags:"
+          echo "=== GitHub Tags ==="
           git tag -l
-          
-          # 添加 Gitee 远程仓库
-          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/${{ env.GITEE_REPO }}.git
-          
-          # 完全镜像推送（会删除 Gitee 上多余的分支和 tags）
-          git push gitee --mirror --force
-          
-          echo "✓ Mirror sync completed"
+
+          # 添加 Gitee 远程
+          git remote add gitee "$GITEE_URL"
+
+          # 逐个分支强制推送（避免 --mirror 的 refs 锁问题）
+          echo "=== Pushing branches ==="
+          for branch in $(git branch | sed 's/\* //'); do
+            echo "Pushing branch: $branch"
+            git push gitee "refs/heads/$branch:refs/heads/$branch" --force 2>&1 || echo "Warning: failed to push branch $branch"
+          done
+
+          # 逐个 tag 强制推送
+          echo "=== Pushing tags ==="
+          for tag in $(git tag -l); do
+            echo "Pushing tag: $tag"
+            git push gitee "refs/tags/$tag:refs/tags/$tag" --force 2>&1 || echo "Warning: failed to push tag $tag"
+          done
+
+          echo "=== Sync completed ==="
 
   # Job 2: 获取最新 release 信息（仅 main 分支）
   get-latest-release:
@@ -152,7 +164,7 @@ jobs:
 
   # Job 5: 并行上传文件（仅 main 分支）
   upload-files:
-    if: github.ref_name == 'main'
+    if: github.ref_name == 'main' && needs.download-assets.outputs.has_files == 'true'
     needs: [download-assets, create-gitee-release]
     runs-on: ubuntu-latest
     strategy:
@@ -195,7 +207,7 @@ jobs:
 
   # Job 6: 汇总（仅 main 分支）
   summary:
-    if: github.ref_name == 'main'
+    if: github.ref_name == 'main' && always()
     needs: [get-latest-release, create-gitee-release, upload-files]
     runs-on: ubuntu-latest
     steps:
