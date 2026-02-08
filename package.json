@@ -1,9 +1,9 @@
 {
   "version": "2.0.3",
-  "build_date": "2026-02-08T14:02:32Z",
-  "commit": "402b36bc075f8815727c3254f17ba26fb70a7886",
+  "build_date": "2026-02-08T14:09:58Z",
+  "commit": "9ecdec98f092ee4995f0a9f27e849f51c4180967",
   "python_version": "3.11",
-  "changelog": "## v2.0.3\n- 优化youku源从搜索接口获取播放链接，用于跳转使用\n\n## v2.0.2\n- 修复renren源tv接口@xuennai",
+  "changelog": "- 优化youku源从搜索接口获取播放链接，用于跳转使用\n- 修复mgtv源的 rdbarrage 备用接口，接口响应字段由id→ids",
   "resources": {
     "bilibili": {
       "type": "scraper",
