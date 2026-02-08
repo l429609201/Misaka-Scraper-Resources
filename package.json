@@ -1,7 +1,7 @@
 {
   "version": "2.0.3",
-  "build_date": "2026-02-06T16:25:27Z",
-  "commit": "be813ea2910dd2fa9583425863b71f40e2ee90fb",
+  "build_date": "2026-02-08T14:02:32Z",
+  "commit": "402b36bc075f8815727c3254f17ba26fb70a7886",
   "python_version": "3.11",
   "changelog": "## v2.0.3\n- 优化youku源从搜索接口获取播放链接，用于跳转使用\n\n## v2.0.2\n- 修复renren源tv接口@xuennai",
   "resources": {
@@ -73,13 +73,13 @@
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.0.9",
+      "version": "1.1.0",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "587adef4b449a15d95d5b5112074fdd06320c368386d812ec198bc82eaf34f43"
+        "linux-x86": "92de2c1f92a2094dd5a9b65e584dd67461863032367e4d601efe53edbef83535"
       }
     },
     "migu": {
