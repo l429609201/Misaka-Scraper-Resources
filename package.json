@@ -1,6 +1,6 @@
 {
   "version": "2.0.4",
-  "build_date": "2026-02-26T18:09:39Z",
+  "build_date": "2026-02-26T18:14:46Z",
   "commit": "9e42b1deb33bc8fbbcc262e3bfe4d0a8023372e1",
   "python_version": "3.11",
   "changelog": "## v2.0.4\n- 优化dandanplay源日志打印\n- 新增mddcloud源",
