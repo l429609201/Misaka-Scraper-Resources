@@ -1,7 +1,7 @@
 {
   "version": "2.0.4",
-  "build_date": "2026-02-26T16:40:48Z",
-  "commit": "46d10b9afeaa91775969b17721e3cb350424940b",
+  "build_date": "2026-02-26T16:57:54Z",
+  "commit": "f7e5d63388df16b729e7f0481d0c08fc152d642b",
   "python_version": "3.11",
   "changelog": "## v2.0.4\n- 优化dandanplay源日志打印\n- 新增mddcloud源",
   "resources": {
@@ -18,13 +18,13 @@
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "fe0f7608fc22b5b68ddb658ba1e3668db0ea61ea85c6af61bcdbd5fc5176fa50"
+        "linux-x86": "2745312accb283bcaff27218536cffa144da4170033c9a08c42f9e207b27deaf"
       }
     },
     "gamer": {
@@ -79,7 +79,7 @@
         "linux-x86": "resources/linux-x86/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "f4b58fd4b68c5e823139d9c82e407f518caa0f4adff13e6db50e565615ef4169"
+        "linux-x86": "ffb9178762efa5f4f0d645d1b7b007ed490f04803e159ac1cd904986abce6add"
       }
     },
     "mgtv": {
