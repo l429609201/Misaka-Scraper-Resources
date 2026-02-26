@@ -1,7 +1,7 @@
 {
   "version": "2.0.4",
-  "build_date": "2026-02-26T13:41:02Z",
-  "commit": "3a2f273b6b6318cfdce93afb1f98a65a07aab972",
+  "build_date": "2026-02-26T15:54:38Z",
+  "commit": "102e583b39eacbd6cbddd4f73c77acf53d27508d",
   "python_version": "3.11",
   "changelog": "## v2.0.4\n- 优化dandanplay源日志打印\n- 新增mddcloud源",
   "resources": {
@@ -73,13 +73,13 @@
     },
     "mddcloud": {
       "type": "scraper",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Mddcloud弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "74b3036e03b8f0cd404acde71acc443a6dae362b9cea43a8dde9e28964676e24"
+        "linux-x86": "0d22de042ab2c88a0c74295e6e8129e627fa18f22795e5921092156face32a5a"
       }
     },
     "mgtv": {
