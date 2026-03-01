@@ -1,7 +1,7 @@
 {
   "version": "2.0.5",
-  "build_date": "2026-03-01T10:22:37Z",
-  "commit": "0cd062e514df1f11bbdffb7e15a1f0291353569f",
+  "build_date": "2026-03-01T11:30:59Z",
+  "commit": "c1de1cab7476af2da5403454d95e35ed74e5e46f",
   "python_version": "3.11",
   "changelog": "## v2.0.5\n- 优化hanjutv源增加手机端接口\n- 弹幕追加获取点赞\n- 优化youku源日志打印",
   "resources": {
