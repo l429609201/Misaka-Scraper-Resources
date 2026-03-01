@@ -1,37 +1,38 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "scrapers": {
-    "iqiyi": "1.0.3",
+    "iqiyi": "1.0.4",
     "le": "1.0.5",
     "gamer": "1.0.4",
     "mgtv": "1.1.0",
-    "tencent": "1.0.4",
+    "tencent": "1.0.5",
     "renren": "1.0.7",
     "mddcloud": "1.0.2",
     "xigua": "1.0.8",
-    "hanjutv": "1.0.3",
+    "hanjutv": "1.0.5",
     "dandanplay": "1.0.5",
-    "youku": "1.0.7",
-    "migu": "1.0.9",
-    "sohu": "1.0.4",
-    "bilibili": "1.1.1"
+    "youku": "1.0.9",
+    "migu": "1.1.0",
+    "sohu": "1.0.5",
+    "bilibili": "1.1.2"
   },
   "hashes": {
-    "iqiyi": "5bf476b1a63b1a16e9a0ed3194adf8b7e8930535ada17c30ee9aa028c28dd4ec",
+    "iqiyi": "b257dbf4254cb6a2a95887e5dad0c19aebfaedb3e32d8e03cd382e6faf7237bb",
     "le": "389e81909a7969bf8cfc8d15d471889f466920ddc959518347d02347e6e7c47c",
     "gamer": "bfba0350826124d25f77b27c683dcfabcccd5d079fbc9ca544af752c6bc6509e",
     "mgtv": "44ff94c87b11c6f006cab78ce08b6be48e1b6096a33aa9a9d3df3634b0c04912",
-    "tencent": "f2faad7aba642832f624b03bc07d5d79c9d74dd5cb0210b28215d06ea917a08f",
+    "tencent": "9f88197c05e76b4eb1cd9274df2caa8164d3862efb975c8f92b8b75a60bc38a9",
     "renren": "cb0fac21883cfdc0563a127c2b9d900efb30eb223da9e13928668029f29bdc29",
     "mddcloud": "ffb9178762efa5f4f0d645d1b7b007ed490f04803e159ac1cd904986abce6add",
     "xigua": "9b32f592ec6b9ce261953fe9ee6c792ca09953a16e6c3dc19147a5a6f5cc6fa2",
-    "hanjutv": "bb896b18ef68dbbfd23417feb8466d810889067e149e5be154f05d4eb779a715",
+    "hanjutv": "3614c8de65154c7b7359554e3de60d97adf69007bfad8b12d70ca56d682a6e08",
     "dandanplay": "2745312accb283bcaff27218536cffa144da4170033c9a08c42f9e207b27deaf",
-    "youku": "c3d3650bd026269317eb317850a3001b6bded47e1c95086b6a6ff39e71da14ea",
-    "migu": "3aa8680c0a4073cfa61f50faeccf554ab64738cd92726bae7e85137ee6865b9b",
-    "sohu": "fd3aad9079ddc53195376fb487d8b712664a6fafff5f675d8e1303933c59f94f",
-    "bilibili": "510b858f9dd0285dcfce5185ef228128185ced92e6cee8aa092f221611a5caa5"
-  }
+    "youku": "0a4ea21b48f8fe2c0f605705fabd0cd9100a1093a53985f074380e9f798600c0",
+    "migu": "610bd8fc0d891efd6da2b46dbfd7aa36beaec28a0574266d026a1481ca6fa9c5",
+    "sohu": "d94daaef1ca3b865427fbaacb10c914db7ad0d43d817345f559705b11940e01b",
+    "bilibili": "752783bdc445721f3cc810b32a1a4e773457f6ca99eec7951461cc867b0214cf"
+  },
+  "min_fetchable_version": "2.5.6"
 }
