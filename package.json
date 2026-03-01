@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6",
-  "build_date": "2026-02-28T08:01:42Z",
-  "commit": "16024f4f92fb5b37636c2055215a1ec668a42a69",
+  "version": "2.0.5",
+  "build_date": "2026-03-01T08:45:46Z",
+  "commit": "cb94504fb3554fee93a4a21513405464a78f08b0",
   "python_version": "3.11",
-  "changelog": "",
+  "changelog": "## v2.0.5\n- 优化hanjutv源增加手机端接口\n- 弹幕追加获取点赞\n- 优化youku源日志打印",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -13,7 +13,7 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "378734924d404d80bf1980bbcad83cf7d47f63a433546c15fed8698d3e7b5ea7"
+        "linux-x86": "752783bdc445721f3cc810b32a1a4e773457f6ca99eec7951461cc867b0214cf"
       }
     },
     "dandanplay": {
@@ -40,13 +40,13 @@
     },
     "hanjutv": {
       "type": "scraper",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "Hanjutv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "25163f6bd1ea5081e70216a04277df06601d87c0f2c2b527b3ad1f148ee11567"
+        "linux-x86": "3614c8de65154c7b7359554e3de60d97adf69007bfad8b12d70ca56d682a6e08"
       }
     },
     "iqiyi": {
@@ -150,13 +150,13 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "7f6f39a58929965bcd03ff7ba11e3f57ad52db570384faf6306936b15f671ba2"
+        "linux-x86": "0a4ea21b48f8fe2c0f605705fabd0cd9100a1093a53985f074380e9f798600c0"
       }
     }
   },
