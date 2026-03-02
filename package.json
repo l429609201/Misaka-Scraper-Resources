@@ -1,7 +1,7 @@
 {
   "version": "2.0.8",
-  "build_date": "2026-03-02T17:41:41Z",
-  "commit": "f1d9b4a3d1c45207da4ae3596fb8603f0348a0f6",
+  "build_date": "2026-03-02T17:47:34Z",
+  "commit": "54b04778b2c9cf0ec80347c71eb21cbbff1dad17",
   "python_version": "3.11",
   "changelog": "",
   "resources": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "9f86e80064c0a7bc8189cb27193a5dc1bbf2414b6e0ee5e9f0f6882964f888fa"
+        "linux-x86": "cafa48c1f7c4fcc01d375dc080acc9be124ac9c6bcbadeb0ad7a071700993d75"
       }
     },
     "gamer": {
