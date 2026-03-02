@@ -1,7 +1,7 @@
 {
   "version": "2.0.6",
-  "build_date": "2026-03-02T11:32:38Z",
-  "commit": "c0a4637f2823ec777c2cd0071f2dc054ee5f91a3",
+  "build_date": "2026-03-02T11:52:18Z",
+  "commit": "086900df1aa480552e46f92f31b7f0bf2c86d395",
   "python_version": "3.11",
   "changelog": "",
   "resources": {
@@ -13,7 +13,7 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "626fa9a1a76853740bc6a1763d1698ecd878abfce9c93b2df3687cd338a8709f"
+        "linux-x86": "a0d65be4bb8663daff8bd72a1de441777f4b05e24eec9e3c6e8be8b3e9b1bd08"
       }
     },
     "dandanplay": {
@@ -57,7 +57,7 @@
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "1985fe4e1694ae1f8ea8bf9742790ef26049ee29ca07298fc5741e7857880ec5"
+        "linux-x86": "4d46e50bdde84dee169fdd669b52a42e9ad6d332f1052d5560dc92236923f337"
       }
     },
     "le": {
@@ -68,7 +68,7 @@
         "linux-x86": "resources/linux-x86/le.so"
       },
       "hashes": {
-        "linux-x86": "313cc69bf64660f3074355760e4f88b24ba1ca4bd2ba3ca522d5e584d0b273b3"
+        "linux-x86": "388ef317a23c6077f2d6f265e6b58d860b11a157c382b15234bfc3814c0b8bff"
       }
     },
     "mddcloud": {
@@ -90,7 +90,7 @@
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "4805006f126da17dde21de28760fdfd557972290a421c5f01fa5e8aef71a5e67"
+        "linux-x86": "f32105726aa7f8be9dca582ddafc8ea3c9e50afd56cd3f07ae7b595e2a67a51a"
       }
     },
     "migu": {
@@ -101,7 +101,7 @@
         "linux-x86": "resources/linux-x86/migu.so"
       },
       "hashes": {
-        "linux-x86": "18e367d7432459bbba8419b3d1612c81ffd1c56508f788c2fc229a9f9358cb28"
+        "linux-x86": "ec4cdeb3e26230e4ff4e730df66954d338c2ed93ca229a574a16789aff5a96e2"
       }
     },
     "renren": {
@@ -123,7 +123,7 @@
         "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "4200866a70a75faf7d4309b2187a81c9c0800ee20ed029d0f71c706a6b87cb73"
+        "linux-x86": "c01cbf3839e46d94f163ad1c5fbe8191db08b5bfcd0046f2a4e82de84c198b9c"
       }
     },
     "tencent": {
