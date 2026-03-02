@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6",
-  "build_date": "2026-03-02T12:52:25Z",
-  "commit": "694d65c5638ad518a3f46baddf100cf46af7dbd3",
+  "version": "2.0.7",
+  "build_date": "2026-03-02T16:09:59Z",
+  "commit": "4d765050a680add64ac960ddeb8a13f7f317efc4",
   "python_version": "3.11",
-  "changelog": "",
+  "changelog": "## v2.0.7\n- 移除mgtv对于电视节目读取模型的硬编码过滤\n- 修复youku源不能过滤mv的问题",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -46,15 +46,15 @@
     },
     "hanjutv": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "Hanjutv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hanjutv.so",
         "linux-arm": "resources/linux-arm/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "8ae13e7139575c276d20475517c3a4b8f85aad0ecba4c7cb4db5177d80765448",
-        "linux-arm": "c22709e16b4b6b50c842052b013a1a462b8dd1d1af0e74e6a50fcbc7bdf5594b"
+        "linux-x86": "97b79cc46e31b5921e7354e861541bd7674d573c3db73ca615a025aeda72664f",
+        "linux-arm": "b91ce456e8b99589312017c74e510004dadf8ecebdfe09af3b325d6ecdbf4bff"
       }
     },
     "iqiyi": {
@@ -98,15 +98,15 @@
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so",
         "linux-arm": "resources/linux-arm/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "f32105726aa7f8be9dca582ddafc8ea3c9e50afd56cd3f07ae7b595e2a67a51a",
-        "linux-arm": "923fae9b0854a9f5225742dc6e5ea4078928ddaafd9633945fe8f1f49f7a257f"
+        "linux-x86": "9b322cc541bea79d3dcc7a895925b23951de55328715491150f553aaf50ad4ea",
+        "linux-arm": "451eb9cd92969c1b51a41c259903910731fdba2d78fb45c2320cc130e3f73000"
       }
     },
     "migu": {
@@ -176,15 +176,15 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so",
         "linux-arm": "resources/linux-arm/youku.so"
       },
       "hashes": {
-        "linux-x86": "577cf5c105613831531d1050563e27a374bb7e67ba97e58d573bccb18cd55c36",
-        "linux-arm": "d98513a7b4209a6c51a8839c2d980fd69de940b8e8f4efc94224e2079ea7353b"
+        "linux-x86": "2feb940579859efa6597db440923083695b119a3dc2866e65f22262c318533ab",
+        "linux-arm": "426829913eb1624040c590ff1fba6b61aaf1e2a3a69e54e0e41443bbd17068e7"
       }
     }
   },
