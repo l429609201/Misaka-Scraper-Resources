@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "scrapers": {
     "iqiyi": "1.0.5",
     "le": "1.0.6",
@@ -12,7 +12,7 @@
     "mddcloud": "1.0.3",
     "xigua": "1.0.9",
     "hanjutv": "1.0.7",
-    "dandanplay": "1.0.6",
+    "dandanplay": "1.0.7",
     "youku": "1.1.1",
     "migu": "1.1.1",
     "sohu": "1.0.6",
@@ -28,7 +28,7 @@
     "mddcloud": "6ea079a5f50f6f7accdd36d90fdae048e861323a9765915159b1d15656a2bcb2",
     "xigua": "f2e23177f4492464bbfef569ecdf4b5b65597806618458ae9c78b53853f92487",
     "hanjutv": "97b79cc46e31b5921e7354e861541bd7674d573c3db73ca615a025aeda72664f",
-    "dandanplay": "b037d019883d801efc68343e4df6d283b78e859d8731cf1e89287268d0763b2a",
+    "dandanplay": "71c6a8a817416ef37e649a7727ca80cacd84cab0341eeef34a15af3f1b1e7d55",
     "youku": "2feb940579859efa6597db440923083695b119a3dc2866e65f22262c318533ab",
     "migu": "ec4cdeb3e26230e4ff4e730df66954d338c2ed93ca229a574a16789aff5a96e2",
     "sohu": "c01cbf3839e46d94f163ad1c5fbe8191db08b5bfcd0046f2a4e82de84c198b9c",

@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7",
-  "build_date": "2026-03-02T16:09:59Z",
-  "commit": "4d765050a680add64ac960ddeb8a13f7f317efc4",
+  "version": "2.0.8",
+  "build_date": "2026-03-02T20:32:49Z",
+  "commit": "9404265631d08e33574f9bb0984c0eb3d4020576",
   "python_version": "3.11",
-  "changelog": "## v2.0.7\n- 移除mgtv对于电视节目读取模型的硬编码过滤\n- 修复youku源不能过滤mv的问题",
+  "changelog": "",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -20,15 +20,15 @@
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so",
         "linux-arm": "resources/linux-arm/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "b037d019883d801efc68343e4df6d283b78e859d8731cf1e89287268d0763b2a",
-        "linux-arm": "1417010b46b40ce3e7883543dd832d3072fc0ee66ff73bb5a23848ee8bdfa76b"
+        "linux-x86": "71c6a8a817416ef37e649a7727ca80cacd84cab0341eeef34a15af3f1b1e7d55",
+        "linux-arm": "c2cc0c2fab3f31f5d1f3c0e78f6320ba2e9b933935ad396c6817b776149032a9"
       }
     },
     "gamer": {
