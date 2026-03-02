@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6",
-  "build_date": "2026-03-02T11:52:18Z",
-  "commit": "086900df1aa480552e46f92f31b7f0bf2c86d395",
+  "version": "2.0.7",
+  "build_date": "2026-03-02T15:07:44Z",
+  "commit": "b2bd7d105d1d6c9ba33b477074e98539189cceaf",
   "python_version": "3.11",
-  "changelog": "",
+  "changelog": "## v2.0.7\n- 移除mgtv对于电视节目读取模型的硬编码过滤\n- 修复youku源不能过滤mv的问题",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -84,13 +84,13 @@
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "f32105726aa7f8be9dca582ddafc8ea3c9e50afd56cd3f07ae7b595e2a67a51a"
+        "linux-x86": "9b322cc541bea79d3dcc7a895925b23951de55328715491150f553aaf50ad4ea"
       }
     },
     "migu": {
@@ -150,13 +150,13 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "577cf5c105613831531d1050563e27a374bb7e67ba97e58d573bccb18cd55c36"
+        "linux-x86": "2feb940579859efa6597db440923083695b119a3dc2866e65f22262c318533ab"
       }
     }
   },
