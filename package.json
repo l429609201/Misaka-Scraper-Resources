@@ -1,7 +1,7 @@
 {
   "version": "2.1.0",
-  "build_date": "2026-03-23T14:46:06Z",
-  "commit": "97b76f97e6ca63eddcb16e3abfd8d60c0856573c",
+  "build_date": "2026-03-23T15:12:42Z",
+  "commit": "9c3c4ab8b67a917148a4976ce46b9498bdcfb5f8",
   "python_version": "3.11",
   "changelog": "## v2.1.0\n- hanjutv源更新参数",
   "resources": {
@@ -40,13 +40,13 @@
     },
     "hanjutv": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "1.1.4",
       "description": "Hanjutv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "5f7faa92704d4e0fb2ecf4a08249574bb7e4715048c093418dca3c02c51cc05d"
+        "linux-x86": "ffb52fadfa12572fbbf1d3dcb4b64d4b6feb3c22186d2b6c8fd709995c9c7d4e"
       }
     },
     "iqiyi": {
