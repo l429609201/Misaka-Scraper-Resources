@@ -1,34 +1,34 @@
 {
-  "version": "2.1.0",
-  "build_date": "2026-03-23T17:01:30Z",
-  "commit": "732d87cf3b72e24f162170e98e8da149c9b66b5e",
+  "version": "2.1.1",
+  "build_date": "2026-03-24T07:28:40Z",
+  "commit": "5c38f1a1a303ae614203a9515cbf050b04aaeeb4",
   "python_version": "3.11",
-  "changelog": "## v2.1.0\n- hanjutv源更新参数",
+  "changelog": "## v2.1.1\n- dandanplay源优化归一化模式\n- 修复hanjutv源app接口获取不到内容",
   "resources": {
     "bilibili": {
       "type": "scraper",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "description": "Bilibili弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/bilibili.so",
         "linux-arm": "resources/linux-arm/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "d91cb0f56019dabba59809266ae607ed537d23fd97fa0e3f4c29ff6a6119dd64",
-        "linux-arm": "aa73c5d67f2799bf03a07e1f77d615e0a2fcb8cd70b79fa124670a538355c307"
+        "linux-x86": "9bcf8ca3946e8383b915d4c77bd62ffece621c775814f49c1027588520338e28",
+        "linux-arm": "e4a749c50762c19680706bdcacba745ae7122c59224b31c140f81a9750286bf6"
       }
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so",
         "linux-arm": "resources/linux-arm/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "7f3be9d87f953fa435934b80e410826ce3a6ef2a2240a46b34ac4224ea7d5197",
-        "linux-arm": "c1199833980ce1950594ef7c81d9398b80d31d717a51d2a0796087b9bb124673"
+        "linux-x86": "a9e4c322728352486b5cfd02a632e2fb1d23edb35c128cbe6bc7f6f64d59c9e6",
+        "linux-arm": "60ae94411c0a68506a8f7557b8c3b12a537bf91f16dce305e4e5721497ffbd4b"
       }
     },
     "gamer": {
@@ -53,8 +53,8 @@
         "linux-arm": "resources/linux-arm/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "d7cd5cf9a44f741a32ffc94d9f6d31bcae98b159fc0938dabe391bafb4cc7feb",
-        "linux-arm": "673d2bb45c97f9146ee3dc02e7d0d200e75577c8231d21b6f8b372f7c9f30643"
+        "linux-x86": "1b430a7b3745878832b87bf4b12b5f183e9b1c8defc2328f01aba6b7d40bb132",
+        "linux-arm": "6bd45a6656bf714417b36708a95e7c0b0d8715e024f95adcb46aa733399f0232"
       }
     },
     "iqiyi": {

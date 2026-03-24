@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "scrapers": {
     "iqiyi": "1.0.5",
     "le": "1.0.6",
@@ -12,11 +12,11 @@
     "mddcloud": "1.0.3",
     "xigua": "1.0.9",
     "hanjutv": "1.1.5",
-    "dandanplay": "1.0.7",
+    "dandanplay": "1.0.8",
     "youku": "1.1.1",
     "migu": "1.1.1",
     "sohu": "1.0.7",
-    "bilibili": "1.1.3"
+    "bilibili": "1.1.4"
   },
   "hashes": {
     "iqiyi": "eae94dd4c0268f994d42cb0a0cc69003487b8eb241389b3bcf6f170e9a4e1c44",
@@ -27,12 +27,12 @@
     "renren": "f6f18dc97688a9e2cd5b061600f182dfe2bc5c5d79a7d65085724357f6ab96d4",
     "mddcloud": "eefa107eeb315bd3197c24e051b41ce7c50bdabaad341114ff96306392e320d7",
     "xigua": "d04b78645a8e2c3a37064ec66e6fdca9c8a887d478443fce599b91a3867589a2",
-    "hanjutv": "d7cd5cf9a44f741a32ffc94d9f6d31bcae98b159fc0938dabe391bafb4cc7feb",
-    "dandanplay": "7f3be9d87f953fa435934b80e410826ce3a6ef2a2240a46b34ac4224ea7d5197",
+    "hanjutv": "1b430a7b3745878832b87bf4b12b5f183e9b1c8defc2328f01aba6b7d40bb132",
+    "dandanplay": "a9e4c322728352486b5cfd02a632e2fb1d23edb35c128cbe6bc7f6f64d59c9e6",
     "youku": "4a46362d5e9f54979b18e1b924969bea9807d540608d5fd79dded45e3106a6e2",
     "migu": "f5cbb0f94358a524e26afe3a09162b5e43d1489eea01200c352e377825b0537e",
     "sohu": "a4d7f58d4b11d9d33d72bd8324fccf04e1556fd08f11abba74f1bdc5769a82e0",
-    "bilibili": "d91cb0f56019dabba59809266ae607ed537d23fd97fa0e3f4c29ff6a6119dd64"
+    "bilibili": "9bcf8ca3946e8383b915d4c77bd62ffece621c775814f49c1027588520338e28"
   },
   "min_fetchable_version": "2.5.6"
 }
