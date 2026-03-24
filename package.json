@@ -1,7 +1,7 @@
 {
   "version": "2.1.1",
-  "build_date": "2026-03-24T00:26:40Z",
-  "commit": "6cf7dd8853749dff3fff0c6dfd07879c161a5609",
+  "build_date": "2026-03-24T01:48:07Z",
+  "commit": "d7c7b484c1501945c35fa642feaa70b16c23159e",
   "python_version": "3.11",
   "changelog": "## v2.1.1\n- dandanplay源优化归一化模式",
   "resources": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "30ad8e7b0d62871e8a377092054b215629a33966814a483a2e45d629a74e4e2a"
+        "linux-x86": "cf762e69d73f4173cdf668277791ffbcb684034e37a25eeb0eb2fbf54c88587f"
       }
     },
     "gamer": {
