@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "scrapers": {
     "hanjutv": "1.1.6",
     "sohu": "1.0.7",
@@ -12,9 +12,9 @@
     "dandanplay": "1.0.8",
     "tencent": "1.0.6",
     "mgtv": "1.1.2",
-    "youku": "1.1.1",
+    "youku": "1.1.2",
     "migu": "1.1.1",
-    "iqiyi": "1.0.5",
+    "iqiyi": "1.0.6",
     "bilibili": "1.1.4",
     "mddcloud": "1.0.3"
   },
@@ -28,9 +28,9 @@
     "dandanplay": "971cd1f77d20c6181ee65021145a5877ff58adf8f5e47b7da872ab3f06518586",
     "tencent": "d5062a139d5c5a3d2413bcd6dfa8c76320f7b2ade824345dd99aa4a13957eee0",
     "mgtv": "2e85218ca4af6fdc791655dcbbd37f941f33ffba538a67238ea7ed3397621e33",
-    "youku": "12e38c993fbfae15a591c1761eed6a9f25450003a6a2d3e0e399d6f3978e37f5",
+    "youku": "c96147bb4353eec5634786e0565d274f89164a3687932694a211943e8a32a562",
     "migu": "891d020a94af97d78dc691db67f63ce394aeb542c76d39313915e09bd9f8dc4c",
-    "iqiyi": "82817b7f9382c31f226cc134cd08ad9a2d14410084f35cf2e23d9f73ea5de48a",
+    "iqiyi": "d489e07a78fa7df9a5e6e17d48d43e9b3befb2dacb0549d90596978777175009",
     "bilibili": "9553ae48c867afa4f8ed1c3ebc06548480d1530c208d131fc2656c32aeaf567c",
     "mddcloud": "51ecdc6e5f3a0e63d476a37388b857380dfb82136769897ab007d5b367f19dbf"
   },
