@@ -1,9 +1,9 @@
 {
-  "version": "2.1.2",
-  "build_date": "2026-03-29T23:40:01Z",
-  "commit": "14dd43565adff1656c00fa0ed3ae1d9821706bb8",
+  "version": "2.1.3",
+  "build_date": "2026-04-02T16:12:31Z",
+  "commit": "555b24833c9e174fc3e1da0a9296334a11725032",
   "python_version": "3.11",
-  "changelog": "## v2.1.2\n- 修复搜索BUG\n- 优化部分源日志打印",
+  "changelog": "## v2.1.3\n- 优化日志打印",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -51,13 +51,13 @@
     },
     "iqiyi": {
       "type": "scraper",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "Iqiyi弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "09104b7eb341c892bdf510c56dac91055d9f560fb0741f159f7ee47e4b2fc3ee"
+        "linux-x86": "b84caf4de0dc24e1d200f07d1825a7abb4ca8e613b72342c109c42acb8895b5d"
       }
     },
     "le": {
@@ -150,13 +150,13 @@
     },
     "youku": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "8a36a91af9b61bd3c358381eab24dc8367f71649a40c88b124d5f4d7dcf2bd53"
+        "linux-x86": "17f14174de4014bfa3badfc1d1e3125d18c8412f863ee47ab4aba7047527e37e"
       }
     }
   },
