@@ -1,9 +1,9 @@
 {
-  "version": "2.1.3",
-  "build_date": "2026-04-02T16:51:10Z",
-  "commit": "89331dafcf500042870469597537dfcbb9f000eb",
+  "version": "2.1.4",
+  "build_date": "2026-04-15T11:31:58Z",
+  "commit": "4a6f439f53cf137a5983ce82a380867a659f5142",
   "python_version": "3.11",
-  "changelog": "## v2.1.3\n- 优化日志打印",
+  "changelog": "## v2.1.4\n- 修复youku拿不到鉴权令牌的时候还会继续下载失败分段的问题",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -14,8 +14,8 @@
         "linux-arm": "resources/linux-arm/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "90bde74ec64ee90dd753d53788b1f2d857186ef77cc1b210c4225c6ec1860255",
-        "linux-arm": "9553ae48c867afa4f8ed1c3ebc06548480d1530c208d131fc2656c32aeaf567c"
+        "linux-x86": "9b5f41481ba29b2899c35419c4656775eb0f34ef2a4ccad5949bb4c552e14cb6",
+        "linux-arm": "d474b270d6a9370955007bec162867f5c177fafab22b1e7933f3d161c699e7f4"
       }
     },
     "dandanplay": {
@@ -27,8 +27,8 @@
         "linux-arm": "resources/linux-arm/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "2ad3ca4857913047b891d13aa72d573140430c108e18558feb238bfd7b709787",
-        "linux-arm": "971cd1f77d20c6181ee65021145a5877ff58adf8f5e47b7da872ab3f06518586"
+        "linux-x86": "f6a62f04d6ff5937e8e17b1dfbe0c682b8e60e4020fd9a6b2df263b042e821c3",
+        "linux-arm": "f391ccf6233ee85acd58ccafdf578b95e19582478cf24bc70eb37903ae2c4163"
       }
     },
     "gamer": {
@@ -40,8 +40,8 @@
         "linux-arm": "resources/linux-arm/gamer.so"
       },
       "hashes": {
-        "linux-x86": "b5cf809dc557c05de95506c043fe4efb0ba33200f6befbb912dcc1e72f342a68",
-        "linux-arm": "b3025d9f27ac511d0980ffe9c4b0a69a4e578890689c34dee1739e10e0600f2a"
+        "linux-x86": "bfe87f086458708ced750cb78fce88add57e0ee46300e743cec8418bff4cacf3",
+        "linux-arm": "780bf9ef421ea189a1703afb85bc44e52ac84413b3e7abcf983a9597e1696a7c"
       }
     },
     "hanjutv": {
@@ -53,8 +53,8 @@
         "linux-arm": "resources/linux-arm/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "1e9f7197ccdbd7cc40767d9145deaf3f0734e6e12fe156e032aa20a32e4b89cb",
-        "linux-arm": "7e4997519e1871405dbe01ceba26d24095b84c6236431fca9de934497100eb07"
+        "linux-x86": "dceb03d550ba786e8fde5ba3fef92e0a3033e965ccef1efed57dd2864bddba43",
+        "linux-arm": "fb6a26c108d7aae7ae73fef1a7ae1463eb40c6d4ceb11575a98ec181dc160512"
       }
     },
     "iqiyi": {
@@ -66,8 +66,8 @@
         "linux-arm": "resources/linux-arm/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "b84caf4de0dc24e1d200f07d1825a7abb4ca8e613b72342c109c42acb8895b5d",
-        "linux-arm": "d489e07a78fa7df9a5e6e17d48d43e9b3befb2dacb0549d90596978777175009"
+        "linux-x86": "1e867102c57f6345cead4ace23e1bbf5f5773f7a9efd6479a0d024676fe39252",
+        "linux-arm": "f3c25c5666ca8d62e22ab5ea8cfe52cebe271613a4559e1c6424faff841c8c36"
       }
     },
     "le": {
@@ -79,8 +79,8 @@
         "linux-arm": "resources/linux-arm/le.so"
       },
       "hashes": {
-        "linux-x86": "24d43224f09273a013f43d3917208b56a2f3c509988b63f5735f4dec49869b7d",
-        "linux-arm": "569fff7dcc5ea2b7338f13fe50855c4e655d2a3aea6b428ec411782674206e84"
+        "linux-x86": "d63f15e03fdb05f7d333fe0aa25f83e2b5b8b983d8d15b09626e8bdb01e649bc",
+        "linux-arm": "938c94ce51961596c28993e6658f5d36ef2e5cef804e5a4d110d18f4f3960e6f"
       }
     },
     "mddcloud": {
@@ -92,8 +92,8 @@
         "linux-arm": "resources/linux-arm/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "25344a7e1d0ec93f010ae66dda303746250ff116bd3bb8e8043cd309e219f655",
-        "linux-arm": "51ecdc6e5f3a0e63d476a37388b857380dfb82136769897ab007d5b367f19dbf"
+        "linux-x86": "f787b676f9297f8e18ef6d59e0cb39ff92f51ed6673c12e1823441b48876c071",
+        "linux-arm": "9b086c735e6356438531faf443daf32f18295456236ab0dfea33f26a3d1c9c9e"
       }
     },
     "mgtv": {
@@ -105,8 +105,8 @@
         "linux-arm": "resources/linux-arm/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "f3174338bf03b05e68291eff24630372e6dfcc97b25b0bf5e7da9e8d61a6cb6b",
-        "linux-arm": "2e85218ca4af6fdc791655dcbbd37f941f33ffba538a67238ea7ed3397621e33"
+        "linux-x86": "8eaee7a5d80fc96e1641028734c00042fe5b8c312887b655f8083bebdab4a431",
+        "linux-arm": "b0c3401e6d451bfeb574ddede61ffede07507b4605f90d86f45dd02b384bf304"
       }
     },
     "migu": {
@@ -118,8 +118,8 @@
         "linux-arm": "resources/linux-arm/migu.so"
       },
       "hashes": {
-        "linux-x86": "97a0d98567227e09baa743ffbc9eaf8eeaacdffd22cf436a669e9cc954a98951",
-        "linux-arm": "891d020a94af97d78dc691db67f63ce394aeb542c76d39313915e09bd9f8dc4c"
+        "linux-x86": "5eef308fdd6f7eaeef2ffdeafe9e392424a3438451cb039a1724abb88808b549",
+        "linux-arm": "08cebcc07b390f38540b8b20bbe82907fed372152e6e10bf502b4be8b647f0f7"
       }
     },
     "renren": {
@@ -131,8 +131,8 @@
         "linux-arm": "resources/linux-arm/renren.so"
       },
       "hashes": {
-        "linux-x86": "4214767e46b82e8c0c6bfddc707714785520701be761adbe907ce8550d1041f6",
-        "linux-arm": "7048291a1935f5e74f89e55126705c512df0855c98fe47c56c64028125f1f77f"
+        "linux-x86": "c6d12c6e9ec324b9d3fce1846ae56bf9a4aaa1209052c4093dd8957ed7e1d82b",
+        "linux-arm": "0047ef7a7ef2cacaf49848a1c7053b25f069b409d68540bb77bcf52044d6a153"
       }
     },
     "sohu": {
@@ -144,8 +144,8 @@
         "linux-arm": "resources/linux-arm/sohu.so"
       },
       "hashes": {
-        "linux-x86": "00375b3f703b56a3f7ca8d74cd97ca3c19a1e578b6a11ea38f218e770f20a675",
-        "linux-arm": "e218c692cde2e61c708a48ba0cb187f2a51f246d2c0397e37d7a47b9cee884c1"
+        "linux-x86": "abf441bd14a5da98f0fccb2b1f31867f0b09406dae86356ade826b3fa9d92360",
+        "linux-arm": "d1e1225f42ea421b5f16d9f0ab6ccdd67441bf74d113dfb291b3d5af4ed569da"
       }
     },
     "tencent": {
@@ -157,8 +157,8 @@
         "linux-arm": "resources/linux-arm/tencent.so"
       },
       "hashes": {
-        "linux-x86": "561da7d080a404d4717c3058d92f226592072d7c4e4d2904f328316dee238dd5",
-        "linux-arm": "d5062a139d5c5a3d2413bcd6dfa8c76320f7b2ade824345dd99aa4a13957eee0"
+        "linux-x86": "c114c9ce5147cf4ce672359ef82db131af6c2a3d2d3f3892ff77bea963b3b3c7",
+        "linux-arm": "941d222384295d248e2c10a80a3778481e3dd093939c06adb2c180447806c3a7"
       }
     },
     "xigua": {
@@ -170,21 +170,21 @@
         "linux-arm": "resources/linux-arm/xigua.so"
       },
       "hashes": {
-        "linux-x86": "59cc0100a8cfc2e94b4423f94447e2f7175aa36c23d259ae535c1d4d59f6c727",
-        "linux-arm": "0bf032d7ba8ffc4a8a954a93bc3d4f3f6e41f9d8de7c1142f9a7f91439dcbae9"
+        "linux-x86": "157f484130f0ce55f798611d733c0199548d4ef3b5d9c737dadc0afd2de3be7b",
+        "linux-arm": "c98680b4e8585bb1429430169b799a23696dbb77f07cd0fd9072afd86b86d257"
       }
     },
     "youku": {
       "type": "scraper",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so",
         "linux-arm": "resources/linux-arm/youku.so"
       },
       "hashes": {
-        "linux-x86": "17f14174de4014bfa3badfc1d1e3125d18c8412f863ee47ab4aba7047527e37e",
-        "linux-arm": "c96147bb4353eec5634786e0565d274f89164a3687932694a211943e8a32a562"
+        "linux-x86": "6f40fcd41b5c8ce62cf18c2ca90c5c88a1a6454393719832db0834112254e545",
+        "linux-arm": "bc9e5b44b094a190231cd141ee16cf17eb40d8fc5b9a6ac96e8922166483f31b"
       }
     }
   },
