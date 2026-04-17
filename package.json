@@ -1,9 +1,9 @@
 {
-  "version": "2.1.4",
-  "build_date": "2026-04-15T10:49:19Z",
-  "commit": "007e5e0e39a0d303c140c29e3b0c24874bf7dc6f",
+  "version": "2.1.5",
+  "build_date": "2026-04-17T03:21:35Z",
+  "commit": "5029944d830e5762c1153e096e5ab67586ddefb1",
   "python_version": "3.11",
-  "changelog": "## v2.1.4\n- 修复youku拿不到鉴权令牌的时候还会继续下载失败分段的问题",
+  "changelog": "## v2.1.5\n- 优化部分源在分段下载的时候，如果试出现失败的情况下，不直接结束的问题",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -51,13 +51,13 @@
     },
     "iqiyi": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "Iqiyi弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "1e867102c57f6345cead4ace23e1bbf5f5773f7a9efd6479a0d024676fe39252"
+        "linux-x86": "ab38b301ba0d8444506f4e6451aacb61f75adb30ab441b68d70565b1292e0361"
       }
     },
     "le": {
@@ -73,24 +73,24 @@
     },
     "mddcloud": {
       "type": "scraper",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Mddcloud弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "f787b676f9297f8e18ef6d59e0cb39ff92f51ed6673c12e1823441b48876c071"
+        "linux-x86": "d2027d43f32b80ead34ead0e9071777cd8518d8a8bc2295ea5e6cce98f83a116"
       }
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "8eaee7a5d80fc96e1641028734c00042fe5b8c312887b655f8083bebdab4a431"
+        "linux-x86": "d5a856193d17647dd23139b621661e04e5580dd5b7ba3a560f5094fe700bfd3d"
       }
     },
     "migu": {
@@ -117,24 +117,24 @@
     },
     "sohu": {
       "type": "scraper",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "description": "Sohu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "abf441bd14a5da98f0fccb2b1f31867f0b09406dae86356ade826b3fa9d92360"
+        "linux-x86": "de052ad7524266212689c3421d5ba685c8148dbc1eb9a21e1f81f93394534db2"
       }
     },
     "tencent": {
       "type": "scraper",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "Tencent弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/tencent.so"
       },
       "hashes": {
-        "linux-x86": "c114c9ce5147cf4ce672359ef82db131af6c2a3d2d3f3892ff77bea963b3b3c7"
+        "linux-x86": "b4da8ab4df34585c09f7554e598d02432d39346bd9439bce1e63fccd92caf601"
       }
     },
     "xigua": {
