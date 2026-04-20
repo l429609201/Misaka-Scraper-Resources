@@ -1,7 +1,7 @@
 {
   "version": "2.1.5",
-  "build_date": "2026-04-20T11:52:17Z",
-  "commit": "a3910feb3b67852b1ac540708a42832ac1d82441",
+  "build_date": "2026-04-20T14:14:01Z",
+  "commit": "537aefdcbc364ba215444ce603ef6266d65f3b50",
   "python_version": "3.11",
   "changelog": "## v2.1.5\n- 优化部分源在分段下载的时候，如果试出现失败的情况下，不直接结束的问题",
   "resources": {
@@ -46,7 +46,7 @@
         "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "aef5b095752386aa33448cd9aceb51171c6a328db0d8e027dfcbc33481d22dad"
+        "linux-x86": "aeb9363cf329b933eaa786e514cd7899bef8f82e693f1b2140f81604c985e78e"
       }
     },
     "iqiyi": {
