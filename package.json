@@ -1,6 +1,6 @@
 {
   "version": "2.1.5",
-  "build_date": "2026-04-24T05:20:48Z",
+  "build_date": "2026-04-24T10:13:41Z",
   "commit": "4d6ea4e91a3813a60ae1b671316ad1dd4e626ca7",
   "python_version": "3.11",
   "changelog": "## v2.1.5\n- 优化部分源在分段下载的时候，如果试出现失败的情况下，不直接结束的问题",
