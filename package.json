@@ -1,8 +1,8 @@
 {
   "version": "2.1.5",
-  "build_date": "2026-04-20T14:14:01Z",
-  "commit": "537aefdcbc364ba215444ce603ef6266d65f3b50",
-  "python_version": "3.11",
+  "build_date": "2026-04-24T10:41:11Z",
+  "commit": "abe2891b01c413690cc55e0d98426225d29ebf1b",
+  "python_version": "3.12",
   "changelog": "## v2.1.5\n- 优化部分源在分段下载的时候，如果试出现失败的情况下，不直接结束的问题",
   "resources": {
     "bilibili": {
