@@ -1,9 +1,9 @@
 {
   "version": "2.1.6",
-  "build_date": "2026-05-08T07:51:17Z",
-  "commit": "fdb6b398c48e66577d35da06e2d287ab997b2a5d",
+  "build_date": "2026-05-09T00:04:41Z",
+  "commit": "0942d30091a6e291e42c9a62b5112007f3818533",
   "python_version": "3.12",
-  "changelog": "## v2.1.6\n- 调整各个源的超时时间，由参数控制",
+  "changelog": "## v2.1.6\n- 调整各个源的超时时间，由参数控制\n- 新增“ezdmw”源",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -25,6 +25,17 @@
       },
       "hashes": {
         "linux-x86": "421abf71d8718c2a4c60b2f28d62aba9993c75a36b89cf0be08a73cf15b801ea"
+      }
+    },
+    "ezdmw": {
+      "type": "scraper",
+      "version": "1.0.0",
+      "description": "Ezdmw弹幕源",
+      "files": {
+        "linux-x86": "resources/linux-x86/ezdmw.so"
+      },
+      "hashes": {
+        "linux-x86": "712f76ad8130a0ea9af0086d856d2cae485302a3031438f9958affbeaf36c8dd"
       }
     },
     "gamer": {
