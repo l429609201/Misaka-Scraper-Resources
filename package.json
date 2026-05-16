@@ -1,9 +1,9 @@
 {
-  "version": "2.1.7",
-  "build_date": "2026-05-11T16:09:43Z",
-  "commit": "b77374d1618998468e0dce70d454baa42d9bd404",
+  "version": "2.1.8",
+  "build_date": "2026-05-16T04:38:52Z",
+  "commit": "e519d1e741bb97395b4f5229c07ee7d3ed866289",
   "python_version": "3.12",
-  "changelog": "## v2.1.7\n- 调整dandanplay源，使其达到上限时能够正确暂停等待",
+  "changelog": "## v2.1.8\n- 经弹弹play开放平台分析接口调用情况，使用量相对与其他人较少，本次调整提高弹弹源单位时间限制",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -18,13 +18,13 @@
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "22f2d9726935caee9ee4b5c138998164e1feb9cea763707d55523a0e64d308ec"
+        "linux-x86": "519c6d04898647651a64a06d4e55412adbaef37ac4687202b6f2e85cd488ad8a"
       }
     },
     "ezdmw": {
