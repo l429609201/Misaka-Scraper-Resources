@@ -1,7 +1,7 @@
 {
   "version": "2.1.8",
-  "build_date": "2026-05-16T04:38:52Z",
-  "commit": "e519d1e741bb97395b4f5229c07ee7d3ed866289",
+  "build_date": "2026-05-16T06:04:54Z",
+  "commit": "eaa0c7bdc16b32f7556c0ad8013a304f373e0c66",
   "python_version": "3.12",
   "changelog": "## v2.1.8\n- 经弹弹play开放平台分析接口调用情况，使用量相对与其他人较少，本次调整提高弹弹源单位时间限制",
   "resources": {
@@ -18,13 +18,13 @@
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "519c6d04898647651a64a06d4e55412adbaef37ac4687202b6f2e85cd488ad8a"
+        "linux-x86": "31c388fb54067c982e97fd6eb9b039075745054a914eaa644b1301b9ca6e6eb1"
       }
     },
     "ezdmw": {

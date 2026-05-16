@@ -5,7 +5,7 @@
   "scrapers": {
     "ezdmw": "1.0.0",
     "gamer": "1.0.7",
-    "dandanplay": "1.1.1",
+    "dandanplay": "1.1.2",
     "sohu": "1.1.0",
     "migu": "1.1.3",
     "renren": "1.1.0",
@@ -22,7 +22,7 @@
   "hashes": {
     "ezdmw": "32694c23997a03950b0c9ef0dbb58498e964cc64b01159958c40d9204ae3ff29",
     "gamer": "75fdceb3a0f02246bef48a46817f2b3fb683f6a63841fb9dd9afb29053af4e8f",
-    "dandanplay": "519c6d04898647651a64a06d4e55412adbaef37ac4687202b6f2e85cd488ad8a",
+    "dandanplay": "31c388fb54067c982e97fd6eb9b039075745054a914eaa644b1301b9ca6e6eb1",
     "sohu": "7a416a572c8e3d5044bd0b97262b8553f3ca519c19586970e831c5877bc4715a",
     "migu": "b885523f7324c6f34f34ef3edf80de049467a519add98f35edadccadac0f253e",
     "renren": "9998d994e8041717e8356a40f363a435f45f72b6062c59423e6b9e46dde7e003",
