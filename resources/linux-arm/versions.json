@@ -1,12 +1,12 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.1.9",
+  "version": "2.2.0",
   "scrapers": {
     "ezdmw": "1.0.1",
     "gamer": "1.0.8",
     "dandanplay": "1.1.3",
-    "sohu": "1.1.1",
+    "sohu": "1.1.2",
     "migu": "1.1.4",
     "renren": "1.1.1",
     "bilibili": "1.1.7",
@@ -20,21 +20,21 @@
     "youku": "1.1.5"
   },
   "hashes": {
-    "ezdmw": "fe1a233b004157b68ecb677ffe82bbad9e614fcf214a2ee32285493629edd232",
-    "gamer": "9004f62b00e5c2df19c71d0f00744d9348a074fb04035737d32d52b8c4febfd8",
-    "dandanplay": "ae642570b8a8e4bfbf44a1ecf86f4a9aaecc86225afe238e9135e3d62e15c003",
-    "sohu": "7c7ee19fefd5a3beb6dc69db01b87bf3aaca3cc4e0735d7e46d4353d194e908b",
-    "migu": "0b7b56885dc0008aae2b4be4986d0bb9370173c060ef5ef93e703f983743794a",
-    "renren": "9335bf1d4cf11e1cbc29da023ac428b61be0cff17a3c55ed6be462c796cadfaf",
-    "bilibili": "85b7f4414ad514318b2acfe1d20130b46ac17362762ab1a60e9b9f6158ddee61",
-    "mddcloud": "354c2bfbc832543c67bb04e49da96773664f1289e6e4ec5a4103dd61276b9b75",
-    "tencent": "14390cf43e7b8f54000c9a0340b32cf4c7ac5076ab61b83fbc8c924193e85fe2",
-    "le": "463def8793113191d2c3ec0441d446d5f07fe90849ca8e02be0126836d81f383",
-    "iqiyi": "fb85eb1146de9616026d47f0f7119adbbcf81b3025925ad8c799dbfd5d38a223",
-    "hanjutv": "ffd447d9865d1d05840c70b68962a5dbde13b0aa4b1edc76842b4ba3cd9a5481",
-    "mgtv": "d4a2af22b5931f0c1f55b22ac8f23154e806f7fd5e30d44c909e65ca1dd0c13d",
-    "xigua": "3206dcfe3612de31693409c022d38b33ad76ac1b5d6ae1c2166b1b7791499560",
-    "youku": "4df0a01cd147435414aea4e134bc57a2dc195907ce15d73a36b7773daacee2e2"
+    "ezdmw": "bc2bd7a3cdae3bf3a9d4c4fa4ea5e284bcf9d04a9a46820ac0ab1b3d9c6a0f4f",
+    "gamer": "b4db04502bac01dd8fb7ad6f4da6ea8a35342c453c081fcdf8213c919aefcfaa",
+    "dandanplay": "f5a0684c8c3c3bfca30c1f23faaf078bae0dd5b3ee8f50052b76e3eb3eaa91b3",
+    "sohu": "0bd4d5e8cd8bedc5401fd0f001392b9a8a7fd0330f02c6be706f48d8b15e85e9",
+    "migu": "1d4bc19ff7def6cba60f6a192e6eadb357e7c1e8c3427d32a3898e13c11a2ce6",
+    "renren": "5d1707dd2826f06ea42d51a4211b89ec39c92586da8f91702f7cab2a528ef8d7",
+    "bilibili": "7cc9c35163730fe06367c495c7a106536e9bf7457d260c1e37c05b924061fb0f",
+    "mddcloud": "d2db52dd28a753532c574a079a64c03e9deb114504720ce6b69a59294f9d86da",
+    "tencent": "cc650ace70201358c1a2015d80f896edc7bf55940ef279f1976432a3889b2f2a",
+    "le": "985998e7c9c73da58810668ff303434425f7750055a714317c19e77caa158af9",
+    "iqiyi": "d46848924fd432939624c7ff1022cb9c7c48157396a1124565d2247ba5bb91bc",
+    "hanjutv": "9959da611fbd1136ec013cd60ff993d1e9c3f50a738123890d653bb2ea687c00",
+    "mgtv": "aafa559abe59ddda8acd09cb251c33716416fc51053c17e855ca6f28e9d0fd51",
+    "xigua": "0f2067b601cbf52f4f1516b1c525e0c9e80859f3f20af4f5a2acad35e57a12a7",
+    "youku": "32c5e8db2a61df5ae4b73d60461b1abdd490882d02c4bc37e3acd72b377bc26a"
   },
   "min_fetchable_version": "2.7.5"
 }
