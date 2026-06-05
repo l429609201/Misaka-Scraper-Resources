@@ -1,7 +1,7 @@
 {
   "version": "2.2.1",
-  "build_date": "2026-06-05T11:04:41Z",
-  "commit": "e8c4d12a3e738f8c57ba8196d286cf215c3906d3",
+  "build_date": "2026-06-05T12:04:48Z",
+  "commit": "bf53e7059e03e8786c615f3cb1b1a0f66075e961",
   "python_version": "3.12",
   "changelog": "",
   "resources": {
@@ -13,7 +13,7 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "4f684ba967e4e7a1e155fa7578fd8d553195e8873da86332f03a1f658caa37f3"
+        "linux-x86": "7193e79d5e58cfcd649573536bd3b612c52d76c1e120ccc049d3a2ed8adbf28c"
       }
     },
     "dandanplay": {
@@ -35,7 +35,7 @@
         "linux-x86": "resources/linux-x86/ezdmw.so"
       },
       "hashes": {
-        "linux-x86": "ff7a1d59c988a8c45d861755110a24dfd00f1d399de7bdfab7b52a91da3afc93"
+        "linux-x86": "2b1f4c4c9582b50f19f9e49100ea251e7d4ca7b7d6e5d52437cf2e53cc9a8183"
       }
     },
     "gamer": {
@@ -68,7 +68,7 @@
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "67f25d58690d3d2a49f4a2ec2178999be310c2ffbc4a2ee06d8b2b6802a820bb"
+        "linux-x86": "1771d653ad39e67541ad38e078ce181d07fc1a673a368af3d2547dd5533b8ade"
       }
     },
     "le": {
@@ -79,7 +79,7 @@
         "linux-x86": "resources/linux-x86/le.so"
       },
       "hashes": {
-        "linux-x86": "4bef7b93882c6ac087d386867ac425bcb93b99a56eafa9217bf06ec817bf6318"
+        "linux-x86": "170d06b1da032fee0c7995069fcb425bfacd93c0774cf492ccfbe05641af211e"
       }
     },
     "mddcloud": {
@@ -101,7 +101,7 @@
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "b67b2fa7c69d024ab2b9270d19cf925bff96fddfb41a0429ccc539c5726903fd"
+        "linux-x86": "103e7af46f8f2f6335b0ce2f1488d970a4cb3b54218a0b7876f116863d9743b2"
       }
     },
     "migu": {
@@ -112,7 +112,7 @@
         "linux-x86": "resources/linux-x86/migu.so"
       },
       "hashes": {
-        "linux-x86": "5d58506bc1f7f42456857466a7a8efd231aef90e5704ec898c8a6cfa2bb75b7d"
+        "linux-x86": "884d01a7766f6cd50e57049211274ba2dcc25827a3100edb9403deaf434495a3"
       }
     },
     "renren": {
@@ -123,7 +123,7 @@
         "linux-x86": "resources/linux-x86/renren.so"
       },
       "hashes": {
-        "linux-x86": "4b1bfa816577155bd4b8ac8b168f8ce7acf06aab02d6458bb89cdbd8d5ddb411"
+        "linux-x86": "8ce788b37772f7d8f17ad006201a9c37caa32b7650e874faa6e0ead506a0be8f"
       }
     },
     "sohu": {
@@ -134,7 +134,7 @@
         "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "105af64352cc02b53992f1f3a423a663b824fdc48daffba08192992bc6ae42eb"
+        "linux-x86": "a9b19d80b8a22e255b5f89eed0f6798b6d68d0ea894cfc82618a3e0385274450"
       }
     },
     "tencent": {
@@ -145,7 +145,7 @@
         "linux-x86": "resources/linux-x86/tencent.so"
       },
       "hashes": {
-        "linux-x86": "1d6c5caf2a0b281bda4f4929d971b01ca999aa9922eb5b00f705ea143d0fbd6e"
+        "linux-x86": "5295fb9ced71bb8038a4b3e8d87bea4fc288ec9597364cb5eabed44cd924943a"
       }
     },
     "xigua": {
@@ -156,7 +156,7 @@
         "linux-x86": "resources/linux-x86/xigua.so"
       },
       "hashes": {
-        "linux-x86": "a3b427a94d6554ba92851189ab5874773ac5db118e77ca395ebf2ce5d4f2d596"
+        "linux-x86": "5863c3b439173ed3b4a1b34db8c76d99310b41d802982c328f6235ec02069836"
       }
     },
     "youku": {
@@ -167,7 +167,7 @@
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "890c6ec9b8cb31926c26db50ae65dca37b034f6eb5c0ed055b1bd195c6f3b635"
+        "linux-x86": "86051b1e6dc8c7808cd81312ecdc5b825781f3562011ffcc97f836c6d04a0795"
       }
     }
   },
