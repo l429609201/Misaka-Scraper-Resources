@@ -1,7 +1,7 @@
 {
   "version": "2.2.1",
-  "build_date": "2026-06-28T14:53:41Z",
-  "commit": "6ca7bcc9bd511129501d3a89963a6b2fbeb61d10",
+  "build_date": "2026-06-28T16:53:30Z",
+  "commit": "4be210a5acc07d8d17785f18eaee610d3165e0b4",
   "python_version": "3.12",
   "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅",
   "resources": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "2c6f86378e3d9acdb0784e0f051d2d834e01234706c38258dc6b69f1d0c6c835"
+        "linux-x86": "cbbbbcb1a80be108a15737ee232ab4661e463b0e46a7a329cddb41469016719e"
       }
     },
     "ezdmw": {
@@ -40,13 +40,13 @@
     },
     "gamer": {
       "type": "scraper",
-      "version": "1.0.9",
+      "version": "1.1.0",
       "description": "Gamer弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/gamer.so"
       },
       "hashes": {
-        "linux-x86": "8b48f9646c1f572d9ffa305eeee0620cfbbaabf34ef0fc4d103fc13296510bca"
+        "linux-x86": "03c06ff74138a27c80d8c7f651aa2027726fa719a644172b9babb1e01ef52539"
       }
     },
     "hanjutv": {
