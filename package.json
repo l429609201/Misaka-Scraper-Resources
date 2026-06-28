@@ -1,7 +1,7 @@
 {
   "version": "2.2.1",
-  "build_date": "2026-06-27T06:46:40Z",
-  "commit": "a8ccd92fb135bd918ee13c8f1fec3ab40a0295ec",
+  "build_date": "2026-06-28T14:53:41Z",
+  "commit": "6ca7bcc9bd511129501d3a89963a6b2fbeb61d10",
   "python_version": "3.12",
   "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅",
   "resources": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "065542aa1907ce430a61187113aa48b7a220c99a8ad6a9a1f17b939e562e4281"
+        "linux-x86": "2c6f86378e3d9acdb0784e0f051d2d834e01234706c38258dc6b69f1d0c6c835"
       }
     },
     "ezdmw": {
