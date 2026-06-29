@@ -1,7 +1,7 @@
 {
   "version": "2.2.1",
-  "build_date": "2026-06-29T06:14:54Z",
-  "commit": "59ffb3447fb8fe6163c2ef6a406e517064a243f1",
+  "build_date": "2026-06-29T06:38:16Z",
+  "commit": "66de05e7fa77fd076de4c1b505c41c53e09ce34a",
   "python_version": "3.12",
   "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅\n- ezdmw源更新域名\n- gamer源增加别名检索",
   "resources": {
@@ -13,7 +13,7 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "44bc7eee9477bbf4a26da86f2ccbe834a1d36515e2ab6db06be886a44121aef4"
+        "linux-x86": "3c840d74289526b5f2a4b78325ef359a3e8b6a580fd07e5cf10902c6b1fede22"
       }
     },
     "dandanplay": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "5908419f1d34ecc34c83960daba3a08edb7b8b33100bd72cd74113405e370e6b"
+        "linux-x86": "9ea41ad3be07c7bc542fa8dc6d85f4c2d3b77dd446e3b60bd4971e97464d1743"
       }
     },
     "ezdmw": {
