@@ -1,9 +1,9 @@
 {
   "version": "2.2.1",
-  "build_date": "2026-06-29T05:20:38Z",
-  "commit": "f3f4715182052b17e722fd2b69d4f5cd5faedce4",
+  "build_date": "2026-06-29T06:14:54Z",
+  "commit": "59ffb3447fb8fe6163c2ef6a406e517064a243f1",
   "python_version": "3.12",
-  "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅",
+  "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅\n- ezdmw源更新域名\n- gamer源增加别名检索",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -29,13 +29,13 @@
     },
     "ezdmw": {
       "type": "scraper",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "Ezdmw弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/ezdmw.so"
       },
       "hashes": {
-        "linux-x86": "674dfb33fec0ebe525336484d25332e5a0bb3fa1b8241319122ee10daad606ed"
+        "linux-x86": "230fd1f083d877d041537259c775a0bd2877ef7c8da2ce9e2ce1d929af1c127f"
       }
     },
     "gamer": {
