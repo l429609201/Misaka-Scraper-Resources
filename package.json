@@ -1,7 +1,7 @@
 {
   "version": "2.2.1",
-  "build_date": "2026-06-29T22:10:34Z",
-  "commit": "ad8d9c0e1f0f12d21869b8ceaf8120c055fe64c9",
+  "build_date": "2026-06-29T22:26:07Z",
+  "commit": "0e5d5a9183646c33597cca69443b27e5c6f06252",
   "python_version": "3.12",
   "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅\n- ezdmw源更新域名\n- gamer源增加别名检索",
   "resources": {
@@ -35,7 +35,7 @@
         "linux-x86": "resources/linux-x86/ezdmw.so"
       },
       "hashes": {
-        "linux-x86": "3ff05d0248a17312be72b82c4b787bd499e3b3f773a9a498ad093dfcf4e4aad0"
+        "linux-x86": "fea475f916c008d20b1702ad3e4e45f3d492c02e55a0ab8821864129b5c83f3a"
       }
     },
     "gamer": {
