@@ -1,9 +1,9 @@
 {
-  "version": "2.2.1",
-  "build_date": "2026-06-29T22:26:07Z",
-  "commit": "0e5d5a9183646c33597cca69443b27e5c6f06252",
+  "version": "2.2.2",
+  "build_date": "2026-07-18T19:34:05Z",
+  "commit": "f1596ce3d969e96f9928defb45f86f9f9ac8bc03",
   "python_version": "3.12",
-  "changelog": "## v2.2.1\n- youku源增加对无内容、预告类的结果过滤\n- 弹弹play源增加对软429响应捕获\n- bilibili源增加探索、UP合集视频解析、UP订阅\n- ezdmw源更新域名\n- gamer源增加别名检索",
+  "changelog": "## v2.2.2\n- 弹弹play源增加接口校验",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -13,18 +13,18 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "3c840d74289526b5f2a4b78325ef359a3e8b6a580fd07e5cf10902c6b1fede22"
+        "linux-x86": "5a0a0f851ebfad13fb70b12a01b32b04de982faa270eee7e5a61808014771eea"
       }
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.1.6",
+      "version": "1.1.8",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "9ea41ad3be07c7bc542fa8dc6d85f4c2d3b77dd446e3b60bd4971e97464d1743"
+        "linux-x86": "0e42357b497b57dc3e8743979800fc6e0d5d5dc87f969e72c3b738d884a77432"
       }
     },
     "ezdmw": {
@@ -35,7 +35,7 @@
         "linux-x86": "resources/linux-x86/ezdmw.so"
       },
       "hashes": {
-        "linux-x86": "fea475f916c008d20b1702ad3e4e45f3d492c02e55a0ab8821864129b5c83f3a"
+        "linux-x86": "d282080d5096981677ef7c9df75bd8b67eeb95a8808cbc6e799ea1c479084262"
       }
     },
     "gamer": {
@@ -46,7 +46,7 @@
         "linux-x86": "resources/linux-x86/gamer.so"
       },
       "hashes": {
-        "linux-x86": "03c06ff74138a27c80d8c7f651aa2027726fa719a644172b9babb1e01ef52539"
+        "linux-x86": "8a8393cb4a0b526ce0b3b15d324646c7d9c89df9eb9f0b7fe49cbd0ed317aa47"
       }
     },
     "hanjutv": {
@@ -57,7 +57,7 @@
         "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "07cbc011aff9628e3904a60b6be3652ed5ce4a55658f69ca7a08d4ac1ee0d975"
+        "linux-x86": "6019c017d3a2cef43f5e85b53d355184874bcc95b82bc261114c395b3d0a27c7"
       }
     },
     "iqiyi": {
@@ -68,7 +68,7 @@
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "6617184dc7b342084ad02553d6c41e930b749bf6eb6122980bc775505756e6a1"
+        "linux-x86": "1522dfe912894e96ee3f72bb0bfea268f713c5c9a6127b867deef58d0c896419"
       }
     },
     "le": {
@@ -79,7 +79,7 @@
         "linux-x86": "resources/linux-x86/le.so"
       },
       "hashes": {
-        "linux-x86": "83ed54a934c64b369fc2b9a66f12d012469d93f21baf3549c664b79f3191d816"
+        "linux-x86": "7a8cc6ca447dc270c443659ab9e65224caa782abe9474b3189efeccd3e7c9508"
       }
     },
     "mddcloud": {
@@ -90,7 +90,7 @@
         "linux-x86": "resources/linux-x86/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "334c88a9eb5d54a707e71a3263c25d83c5c4f14204dab1e3a50127db8e0beae9"
+        "linux-x86": "e0a59884ff1b0201e5177817954f3314de664fe9c939468b5eb8fda2f09c81d9"
       }
     },
     "mgtv": {
@@ -101,7 +101,7 @@
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "d58c159cd807aa2497e8fa4759ac3afdc720879ec0950c6c249ff43c805f1b3b"
+        "linux-x86": "0b17b9b0d12187600e973daacbc3407e04c1a2ade153248480a6fc0f4242531b"
       }
     },
     "migu": {
@@ -112,7 +112,7 @@
         "linux-x86": "resources/linux-x86/migu.so"
       },
       "hashes": {
-        "linux-x86": "e257d4a07afa9761ca310603bba041205a35180a650143011e712af017063538"
+        "linux-x86": "60467fd99f22ccd84cc0d332f71191efa6bcfa4172c814cd40fb86878fe99caa"
       }
     },
     "renren": {
@@ -123,7 +123,7 @@
         "linux-x86": "resources/linux-x86/renren.so"
       },
       "hashes": {
-        "linux-x86": "dad3daa9dfee276605a42f813525f19450c38e1cc5b39968fbbc9ca80b79013a"
+        "linux-x86": "d0a366705ecd8c6fa789e093ea99ca8954af56ccad7d3ad54777d75a1bc75cb6"
       }
     },
     "sohu": {
@@ -134,7 +134,7 @@
         "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "a491bd65f6eacfd12b49481da5b4fe383e833db5b18eacd77bc8c39e4397ef41"
+        "linux-x86": "010d73e1ad076dd1e6a451a27c53d6064ea551e9491f24cf73040e2619a7e0b3"
       }
     },
     "tencent": {
@@ -145,7 +145,7 @@
         "linux-x86": "resources/linux-x86/tencent.so"
       },
       "hashes": {
-        "linux-x86": "ba4ddaa7e20df32a8e136263e2926cffc599ce9f9cb05b9e58c413bf51ffdd77"
+        "linux-x86": "ccf968b603628a3137e97d2e11dacec828a84be42412a8e2c1591cc40d23331a"
       }
     },
     "xigua": {
@@ -156,7 +156,7 @@
         "linux-x86": "resources/linux-x86/xigua.so"
       },
       "hashes": {
-        "linux-x86": "399af4b51da5507bf75b2b60690dd1d5057966b798c80ff774ae3f623b524ecc"
+        "linux-x86": "13f978680e9b9f9279c2b77188f32df53128fa03a4d21b833625fcd1b8b5a86f"
       }
     },
     "youku": {
@@ -167,9 +167,9 @@
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "43290fe99b4c2025c26702f19755618381e5aac9e1c608c1fad86e288e462908"
+        "linux-x86": "85e2c8466be8cf0bc0b77d367a5e62c7300fefebb3f9c95ba987abab6c7b40c1"
       }
     }
   },
-  "min_fetchable_version": "2.8.0"
+  "min_fetchable_version": "2.8.2"
 }
