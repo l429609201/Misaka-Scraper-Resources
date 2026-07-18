@@ -1,7 +1,7 @@
 {
   "version": "2.2.2",
-  "build_date": "2026-07-18T19:34:05Z",
-  "commit": "f1596ce3d969e96f9928defb45f86f9f9ac8bc03",
+  "build_date": "2026-07-18T20:41:32Z",
+  "commit": "4ecfeaf753c6d47c7d89eff39bad78ab7c15b973",
   "python_version": "3.12",
   "changelog": "## v2.2.2\n- 弹弹play源增加接口校验",
   "resources": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "0e42357b497b57dc3e8743979800fc6e0d5d5dc87f969e72c3b738d884a77432"
+        "linux-x86": "c9f494ff4686de4016c2b7c38c669e03da68d8183a3f4cf8239686682f8ef7de"
       }
     },
     "ezdmw": {
