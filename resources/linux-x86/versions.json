@@ -1,7 +1,7 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "scrapers": {
     "xigua": "1.1.3",
     "mddcloud": "1.0.8",
@@ -12,7 +12,7 @@
     "gamer": "1.1.0",
     "le": "1.1.0",
     "renren": "1.1.2",
-    "mgtv": "1.1.7",
+    "mgtv": "1.1.8",
     "bilibili": "1.1.9",
     "youku": "1.1.7",
     "ezdmw": "1.0.3",
@@ -29,7 +29,7 @@
     "gamer": "8a8393cb4a0b526ce0b3b15d324646c7d9c89df9eb9f0b7fe49cbd0ed317aa47",
     "le": "7a8cc6ca447dc270c443659ab9e65224caa782abe9474b3189efeccd3e7c9508",
     "renren": "d0a366705ecd8c6fa789e093ea99ca8954af56ccad7d3ad54777d75a1bc75cb6",
-    "mgtv": "0b17b9b0d12187600e973daacbc3407e04c1a2ade153248480a6fc0f4242531b",
+    "mgtv": "b2fed30870c822bad22b4cb2276f0da4089fdd280f083fdc1943a1df0cddbd56",
     "bilibili": "5a0a0f851ebfad13fb70b12a01b32b04de982faa270eee7e5a61808014771eea",
     "youku": "85e2c8466be8cf0bc0b77d367a5e62c7300fefebb3f9c95ba987abab6c7b40c1",
     "ezdmw": "d282080d5096981677ef7c9df75bd8b67eeb95a8808cbc6e799ea1c479084262",

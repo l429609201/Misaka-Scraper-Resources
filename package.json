@@ -1,9 +1,9 @@
 {
-  "version": "2.2.2",
-  "build_date": "2026-07-19T02:02:52Z",
-  "commit": "bf9583ed8fd6e7d320132db14bd9a7c615e11acd",
+  "version": "2.2.3",
+  "build_date": "2026-07-19T09:47:07Z",
+  "commit": "2124885791301696109aefbbc8da2c946c87b77a",
   "python_version": "3.12",
-  "changelog": "## v2.2.2\n- 弹弹play源增加接口校验",
+  "changelog": "## v2.2.3\n- mgtv接口403问题修复",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -17,7 +17,7 @@
       "hashes": {
         "linux-x86": "5a0a0f851ebfad13fb70b12a01b32b04de982faa270eee7e5a61808014771eea",
         "linux-arm": "bf8fe9048140bb2b790b6ca5d89306abe86361e6d5191eebd146cffa2276081a",
-        "windows-amd64": "d958f17c747f1d9e1fa1461b96fd3eedf828c8f5db20f88e6b961809860fab77"
+        "windows-amd64": "b8b4e9587f404148b0c57ca3c88e50a97dee486c5be9f406a19947b7e124790d"
       }
     },
     "dandanplay": {
@@ -32,7 +32,7 @@
       "hashes": {
         "linux-x86": "c9f494ff4686de4016c2b7c38c669e03da68d8183a3f4cf8239686682f8ef7de",
         "linux-arm": "7df940eb1a05efd6dce920dd3d986247f9f7c38963a98e2fef83c8d8522dda03",
-        "windows-amd64": "2c4be53c25b11fcd146a95f0458022f9d844d860924e693cacba9a4a1e9d2501"
+        "windows-amd64": "18a019abb277614af8d49059913e65553eb447c25d79542782aeece79860c6e5"
       }
     },
     "ezdmw": {
@@ -47,7 +47,7 @@
       "hashes": {
         "linux-x86": "d282080d5096981677ef7c9df75bd8b67eeb95a8808cbc6e799ea1c479084262",
         "linux-arm": "701d248d0970c4c4cd56be88897cf497ee46b5689d458b3c14cd3a20e83c2123",
-        "windows-amd64": "a8a1df17c61453e67ef8da56edb6229fb0d09039f5353eaf4399b96a9cbb9469"
+        "windows-amd64": "3c0027e49fdbd545193c03f8902cd3a7432ecefb31ba366da12ffc2daeaa85ea"
       }
     },
     "gamer": {
@@ -62,7 +62,7 @@
       "hashes": {
         "linux-x86": "8a8393cb4a0b526ce0b3b15d324646c7d9c89df9eb9f0b7fe49cbd0ed317aa47",
         "linux-arm": "b2a14b0630e810bfd05ee46a8f489f9f0c6358fcd926bdc169343151134719e8",
-        "windows-amd64": "4fd32ca7ae9b0d2dd0c3c25e888ad9018b1ab2cc1ed66ca6d455abe99f410a0c"
+        "windows-amd64": "15a40af065d909b2abad3b7f60099685b91c656657f07853a8e7d629e223bf88"
       }
     },
     "hanjutv": {
@@ -77,7 +77,7 @@
       "hashes": {
         "linux-x86": "6019c017d3a2cef43f5e85b53d355184874bcc95b82bc261114c395b3d0a27c7",
         "linux-arm": "6a078b6d87a43c2f76d2f365aa9d6710d77e00304a5a99cdd7626cba2edd7454",
-        "windows-amd64": "99f14bf1f1a65163384febd9beed40bdee6cc7e7fe7b00c90bc4854961f86ac3"
+        "windows-amd64": "988d1d643adabe2ae8e1d71a3014163a9318590c9577d90523fb234aaa51396d"
       }
     },
     "iqiyi": {
@@ -92,7 +92,7 @@
       "hashes": {
         "linux-x86": "1522dfe912894e96ee3f72bb0bfea268f713c5c9a6127b867deef58d0c896419",
         "linux-arm": "83dfc9065ee2d63d0a1d1e9b0d6671e9faa8f6c38fb07d4b3cd1b864da47a4a0",
-        "windows-amd64": "5edfe42355c06aeb9ec27ea5c9529999e22733f19239e13e9969559a9f4d42bc"
+        "windows-amd64": "7f2feaef1144dac5fb5fe41ccaecb809941ffb887d8075dbe9ceb2b64cdd92a7"
       }
     },
     "le": {
@@ -107,7 +107,7 @@
       "hashes": {
         "linux-x86": "7a8cc6ca447dc270c443659ab9e65224caa782abe9474b3189efeccd3e7c9508",
         "linux-arm": "c11ea807346c896a926373c9aeee48cb0d0e168028207d56024e75f9e1b689b9",
-        "windows-amd64": "6feb0204e8f55409e970363243c3ded80f030e30d96fed2f6d8140bcc5b39d95"
+        "windows-amd64": "f51f9eff7733b2c85dba8ef0d8a171340e656f059e10c91aecca44b760cec855"
       }
     },
     "mddcloud": {
@@ -122,12 +122,12 @@
       "hashes": {
         "linux-x86": "e0a59884ff1b0201e5177817954f3314de664fe9c939468b5eb8fda2f09c81d9",
         "linux-arm": "7d0e5c8b13185cf239727898f2bf03f74a7f13e75a07e54359f731129496e15c",
-        "windows-amd64": "2031dbe1b3a6a3006bda87cac0a10cba0c04f6710b54901726172a52181716a3"
+        "windows-amd64": "df15502639075854becdcd66afac22c875d821e4ddac475ea8000ac222a6332e"
       }
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.7",
+      "version": "1.1.8",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so",
@@ -135,9 +135,9 @@
         "windows-amd64": "resources/windows-amd64/mgtv.pyd"
       },
       "hashes": {
-        "linux-x86": "0b17b9b0d12187600e973daacbc3407e04c1a2ade153248480a6fc0f4242531b",
-        "linux-arm": "2fe438e8eac9eb91b1f858ad5d05b4b0a56bb568c1929f9510d2c0de892bd9a8",
-        "windows-amd64": "5bb7a50d5e8b33c49327c9bb3e59cbe1b98b2b7d5f79b9037113007e1afe7ced"
+        "linux-x86": "b2fed30870c822bad22b4cb2276f0da4089fdd280f083fdc1943a1df0cddbd56",
+        "linux-arm": "d89b66901461be03b962e43c6dc1bb666973b8f6a76b767af41e40cb65b885b2",
+        "windows-amd64": "8b1f4c467e797d6c1420bfad8567afbdc032063ac2257e1484bc8401fd023fcd"
       }
     },
     "migu": {
@@ -152,7 +152,7 @@
       "hashes": {
         "linux-x86": "60467fd99f22ccd84cc0d332f71191efa6bcfa4172c814cd40fb86878fe99caa",
         "linux-arm": "84e5e64edcb2829697bbe4adff1ecd5a1a40683cffcd57617c6988786eefe942",
-        "windows-amd64": "fc762ab02a5e013766d26b51b391aa9c462c563f8c20f2b4988e460b717cf2f3"
+        "windows-amd64": "8dbfedfc55711700d03a31a536d4552288629943993fef1873d5d688c214cc50"
       }
     },
     "renren": {
@@ -167,7 +167,7 @@
       "hashes": {
         "linux-x86": "d0a366705ecd8c6fa789e093ea99ca8954af56ccad7d3ad54777d75a1bc75cb6",
         "linux-arm": "8ae37bae6debb4d9c8cc4e350415c90a0a34d9954b1daaec1c526fc42c6dcb91",
-        "windows-amd64": "9fe5006ac7442cba903fd61c7da32212840d84b507864be35e5a5e8285109467"
+        "windows-amd64": "7abd31216ef0073cfb556663a54b353d7e7b9cfa862d985d9f86c161cc20f4c1"
       }
     },
     "sohu": {
@@ -182,7 +182,7 @@
       "hashes": {
         "linux-x86": "010d73e1ad076dd1e6a451a27c53d6064ea551e9491f24cf73040e2619a7e0b3",
         "linux-arm": "9e8a142fe2cb864fb0c334f1fe4e26b65548f01d4a67070c95f50d13b53fd103",
-        "windows-amd64": "d16859afbe8185ec3191fcd3f499fb67517f614e016761074047d1a1c5aead0d"
+        "windows-amd64": "26f609a8058c856bca31965a4ed136233e0d68d0a063932b9c93fe5256ae2419"
       }
     },
     "tencent": {
@@ -197,7 +197,7 @@
       "hashes": {
         "linux-x86": "ccf968b603628a3137e97d2e11dacec828a84be42412a8e2c1591cc40d23331a",
         "linux-arm": "4cb395ffd8a2ffd8365c61bf3e8ba09bfc09c6f5425c3b0f401900a9bd6c49a8",
-        "windows-amd64": "3229f4911a24f28858969bd6d8c3c3c0e8a72b22d20a820a83cf0dcd295d0fcb"
+        "windows-amd64": "c12f791a14c9b7e20552f222c2f42fb9066112c5b3fb210f0b12d3586b0c2f6b"
       }
     },
     "xigua": {
@@ -212,7 +212,7 @@
       "hashes": {
         "linux-x86": "13f978680e9b9f9279c2b77188f32df53128fa03a4d21b833625fcd1b8b5a86f",
         "linux-arm": "737e97d6f8e8acbe7dbd5d3085f8dccb4614eb440adbeea09c01ebb2168ab55c",
-        "windows-amd64": "22473d61b56121f882374c9f041c617ef2b2fe9d006417d4e7977d46aa51d830"
+        "windows-amd64": "1423670a32862f75787160f6f8402a8804969d50a834de991e0b39e4815b0193"
       }
     },
     "youku": {
@@ -227,7 +227,7 @@
       "hashes": {
         "linux-x86": "85e2c8466be8cf0bc0b77d367a5e62c7300fefebb3f9c95ba987abab6c7b40c1",
         "linux-arm": "03411f849910df7f931bdeacbcb67e370ee3494d03785d6661dd7d6729d1f47a",
-        "windows-amd64": "5cea2ea6c2051dea645574955f11899198e293adebd44760dd3c20c8490e412a"
+        "windows-amd64": "93f2b7985cb5539e44fbd8fe9ea08b1245f8a95556e852d06387be39fd44aace"
       }
     }
   },
