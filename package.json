@@ -1,9 +1,9 @@
 {
-  "version": "2.2.2",
-  "build_date": "2026-07-18T20:41:32Z",
-  "commit": "4ecfeaf753c6d47c7d89eff39bad78ab7c15b973",
+  "version": "2.2.3",
+  "build_date": "2026-07-19T07:41:03Z",
+  "commit": "0c64012ff1c058ed32a64c238b6ab8e622244c0d",
   "python_version": "3.12",
-  "changelog": "## v2.2.2\n- 弹弹play源增加接口校验",
+  "changelog": "",
   "resources": {
     "bilibili": {
       "type": "scraper",
@@ -95,13 +95,13 @@
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.7",
+      "version": "1.1.8",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "0b17b9b0d12187600e973daacbc3407e04c1a2ade153248480a6fc0f4242531b"
+        "linux-x86": "b2fed30870c822bad22b4cb2276f0da4089fdd280f083fdc1943a1df0cddbd56"
       }
     },
     "migu": {
