@@ -1,12 +1,13 @@
 {
   "platform": "linux",
   "type": "x86",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "scrapers": {
     "tencent": "1.1.0",
     "sohu": "1.1.3",
     "ezdmw": "1.0.3",
     "iqiyi": "1.1.1",
+    "girigirilove": "1.0.0",
     "youku": "1.1.7",
     "gamer": "1.1.0",
     "renren": "1.1.2",
@@ -21,20 +22,21 @@
   },
   "hashes": {
     "tencent": "7a144c845d9ed52268d03c5406d24e45e3b2254ffc5df3e4168cc281b94db398",
-    "sohu": "fe76d6e5b0f4731dfc093591431f356b94904c00e27c30567d2b63152c70c4a2",
+    "sohu": "6d20e4c7ce8b1f0ba1c681eebba9a14414e062d05ed37fe26ecc4b79ca6bbfa2",
     "ezdmw": "d282080d5096981677ef7c9df75bd8b67eeb95a8808cbc6e799ea1c479084262",
-    "iqiyi": "329ec1428906a067543f1fc795629aef5ea2bc09700f4f56a1617df8fdd90b88",
-    "youku": "30db6d9fab7223c58ddb4d140739ad8ba3190c9726d736366cd6478145586683",
+    "iqiyi": "1530a0f30168a848024d867335ed1b370d1bbde86a033e4e66a1adaf076a77c8",
+    "girigirilove": "1ac1ac886c1ae3417a57cd4f730bf9b6b6cbf174661e61cccad6d4b6050c7c3b",
+    "youku": "1927badb2f1b850eb2767972ed93499be1c8272713bdc14ea123282530da97c0",
     "gamer": "8a8393cb4a0b526ce0b3b15d324646c7d9c89df9eb9f0b7fe49cbd0ed317aa47",
-    "renren": "c4b5440445a92da0c5070e783e88617c41fa48f4d21a3361b0bb89b76c4b63a0",
+    "renren": "62e8a2cfe881e0717ce1d8258b53ab768465863eb3e9547e17f71679360da796",
     "mgtv": "0576bcb6ada2fb38337fd314b00853ea6051444d916afa2e16295f8e84dacfd7",
-    "hanjutv": "de964065581083f4d423b45617898101aa27517a3c04a3e32ca7ca92fc547489",
+    "hanjutv": "e453c96a55539e9ccfdb41ef27b46ec4e11c2a0abb378571a6cc783bb792c0e1",
     "le": "7a8cc6ca447dc270c443659ab9e65224caa782abe9474b3189efeccd3e7c9508",
     "xigua": "13f978680e9b9f9279c2b77188f32df53128fa03a4d21b833625fcd1b8b5a86f",
-    "dandanplay": "72d20b7bccdc2b2f60b3ff7c0126dd324df429df34bb90102fb7f72bcb800e35",
+    "dandanplay": "fb847462b2b16fb6faed6110f50f58178b8d39058227cf7077b3d3dc7af3a69b",
     "migu": "60467fd99f22ccd84cc0d332f71191efa6bcfa4172c814cd40fb86878fe99caa",
-    "bilibili": "62ba97da3a24ebe8d7d842e99c4946b28f44e199539fc169142d0b450ff02549",
-    "mddcloud": "1cb1f224420b37f2566196b7a9b0f438c3a9846bcd657b9f4050d6e5268ad8e7"
+    "bilibili": "d7ba92bc46e19b032851123327eeffe9782883d76905f24336045f824718ea19",
+    "mddcloud": "bc5a8a5d20769fde4471ddaec41e1d528cb14ac600fefafae9e5eedc178eab44"
   },
   "min_fetchable_version": "2.8.2"
 }
