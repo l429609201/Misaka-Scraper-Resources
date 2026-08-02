@@ -1,12 +1,13 @@
 {
   "platform": "windows",
   "type": "amd64",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "scrapers": {
     "bilibili": "1.1.9",
     "dandanplay": "1.1.8",
     "ezdmw": "1.0.3",
     "gamer": "1.1.0",
+    "girigirilove": "1.0.0",
     "hanjutv": "1.2.0",
     "iqiyi": "1.1.1",
     "le": "1.1.0",
@@ -20,21 +21,22 @@
     "youku": "1.1.7"
   },
   "hashes": {
-    "bilibili": "341c1cda0a46bc87c91085b9eff1e3e0cbd49217d3dfba5e35bcef06531fa809",
-    "dandanplay": "11ec35e5f82b8cd7f4898701df0d94c931a90f82a25ace7ad2c93b55b0b5ebd4",
-    "ezdmw": "a83e905bf8ccee2fdbb7cc7d83e72fdfd9799a7c790e905f95eedf818f6bed80",
-    "gamer": "eb102b114b78ee82e382be6e36727fe2ce8c3c3c1fac420c6c903f0c3229d723",
-    "hanjutv": "e8e6a439772c6e17e660b1b22ad8fe96bc23bc70c427e498057d68f38c0c11c7",
-    "iqiyi": "15906fea42e0ff8ab55772735fe6b228828e7bee3484c6e41ea466a178b37325",
-    "le": "b8874e8df7cded303741fbea716bac5c2fc04026262a115f5c7575dc92946c64",
-    "mddcloud": "6fbcebb2c769f8a941265f0fa3ce12c5e36d163a3a85c1b43ebd06007eb33e0f",
-    "mgtv": "b1f848a8835a5581b522297d559ed0cfb81aec522c04a8cc8c6bc245fc434b8d",
-    "migu": "df89cc4f846f57d8543fc523acc0eaf8eb196517d99cc6f631a3f021242c0b09",
-    "renren": "c33d1a832feaf97e3e78708d357e8cf668d608349439c9df7af31ef3a88797d2",
-    "sohu": "bbc2700ff0c3a855cd0c1040153afc5dd2b0b274c596746349047a41c5d1bf25",
-    "tencent": "91d7a412d243b905749ed0eaa7088756cc28f5173b241ca02aefd0bf3f305f67",
-    "xigua": "28d40558d7721dfcd5ac0d4d2751365cee863b9b7c753d1bd2e06083a0183d89",
-    "youku": "ce79512c3fb18e7a29e68ec3223fc3960f39e87431900365043a3e1b59589780"
+    "bilibili": "2a222dab0d3d51bbc4bd61c0c81aceacf15eba646368632ee896fc4bbf8c1046",
+    "dandanplay": "8ea92b080b05713462ed5c89a0b81126dde8083079effaa423dc66f440a0bb3c",
+    "ezdmw": "8d779af30b9b3d3858bdbb3a2651e8e28c0202c9542e06e1b95db0bd2b41d0d8",
+    "gamer": "473a65edda779ac74390116f0e1c436e1cd9fcb4197e5a838c4ad6178b7a3489",
+    "girigirilove": "ecfa43d62460f463072f7b23f3f2f309a58659da5f158cc13c81d19f39e80e12",
+    "hanjutv": "f00cb2e8ebcb6aefaab6b51ce176fa824497c67c34a899347946a99b0a964b69",
+    "iqiyi": "e4df8bddb8668c566e9195f942cdc69e7151b761395afa59bc1e01a81ceadf0b",
+    "le": "0305874ead5eeaf2b0d981cb5f255cf43009800229371b5ba82be4d9fb2c09f9",
+    "mddcloud": "2608437cd5d1e5bf706bbe1343aad165b1c37093e73c1e72d9489ffc54cd6adc",
+    "mgtv": "f262dd664231f20495fac57fd0145bd24d84def004dfcf38a34c32604b84db21",
+    "migu": "159e3cd60364fb0bf6dc4bc9c0d1c4cd47404de3977330b7694e9d223fa827a8",
+    "renren": "937db4e04d79604179358c2c26198ef134cf2097c7aedc27ed82b7294afbafd0",
+    "sohu": "53a3ca19acb0bc2b4e7aede3f1cb3470376a6ae8ded852de193d1664a169d0a6",
+    "tencent": "8ca3450662adc299ca0f8855bffb9307e5c36dc0f97fc17004d24e08ad8d9161",
+    "xigua": "8010ccbf0a429ce6b946d7989c37d05e342d082d6b08df49e8081765f95d3c58",
+    "youku": "ce976db71abb017b35acee24669e04bef7b5d3385182c43fde88bf9b75955ce9"
   },
   "min_fetchable_version": "2.8.2"
 }
