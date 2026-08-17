@@ -1,197 +1,197 @@
 {
-  "version": "2.2.7",
-  "build_date": "2026-08-05T19:17:29Z",
-  "commit": "2f78271d12621f14423e353f3c914d24691c000b",
+  "version": "2.2.8",
+  "build_date": "2026-08-17T17:47:39Z",
+  "commit": "b863571f49b05aafeff6b4ce4ba9ab65ddf19bf1",
   "python_version": "3.12",
-  "changelog": "",
+  "changelog": "## v2.2.8\n- 兼容hanjutv出现日期作为集数的问题，将其转换为按时间顺序排序的数字集数\n- 所有源原始响应日志写入方式整合",
   "resources": {
     "bilibili": {
       "type": "scraper",
-      "version": "1.1.9",
+      "version": "1.2.0",
       "description": "Bilibili弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "9186c5c0cc53a43b6d74a6487bd25f61f4e1b7509fbfa87940a86f4397e0e0db"
+        "linux-x86": "3078ed04a9a232763fd0ec01018a57c00c2ba9cf119ee3816cba1a8bdcd9c132"
       }
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.1.8",
+      "version": "1.1.9",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "fde6e25ef87e1a4a744061bcf6bd3b2ebc627b8be6e0b0b3303f92ffd5343aee"
+        "linux-x86": "af81979ccff721d9d45cf7d5724f131ab12280483ce271d6ccfd4316cd5d8bb6"
       }
     },
     "ezdmw": {
       "type": "scraper",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Ezdmw弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/ezdmw.so"
       },
       "hashes": {
-        "linux-x86": "d282080d5096981677ef7c9df75bd8b67eeb95a8808cbc6e799ea1c479084262"
+        "linux-x86": "3f3fcc579d21c25c2d7049f6ebd69abcf11dadd63f55fcc38c0cd20dcd26fe66"
       }
     },
     "gamer": {
       "type": "scraper",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Gamer弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/gamer.so"
       },
       "hashes": {
-        "linux-x86": "8a8393cb4a0b526ce0b3b15d324646c7d9c89df9eb9f0b7fe49cbd0ed317aa47"
+        "linux-x86": "c04a38e9d77f809686869a1dc2a17fce63fc9cad705949d9db75973494b643e2"
       }
     },
     "girigirilove": {
       "type": "scraper",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Girigirilove弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/girigirilove.so"
       },
       "hashes": {
-        "linux-x86": "7a578eeae0c513312d732aa7f9c59fa47f27a76a68f9b22e6e10a320b74d5410"
+        "linux-x86": "2dc0620ed6ca708444b1319589b295ae611fc3e7dc5c8ae0f1c989e1763683ab"
       }
     },
     "hanjutv": {
       "type": "scraper",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "description": "Hanjutv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "722363d84c17ddc6c0cd3ae7ca4157dd177067e947bfaf4b36cf532c537a71be"
+        "linux-x86": "c56eb708205a4524984fba46f0e7a37585aceab3d79d557f986408f44afef7cc"
       }
     },
     "hongguo": {
       "type": "scraper",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Hongguo弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hongguo.so"
       },
       "hashes": {
-        "linux-x86": "39f4cf4b0a722257437139a9fd49ff80947227df7ede19fb870ad5645925bde7"
+        "linux-x86": "36217286352e606ed76f5c76f1885aa73e7ca08e1d44068ac87fcda1f2f2bf10"
       }
     },
     "iqiyi": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "Iqiyi弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "f008573fd5050dfc5623afcf9ae632e0a387b1359b38c253b49306d18d5245fe"
+        "linux-x86": "49b9a95e5f7cd9ddff2e8c7bffed03104fbfc51e78f58fafefceaf0b09b287ed"
       }
     },
     "le": {
       "type": "scraper",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Le弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/le.so"
       },
       "hashes": {
-        "linux-x86": "7a8cc6ca447dc270c443659ab9e65224caa782abe9474b3189efeccd3e7c9508"
+        "linux-x86": "bd678fb9115cb36b6462a605c36cced6c48e19fd94d622d3b52619822d1415c5"
       }
     },
     "mddcloud": {
       "type": "scraper",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "Mddcloud弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "e712197e7cc64ccb03f9276823e4ae309bb615ec3af39654ba504102518561cb"
+        "linux-x86": "9c40749c3f5f52a2f74bd7e053ecdc3427fed0b3e60420d5188825a63484f296"
       }
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.8",
+      "version": "1.1.9",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so"
       },
       "hashes": {
-        "linux-x86": "0576bcb6ada2fb38337fd314b00853ea6051444d916afa2e16295f8e84dacfd7"
+        "linux-x86": "59291f5b9ae7f6e489d9c8a47f488e61283c3a8a74b68b12bd9ff7994d63304a"
       }
     },
     "migu": {
       "type": "scraper",
-      "version": "1.1.5",
+      "version": "1.1.6",
       "description": "Migu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/migu.so"
       },
       "hashes": {
-        "linux-x86": "60467fd99f22ccd84cc0d332f71191efa6bcfa4172c814cd40fb86878fe99caa"
+        "linux-x86": "7228e1c3b9171de63666c887a934220dc3fb9adeb3b4acb39e9b406b23435f40"
       }
     },
     "renren": {
       "type": "scraper",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "description": "Renren弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/renren.so"
       },
       "hashes": {
-        "linux-x86": "99cadb56fb55ca7436a633daefa82bfe4b7bf6b3766e0442023e1cf35e12dc80"
+        "linux-x86": "badc7acffce9a4c47c35ea76e9cefe92bdafd0bdee14a67730640200836695de"
       }
     },
     "sohu": {
       "type": "scraper",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "description": "Sohu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "9409cf94e00b162f1499623a37d2c90382e9ce44cab493c70befee0ce294bfb7"
+        "linux-x86": "babb1f827cbb8bd6993db673dac6d20bef66e7b5130af10ef19c1eecf83806dd"
       }
     },
     "tencent": {
       "type": "scraper",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Tencent弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/tencent.so"
       },
       "hashes": {
-        "linux-x86": "7a144c845d9ed52268d03c5406d24e45e3b2254ffc5df3e4168cc281b94db398"
+        "linux-x86": "12c99e26353192fb0ddb06083ce50637505393b48a7b60057843b4c77aa11031"
       }
     },
     "xigua": {
       "type": "scraper",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "description": "Xigua弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/xigua.so"
       },
       "hashes": {
-        "linux-x86": "13f978680e9b9f9279c2b77188f32df53128fa03a4d21b833625fcd1b8b5a86f"
+        "linux-x86": "0ebfc1823fe176eef52fbb4845e07bda0c96f6f91ab9310bbd886191651a2ede"
       }
     },
     "youku": {
       "type": "scraper",
-      "version": "1.1.7",
+      "version": "1.1.8",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "aeb3c9184b8fa37fe7cedbdcb7e90d942f909d29eadce49f23a7d03a78b465a1"
+        "linux-x86": "75870bd1b2a5acc2f399820080ba6f8d038d52689838f44fa5c30a80bfe8bcfc"
       }
     }
   },
-  "min_fetchable_version": "2.8.2"
+  "min_fetchable_version": "2.8.6"
 }
