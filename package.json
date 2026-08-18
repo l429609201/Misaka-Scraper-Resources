@@ -1,7 +1,7 @@
 {
   "version": "2.2.8",
-  "build_date": "2026-08-17T18:38:54Z",
-  "commit": "769d805549d469982b79d7d9c17008e40b2d6460",
+  "build_date": "2026-08-18T14:51:16Z",
+  "commit": "afa534a3f95068c1c0f874b6ea8ba0c0d5137d82",
   "python_version": "3.12",
   "changelog": "## v2.2.8\n- 兼容hanjutv出现日期作为集数的问题，将其转换为按时间顺序排序的数字集数\n- 所有源原始响应日志写入方式整合",
   "resources": {
@@ -13,7 +13,7 @@
         "linux-x86": "resources/linux-x86/bilibili.so"
       },
       "hashes": {
-        "linux-x86": "0da834c8518741d54d57ef4aaec8e3f822b7dd8390765da7c08d4813bf892f69"
+        "linux-x86": "e286f5203e50a12d97c68d123a6f9fb18789ddd14ed31fab681eaa38e66ab6fe"
       }
     },
     "dandanplay": {
@@ -24,7 +24,7 @@
         "linux-x86": "resources/linux-x86/dandanplay.so"
       },
       "hashes": {
-        "linux-x86": "c725bf2ef6bf84e3d401f0f1e4c0a36830db3136f98c79f65c0385dee81d8250"
+        "linux-x86": "3f433035509d064122a9ba3fec48c1c522ead66c42af5d5fb88175f31efcb562"
       }
     },
     "ezdmw": {
@@ -57,7 +57,7 @@
         "linux-x86": "resources/linux-x86/girigirilove.so"
       },
       "hashes": {
-        "linux-x86": "318ee4c757c2e50b2b3fb17b776c5c1ee49d26b598c400a0074983fe1c9e8a0c"
+        "linux-x86": "6dcbccc243bc04dba5b96e95bd7d5ee18bb5230b0b6458114623a71cb0ba43f1"
       }
     },
     "hanjutv": {
@@ -68,7 +68,7 @@
         "linux-x86": "resources/linux-x86/hanjutv.so"
       },
       "hashes": {
-        "linux-x86": "efd6fe15c6dad1309d00816a9d9e336e6071fcd9d02cbc8672eff98ff1fc5bcf"
+        "linux-x86": "06b2f183fb08d6d67581e8760e623bad3fa49dc831557b6014af73dc8d3f0299"
       }
     },
     "hongguo": {
@@ -90,7 +90,7 @@
         "linux-x86": "resources/linux-x86/iqiyi.so"
       },
       "hashes": {
-        "linux-x86": "d5ebed9a2b7bbf115f9f8ade5e58ec7d2fb5c00e401c5f42565cc6e61f6fd58b"
+        "linux-x86": "b067ba3fc536e9f734685a43951742164c5f64905dd491b0652b963ff899c170"
       }
     },
     "le": {
@@ -112,7 +112,7 @@
         "linux-x86": "resources/linux-x86/mddcloud.so"
       },
       "hashes": {
-        "linux-x86": "ebeff1c86676899f08369c8ae117f862cde78d1cbb728338188b60057c8daa4e"
+        "linux-x86": "4e80f98be80aeeeec4c255ac3c8f0f06727a1cecf10b890545aa6de01b317eec"
       }
     },
     "mgtv": {
@@ -145,7 +145,7 @@
         "linux-x86": "resources/linux-x86/renren.so"
       },
       "hashes": {
-        "linux-x86": "623497355d2894a52422ac79a896065e8e2ea3abf46193352942a2f2aa76c0a7"
+        "linux-x86": "f540302618617df496c611981bc37b3fa5c7cb24c02d06d2ef367af1d8f59465"
       }
     },
     "sohu": {
@@ -156,7 +156,7 @@
         "linux-x86": "resources/linux-x86/sohu.so"
       },
       "hashes": {
-        "linux-x86": "506001a4f56d9aedf0e6e68494679d036af9b0c1bd513d90e62569f1ed6cae36"
+        "linux-x86": "ce9cb4a8b428e6f8cc3025d50a3d6dc0641fbcda50e79a66af8a33ef9bda9c77"
       }
     },
     "tencent": {
@@ -189,7 +189,7 @@
         "linux-x86": "resources/linux-x86/youku.so"
       },
       "hashes": {
-        "linux-x86": "7f172bc162eba1c118640a66fb666903e7e36d0fc8abc865853471b7b7e61499"
+        "linux-x86": "3978d8788961002af22b2dca815d7792dfd652bc4904093bc9d5b09a8a054a52"
       }
     }
   },
