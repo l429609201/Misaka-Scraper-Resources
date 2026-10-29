@@ -1,13 +1,13 @@
 {
-  "version": "2.2.9",
-  "build_date": "2026-08-20T00:28:23Z",
-  "commit": "cf7b0ad1d8bb25806b7dc594e0b6fe3883fb4519",
+  "version": "3.0.0",
+  "build_date": "2026-10-29T15:27:55Z",
+  "commit": "c6c33da27f4517bda561c775b414917c45be5dd2",
   "python_version": "3.12",
-  "changelog": "## v2.2.9\n- 修复honguo源只读取第一季的问题",
+  "changelog": "## v3.0.0\n- 所有源按照最新架构适配调整\n- 优化日志打印\n- 调整部分信息缺失的源信息补充逻辑\n- 统一收口下载路径\n- hongguo源追加兜底途径",
   "resources": {
     "bilibili": {
       "type": "scraper",
-      "version": "1.2.0",
+      "version": "2.0.3",
       "description": "Bilibili弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/bilibili.so",
@@ -15,14 +15,14 @@
         "windows-amd64": "resources/windows-amd64/bilibili.pyd"
       },
       "hashes": {
-        "linux-x86": "e3868fdd71e99fb3751c69764612f9c2f9ba162ddd8c49bf91c41badf292de53",
-        "linux-arm": "7d92f1f34626e48fac591a7ce1b7e43294dd4ce3bcfed3201cae9c602445923d",
-        "windows-amd64": "2f13e6ab97ae4cf87ed247f604988d3bc4c45a692ca9b8d9681cafbbb13b4344"
+        "linux-x86": "4ce62465c644d8983de50fd38f85793557db39605b798f5f7b24587f28d4e29d",
+        "linux-arm": "7caf5d5758e595e9432caeccdeff127a15dfae0d9a1715fc92cad46cf4413621",
+        "windows-amd64": "08bd3348965119fbd259b97d8d481405f255ec0fcfc175459f995ca2cac84862"
       }
     },
     "dandanplay": {
       "type": "scraper",
-      "version": "1.1.9",
+      "version": "2.0.3",
       "description": "Dandanplay弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/dandanplay.so",
@@ -30,14 +30,14 @@
         "windows-amd64": "resources/windows-amd64/dandanplay.pyd"
       },
       "hashes": {
-        "linux-x86": "0b320574a0d37ad84956a7eb8cc14ff4c4af4dd2938a054bce908c2efef68d02",
-        "linux-arm": "98ab461310cae779f87be7064d62f48bbbec6448507d51d614997c7ae41d564e",
-        "windows-amd64": "b9e7b041b86a74bcb7aa7126f975cad8cf73ae3c86000e9576eafa3df3cf47ae"
+        "linux-x86": "4d73673f3557e7f3013aa5673144cc83673c61a46126950bac0155287ad38d9e",
+        "linux-arm": "081ba82279c266f072a61f184f75f915d5b76cb127843bb2f5f0210cd682bd86",
+        "windows-amd64": "d6315375903b574e3e26373316117a9c54fa358f2f1505b1be4462a2b5cf4b2d"
       }
     },
     "ezdmw": {
       "type": "scraper",
-      "version": "1.0.4",
+      "version": "2.0.2",
       "description": "Ezdmw弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/ezdmw.so",
@@ -45,14 +45,14 @@
         "windows-amd64": "resources/windows-amd64/ezdmw.pyd"
       },
       "hashes": {
-        "linux-x86": "0124c95d4bbb4e5edf79c4bf7dcce4167d111fead0d763641dcc54310cd50dd2",
-        "linux-arm": "26a9b1d647f02cb9cd5fadb116d18ce6b45a9be607609b12f352cbff774e0f37",
-        "windows-amd64": "8fc2a7bf63886f3d68fbda31540c79def55d10d4a47569929f25561e2a57b17c"
+        "linux-x86": "d750e4d2230341bd1116123d92bfdcf0515c553640cb4d79651d786b33276024",
+        "linux-arm": "09a87a398cb98a1807741d18641c12dc4690ba1efcbf22f077495af0a92ec913",
+        "windows-amd64": "b29e27fb26ece89501d783b19e414193399bd58b02e09f0a5f0ead1aab7af3ed"
       }
     },
     "gamer": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "2.2.0",
       "description": "Gamer弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/gamer.so",
@@ -60,14 +60,14 @@
         "windows-amd64": "resources/windows-amd64/gamer.pyd"
       },
       "hashes": {
-        "linux-x86": "797eba09da0dbc6ea803ee5586ddbff3245688121e73986f8168c8bed15a16ba",
-        "linux-arm": "0d971a9f32691b03b8351ba22404a5085908df1f0edf7f3e89309ed52c29e48f",
-        "windows-amd64": "4db4a3c9c018eeca9b10b0377cec2fb46533ae0d64498777eb1631e374538b4b"
+        "linux-x86": "63083ed94585eb2e4f3e14868cd9a5e56ce6bdd0a9f206c95fd6b4f75ee28b47",
+        "linux-arm": "3d2ba4a53893a804eb4ad40880a28648093989ac106157b02263fef8fa564e3e",
+        "windows-amd64": "d1ba20eb124dde689be894ecac68ca325d34944a8e0beb65c4f0b4c6c3396a75"
       }
     },
     "girigirilove": {
       "type": "scraper",
-      "version": "1.0.1",
+      "version": "2.0.6",
       "description": "Girigirilove弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/girigirilove.so",
@@ -75,14 +75,14 @@
         "windows-amd64": "resources/windows-amd64/girigirilove.pyd"
       },
       "hashes": {
-        "linux-x86": "d4053c9165644a34689b181ee9b8b06c54b6bd5d9db4f268aaeab537d4cdf9d5",
-        "linux-arm": "4c410d32c1db1134c7b3441e0d3e25ee3f27d8ff7f7144fd5aa45edc229f60cd",
-        "windows-amd64": "5dcbf6b0c4f21e8e345e11f8a1e8198b9eebe40c512a39b9c1f272c7a440bf20"
+        "linux-x86": "7ac4b601e47f6a5e184a078741023535a73d8f6c5562aae8274323656cc2a3a1",
+        "linux-arm": "67bdf8a9bf994695a8f59622e4209f76e62d14b5f0800610e9ada63aa2178f63",
+        "windows-amd64": "5a630c9300da4887005fe4ebb8ae7c6b7c0b2266459abd470a9d89a522fbe50f"
       }
     },
     "hanjutv": {
       "type": "scraper",
-      "version": "1.2.1",
+      "version": "2.0.2",
       "description": "Hanjutv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hanjutv.so",
@@ -90,14 +90,14 @@
         "windows-amd64": "resources/windows-amd64/hanjutv.pyd"
       },
       "hashes": {
-        "linux-x86": "9df56cd7d5dc7f0308e12f6e1ac577ab8dae9e7587c71a1b0f23b0e5adf2b51e",
-        "linux-arm": "cfc94b9f1a5b8af4dd28f28c6378d47d97cc2a6925311d12a99715b4ee371d8d",
-        "windows-amd64": "a4ef7b485f7e3812c5dfd6054175cfa08a18d1332ee39884fadc157a934a7739"
+        "linux-x86": "e521a2f953b2459914e9c32a3aef81704c673964e1f4155b8940efcaa4dd6980",
+        "linux-arm": "978573f17a4f6ceef1415320d86e6a802bf779bf5da16fd0fcfdaf5bf474f207",
+        "windows-amd64": "898c6e3f5ec3563ffad30461e533f799673c6cca5ec769d6023f1fd32b92345c"
       }
     },
     "hongguo": {
       "type": "scraper",
-      "version": "1.0.2",
+      "version": "2.0.3",
       "description": "Hongguo弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/hongguo.so",
@@ -105,14 +105,14 @@
         "windows-amd64": "resources/windows-amd64/hongguo.pyd"
       },
       "hashes": {
-        "linux-x86": "53c04655b8d34e096fe7fb2df26e52c39868be2c741ce44929f9d87166a9d7bc",
-        "linux-arm": "365360df120a28fe712a825e6506ac800966aa5842f4c104932e1bae10ab3524",
-        "windows-amd64": "3914f09ff48460b8ff43109e7be8fec7899b1aded3ad38d26020462b2468279f"
+        "linux-x86": "c94ab28d60056a3257e99268180214e2e775d4e4246234dc90d5c8c5d359856c",
+        "linux-arm": "033e0642dab3290885d1e604b974c8ea4521880da29f04088faef6e6e6430074",
+        "windows-amd64": "135472663f4c9fa5d62aea74d6e704179df471d6492f7ada7a79306752b32c27"
       }
     },
     "iqiyi": {
       "type": "scraper",
-      "version": "1.1.2",
+      "version": "2.0.2",
       "description": "Iqiyi弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/iqiyi.so",
@@ -120,14 +120,14 @@
         "windows-amd64": "resources/windows-amd64/iqiyi.pyd"
       },
       "hashes": {
-        "linux-x86": "0be5695d8bf38bd65fff41e81ce359328a76f73319c3fa6aeea9888c58004856",
-        "linux-arm": "cbe7a3b455cc3d2c667f58cafec272fcaf3cd115bbdc73fb3d6e39453a52b3aa",
-        "windows-amd64": "f4f20aa339233c719acd1b6ac6fa909870edbb95b77b245d450d43b739c9543a"
+        "linux-x86": "ce78ed5ff8e98dc784703767145d623ffd6b7fc322c1ecf7360382e981b380bf",
+        "linux-arm": "db1f536846a9f5efdc5f8559967ba00a8835dbb730590b121f2574805cde1281",
+        "windows-amd64": "621e9eb28a7446ae043e0eaa3f68ae666bb7c3225fa8223b189226ae9caf55ed"
       }
     },
     "le": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "2.0.3",
       "description": "Le弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/le.so",
@@ -135,14 +135,14 @@
         "windows-amd64": "resources/windows-amd64/le.pyd"
       },
       "hashes": {
-        "linux-x86": "8a366fecf87a1f2996a5ee54574edf42240e49439ac8b01cbc28024f22764d0c",
-        "linux-arm": "c73722c74c3a46b26133d3d71b55a89fe0e5f36d9e0b71b5b3af38e457cd5b33",
-        "windows-amd64": "1d2df177da7f4502ef88be4b892dbd5011a9921cd0b82e786950ee6daa878d88"
+        "linux-x86": "5b0b5e7fa150226f050fff3dcf1b0008f05ce8e6b9f26e04052da0fbde04b29c",
+        "linux-arm": "5480583a3558988ce4ef4050898580e51907dc65c802d9497400da81c3590f8a",
+        "windows-amd64": "623e76d811aa49ba3a47a54d235e54c43b29b4340ee1ceb4e29abe78927dd92a"
       }
     },
     "mddcloud": {
       "type": "scraper",
-      "version": "1.0.9",
+      "version": "2.0.2",
       "description": "Mddcloud弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mddcloud.so",
@@ -150,14 +150,14 @@
         "windows-amd64": "resources/windows-amd64/mddcloud.pyd"
       },
       "hashes": {
-        "linux-x86": "9ac81a5783332067682827e0bf1a7e695e060b5fbc0dd2b268dadda01e2d4add",
-        "linux-arm": "6bdd9900a7cba56e04851e3c5549f871137b4a907a2e890cec73cbf492ec11b2",
-        "windows-amd64": "f5085f31d00ac3df0814f2ab5578ecbc2b1e7e55ce9f7576cad778c9867ed7ce"
+        "linux-x86": "07ec9879247214a48ba3e79e0d11e8df6411c4302981c66d05bb0cb83a2232db",
+        "linux-arm": "9ff221982a43dcc98d2b58494e6ed513e0f6b0d032ea5056bb5753b6610247fd",
+        "windows-amd64": "866f9bca670f00db9afc88f42cff52a23ac4e259edb56bf9c7a68978cff83634"
       }
     },
     "mgtv": {
       "type": "scraper",
-      "version": "1.1.9",
+      "version": "2.0.4",
       "description": "Mgtv弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/mgtv.so",
@@ -165,14 +165,14 @@
         "windows-amd64": "resources/windows-amd64/mgtv.pyd"
       },
       "hashes": {
-        "linux-x86": "97665e57cdd57981f5b252fa126c790705f25950895761a78d0f90bd086f44aa",
-        "linux-arm": "e73c0f3582aad66f113d3467b70bda5330de4ab906a51510ee58a8c518c3e732",
-        "windows-amd64": "7277f2d13df8978c19b63213456e648fee3c48ce85a0e52e86d7dd8f467641e6"
+        "linux-x86": "3566663adc88cfc642b54da25408d6507a69eb6a1c766376f50eb01a05d57101",
+        "linux-arm": "a48b369d1f08ccb86e299dc16ef31f8904fbe5dee0eb53571bc80b5c21c152ab",
+        "windows-amd64": "1b0130006acfc854f00e08319c498037ab8e25f0ba799bdb4b6f6cf2e5845f29"
       }
     },
     "migu": {
       "type": "scraper",
-      "version": "1.1.6",
+      "version": "2.0.2",
       "description": "Migu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/migu.so",
@@ -180,14 +180,14 @@
         "windows-amd64": "resources/windows-amd64/migu.pyd"
       },
       "hashes": {
-        "linux-x86": "6a7686076af54b1a3d9d99c677248e52bf8a72adf22e069eb3eb61de7062615c",
-        "linux-arm": "728eb253c03a655a7271ef8c078dcdd10082a5582a9f044c71d61a10c1844051",
-        "windows-amd64": "7a3d8884a879bdf63ec16a398180bbb3425d441ae4021ef62a9bb753e2a03be5"
+        "linux-x86": "5a4b259edcdd4163a744f9d696df88aaa70640b47978cffd9ecc77b72d63d864",
+        "linux-arm": "5f32affd941ac2cc7a1e608fcaf9d4bea863a47a215917043415c1d51c682a6e",
+        "windows-amd64": "ceb78e3479d87171166f38b26a82837334cbd146266a5b9fc1892df3016954af"
       }
     },
     "renren": {
       "type": "scraper",
-      "version": "1.1.3",
+      "version": "2.0.1",
       "description": "Renren弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/renren.so",
@@ -195,14 +195,14 @@
         "windows-amd64": "resources/windows-amd64/renren.pyd"
       },
       "hashes": {
-        "linux-x86": "416cfab9d5f5f81adc78db8827035343989d52a3f01330f7a0f5dde88fe996fe",
-        "linux-arm": "e421824b092d6cd1075e6c7cbce56e3cec6c94382904f336f1ef4d4bcbb084be",
-        "windows-amd64": "a3b0035a3effb9bd939152d490ef9bee52042dd778c589bb0fec90f08b652a46"
+        "linux-x86": "65f64a0bcb39276f0f21a30508cd45818bcfb28e9b752f53dfd4079a24e168a4",
+        "linux-arm": "29a0d9c90d0562d185c93cf821de3e2b11cab1e37a3d0222d56b6fdd99bee4b3",
+        "windows-amd64": "7bfcc951f84ab2926ce250262fdc22a42006fe72c0eaee51401343c452d7c070"
       }
     },
     "sohu": {
       "type": "scraper",
-      "version": "1.1.4",
+      "version": "2.0.3",
       "description": "Sohu弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/sohu.so",
@@ -210,14 +210,14 @@
         "windows-amd64": "resources/windows-amd64/sohu.pyd"
       },
       "hashes": {
-        "linux-x86": "0c906d6429fee7b4d1bf034fe324440a901519f6461075e633927911172d0c62",
-        "linux-arm": "b25fca46967259575a986163aaf4f801d2d64f06feeac0e71108ee9171668a8d",
-        "windows-amd64": "b7193a01b895004253318593c07c980ac7e4944e30c8db27d79b21d5e40832fd"
+        "linux-x86": "db57e5a348b8906bf16b6a2012b43a8dc1c9f55a16bdbee3d009223354eec7f2",
+        "linux-arm": "30c15011a4c346adc097ade6daed9ba4077cd2cb747d85beea1528e46ed1e3cf",
+        "windows-amd64": "388dcf2b5351181fcdaeeb0b291bf7b314193e0a31bd48c52eef35970eeb7510"
       }
     },
     "tencent": {
       "type": "scraper",
-      "version": "1.1.1",
+      "version": "2.0.3",
       "description": "Tencent弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/tencent.so",
@@ -225,14 +225,14 @@
         "windows-amd64": "resources/windows-amd64/tencent.pyd"
       },
       "hashes": {
-        "linux-x86": "b1f6f358dabb1998fc609f3475b5949cf7b10d07c19c405d9212c1d332dbb5a3",
-        "linux-arm": "6196ff19c89627dba56fd3ea2b2e7074aba7dffa678bc7ecb9870ae6aea29dc1",
-        "windows-amd64": "9f79c57354cfb5123ac6cd1e205ca843bd9cf755d1791926eb38eec6426856e7"
+        "linux-x86": "eb7c78c5ecc9a4d4bee12753b52295c790878bed03203280bdabbf82f0342c77",
+        "linux-arm": "9108b490238b80186e01f194bdbeae7051e7d3bfc1df6757357dec904bcb6537",
+        "windows-amd64": "4a045409d441bb90316894a771111b63ab8c02c90a5b917a56d708afe1b2ed46"
       }
     },
     "xigua": {
       "type": "scraper",
-      "version": "1.1.4",
+      "version": "2.0.3",
       "description": "Xigua弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/xigua.so",
@@ -240,14 +240,14 @@
         "windows-amd64": "resources/windows-amd64/xigua.pyd"
       },
       "hashes": {
-        "linux-x86": "8fc4e0ce1f43660c7c5ffe4a93ce5492f4b34fefff32b16a93ba0928e2db874e",
-        "linux-arm": "7963391f61624c4d27a62404696e66896a027617b340d84982ebe2d5696872d7",
-        "windows-amd64": "e44f603d7d70ee06f75ed5b043e2bf91bfa5150ba85be4c31919ae0b82472faf"
+        "linux-x86": "a8e53b864fac29f9c543b040484fd2d7b786d8af882eecd181cfe360a89f10b6",
+        "linux-arm": "bfeaa01112b1ccb0bc42e3483ee0cea6556b97fd1a3b6e349d5cb1fe49305494",
+        "windows-amd64": "73bfe3a007bda08a1853df70b66a4b952895ab5aec222fb074216e824e0a7400"
       }
     },
     "youku": {
       "type": "scraper",
-      "version": "1.1.8",
+      "version": "2.0.2",
       "description": "Youku弹幕源",
       "files": {
         "linux-x86": "resources/linux-x86/youku.so",
@@ -255,11 +255,11 @@
         "windows-amd64": "resources/windows-amd64/youku.pyd"
       },
       "hashes": {
-        "linux-x86": "11fa99c1161667ac029b9a5a6c1cd2f265f840442b2088e556833faf031f494f",
-        "linux-arm": "13fc4bb0a4951524a77e58ec13496bfa3b026f79a979ba34fac5b59df83ff7f2",
-        "windows-amd64": "7321139bc6e70be090a31a262b8401632dda88ad26dd907710db16799cfc3ed4"
+        "linux-x86": "57a540a31c73baafcb5cf5189833c66a9c6731c97396272e76ae6e24a734822f",
+        "linux-arm": "a8e677bdc7f21887829712a9e5abb55815c32b018f0eec61ebaf92e0a554c241",
+        "windows-amd64": "ce61f3a904c7cf0f3a6ead01d054be87ab26abb8de644ee202ccc9077263a2fa"
       }
     }
   },
-  "min_fetchable_version": "2.8.6"
+  "min_fetchable_version": "2.9.0"
 }
