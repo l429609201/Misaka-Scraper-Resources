@@ -20,27 +20,27 @@
     "xigua": "2.0.3",
     "bilibili": "2.0.3",
     "ezdmw": "2.0.2",
-    "aiyifan": "1.0.0"
+    "aiyifan": "2.0.0"
   },
   "hashes": {
     "tencent": "2323e778deada7a7b722681b89fab3f816f6850dbdedae678dd5492d81701be7",
-    "hanjutv": "fa61a0c8884ff70e1e836b28b28dd44352130e1944f8fdd36bfdd1ac98d8c9f1",
+    "hanjutv": "99138b9cee8b04ae52f3dce5a4a53679a9e01507616f8b77cb39cf8558185069",
     "migu": "a02c721164c33db6070d2a2140b3dc0e743b3e206040daa5841689409bbae051",
     "mgtv": "ddee0e83288d4059cb859e299558d231609a109062fce6706580176ecdec3a69",
-    "dandanplay": "180b704e6100aafe2ff7e4b695568a01fbaf555e14c70a7023b7ac39d91f0946",
+    "dandanplay": "c475614c3724aa92c5c64bd661b4f86137ef27edd38e729a8bf96ceddca178a2",
     "girigirilove": "f5b7d6e16fb4e7a7e39ab5d5bbd9f059f4d5fe37e8b5df268a7e427af958e7fd",
     "gamer": "5569cf30cf0473a622b976ee70013b779d79402425dd9efdac9700b9ef6dac2f",
-    "sohu": "89982c94938b9cba572f60bdd032f42dc55a3845aa34a3c4383c66e2148a3618",
+    "sohu": "82ab5186abac2b63576f89c39274335b63e1bc0e345a0d72235babeac62e6f26",
     "hongguo": "3668f2df283ab7666431d16a5786461494e412da22528f379bed0e3b3a5922c0",
-    "renren": "308f1924b8857b70a7000383b95d54c244d3eaecb0183dd455bfb2a291feb0eb",
+    "renren": "68c54ebe5c150f0f99a6f2d20fe73b07b25674a5d0a82db61c281f0b1de59cc1",
     "le": "cf7d8642ed84ea935533f57e81a54535b1397828fbc833bc28e8792e4ecb078d",
-    "youku": "d06304cac06fbae49c13897ceff4071c907fe1cf7d180ffcf752479cde82999a",
-    "mddcloud": "6ca5a46ea3fe323816e71f5245830e2acd978d6ba7ce13ed59a4279fe87d7247",
-    "iqiyi": "eb4c356cf91a896c086abfcbc447f7b438dcc01f7234b96e6243b7b93370cc3a",
+    "youku": "9bae6e9d2a6bd2608717c65cd1f439ad1f1a1d93ee893912780eb584dd1a7c6f",
+    "mddcloud": "bcf0a6b9e4954d0713f1b83f1f42de2edf88cd7df6c4cc145d7e0b7c66fc7851",
+    "iqiyi": "773af2aab9cb2c2fe9361a484959221b5e14b72724f1d29b67bdbd2e9b71cb14",
     "xigua": "2dd0b1da18665038ce38c6dbb1decd397e8fe9e3c90f611ce6017410ec80b376",
-    "bilibili": "1c9ac9ff6f4a11dbf0cb73b3a6d5b281605f11897d308446acd2e95b5835f464",
+    "bilibili": "168ebeb4f367bf09a71a6414a91db676bb5498c9fb9dc16e34478e4b386e9236",
     "ezdmw": "d47c9e9d80886b58028e3fc3370b1a4f80620e68948b9bde4a98329bae8fef67",
-    "aiyifan": "cb16a196a96592eaed64ee716416ee5e2454a0ea4e3553f0d6a900eb49d09277"
+    "aiyifan": "3a84e5b1d0e8f93d1bfe84eb2cee01f08c042d5cfa88594a4136e8f9abfa4de2"
   },
   "min_fetchable_version": "2.9.0"
 }
